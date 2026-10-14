@@ -1,19 +1,49 @@
-"""NDG XACML ndg namespace package
+"""NDG XACML package 
 
 NERC DataGrid
-
-This is a setuptools namespace_package.  DO NOT place any other
-code in this file!  There is no guarantee that it will be installed
-with easy_install.  See:
-
-http://peak.telecommunity.com/DevCenter/setuptools#namespace-packages
-
-... for details.
 """
 __author__ = "P J Kershaw"
-__date__ = "19/02/10"
+__date__ = "16/03/10"
 __copyright__ = "(C) 2010 Science and Technology Facilities Council"
+__contact__ = "Philip.Kershaw@stfc.ac.uk"
 __license__ = "BSD - see LICENSE file in top-level directory"
 __contact__ = "Philip.Kershaw@stfc.ac.uk"
-__revision__ = '$Id: __init__.py 7087 2010-06-25 11:23:09Z pjkersha $'
-__import__('pkg_resources').declare_namespace(__name__)
+__revision__ = "$Id: __init__.py 8010 2012-01-30 16:24:06Z rwilkinson $"
+class XacmlError(Exception):
+    """Base class for XACML package exception types"""
+
+class Config(object):
+    """Configuration options
+    @type use_lxml: bool
+    @cvar use_lxml: Controls whether lxml.etree should be imported instead of
+    etree. lxml is required for XPath expressions with conditions.
+    """
+    use_lxml = None
+
+def importElementTree():
+    """Imports ElementTree or the lxml ElementTree API depending on the
+    Config.use_lxml value and whether the lxml package is found.
+    @rtype: module
+    @return: the element tree module that has been imported
+    """
+    if Config.use_lxml is not None:
+        if Config.use_lxml:
+            from lxml import etree as ElementTree
+        else:
+            try: # python 2.5
+                from xml.etree import ElementTree
+            except ImportError:
+                # if you've installed it yourself it comes this way
+                import ElementTree
+    else:
+        Config.use_lxml = False
+        try:
+            from lxml import etree as ElementTree
+            Config.use_lxml = True
+        except ImportError:
+            try: # python 2.5
+                from xml.etree import ElementTree
+            except ImportError:
+                # if you've installed it yourself it comes this way
+                import ElementTree
+    return ElementTree
