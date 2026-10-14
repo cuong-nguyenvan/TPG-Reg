@@ -1,0 +1,7 @@
+Method,Clean: false alarm %,Clean: detect %,Dirty: flagged %,Dirty: detect %,Dirty: |T|
+Retest-all,0.0,52.2,50.2,77.3,14.5
+XFG-Regen,0.0,35.3,35.5,59.7,14.2
+AST-Up,0.0,59.5,51.8,80.3,3.2
+TPG-Reg,0.0,93.2,91.3,99.0,18.5
+TPG-Reg+D,0.0,100.0,97.0,100.0,19.3
+Exhaustive (all requests),0.0,100,99.2,100,-

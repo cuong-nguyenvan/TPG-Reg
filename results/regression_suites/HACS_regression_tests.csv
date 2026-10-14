@@ -1,0 +1,603 @@
+evolution,op,edit,test,role,action,resource,dept,same_dept,hour,emergency,consent,decision_v1,decision_v2,changed,decisive_rules
+0,CCF,H.R1.target[0],0,patient,write,ehr,cardio,yes,0,0,1,Deny,NotApplicable,1,H.R1
+0,CCF,H.R1.target[0],1,admin,write,ehr,cardio,no,12,1,0,NotApplicable,Deny,1,H.R1
+1,CCF,H.R1.cond[0],0,patient,write,ehr,cardio,yes,3,0,0,Deny,NotApplicable,1,H.R1
+1,CCF,H.R1.cond[0],1,patient,delete,ehr,cardio,no,10,1,0,Deny,Deny,0,H.R1
+2,CCF,H.R1.cond[1],0,patient,write,ehr,cardio,yes,22,1,0,Deny,Deny,0,H.R1
+2,CCF,H.R1.cond[1],1,patient,delete,ehr,cardio,no,11,1,1,Deny,Deny,0,H.R1 H.R6
+2,CCF,H.R1.cond[1],2,patient,print,ehr,cardio,yes,21,0,0,NotApplicable,Deny,1,H.R1
+3,CRE,H.R1,0,doctor,delete,ehr,er,no,15,0,0,Deny,Deny,0,H.R6
+3,CRE,H.R1,1,patient,write,ehr,onco,yes,1,0,1,Deny,Permit,1,H.R1
+3,CRE,H.R1,2,patient,delete,ehr,cardio,yes,0,0,0,Deny,Permit,1,H.R1
+4,RDL,H.R1,0,patient,write,ehr,cardio,yes,0,0,1,Deny,NotApplicable,1,H.R1
+6,CCF,H.R2.target[0],0,doctor,read,ehr,onco,yes,13,0,1,Permit,NotApplicable,1,H.R2
+6,CCF,H.R2.target[0],1,nurse,read,ehr,onco,yes,21,1,0,NotApplicable,Permit,1,H.R2
+7,CCF,H.R2.target[1],0,doctor,read,ehr,cardio,yes,10,0,1,Permit,NotApplicable,1,H.R2
+7,CCF,H.R2.target[1],1,doctor,read,ehr,cardio,no,0,0,1,NotApplicable,Permit,1,H.R2
+8,CCF,H.R2.cond[],0,doctor,read,ehr,cardio,yes,2,0,0,Permit,NotApplicable,1,H.R2
+8,CCF,H.R2.cond[],1,doctor,write,ehr,cardio,yes,8,1,0,Permit,Permit,0,H.R2
+9,CRE,H.R2,0,doctor,read,ehr,cardio,yes,8,0,0,Permit,Deny,1,H.R2
+9,CRE,H.R2,1,doctor,read,ehr,cardio,yes,10,1,1,Permit,Deny,1,H.R2
+9,CRE,H.R2,2,doctor,read,ehr,cardio,no,5,1,0,Permit,Permit,0,H.R3
+10,RDL,H.R2,0,doctor,read,ehr,cardio,yes,6,0,0,Permit,NotApplicable,1,H.R2
+12,CCF,H.R3.target[0],0,doctor,read,ehr,cardio,no,1,1,1,Permit,NotApplicable,1,H.R3
+12,CCF,H.R3.target[0],1,nurse,read,ehr,cardio,yes,22,1,0,NotApplicable,Permit,1,H.R3
+13,CCF,H.R3.target[1],0,doctor,read,ehr,cardio,no,3,1,1,Permit,NotApplicable,1,H.R3
+13,CCF,H.R3.target[1],1,doctor,write,ehr,cardio,no,9,1,1,NotApplicable,Permit,1,H.R3
+14,CCF,H.R3.cond[],0,doctor,read,ehr,cardio,no,9,1,0,Permit,NotApplicable,1,H.R3
+15,CRE,H.R3,0,doctor,read,ehr,cardio,yes,17,1,1,Permit,Permit,0,H.R2
+15,CRE,H.R3,1,doctor,read,ehr,cardio,yes,19,0,0,Permit,Permit,0,H.R2
+15,CRE,H.R3,2,doctor,read,ehr,cardio,no,2,1,1,Permit,Deny,1,H.R3
+16,RDL,H.R3,0,doctor,read,ehr,cardio,no,1,1,1,Permit,NotApplicable,1,H.R3
+18,CCF,H.R4.target[0],0,nurse,read,ehr,cardio,yes,13,0,0,Permit,NotApplicable,1,H.R4
+18,CCF,H.R4.target[0],1,receptionist,read,ehr,onco,yes,9,1,0,NotApplicable,Permit,1,H.R4
+19,CCF,H.R4.target[1],0,nurse,read,ehr,cardio,yes,10,1,1,Permit,NotApplicable,1,H.R4
+19,CCF,H.R4.target[1],1,nurse,write,ehr,cardio,yes,7,1,1,NotApplicable,Permit,1,H.R4
+20,CCF,H.R4.cond[0],0,nurse,read,ehr,cardio,yes,10,1,0,Permit,NotApplicable,1,H.R4
+20,CCF,H.R4.cond[0],1,nurse,read,ehr,cardio,no,11,0,1,NotApplicable,Permit,1,H.R4
+21,CRE,H.R4,0,nurse,read,ehr,cardio,yes,10,1,1,Permit,Deny,1,H.R4
+22,RDL,H.R4,0,nurse,read,ehr,cardio,yes,7,0,0,Permit,NotApplicable,1,H.R4
+24,CCF,H.R5.target[0],0,patient,read,ehr,cardio,yes,17,0,1,Permit,NotApplicable,1,H.R5
+24,CCF,H.R5.target[0],1,admin,read,ehr,cardio,yes,8,0,1,NotApplicable,Permit,1,H.R5
+25,CCF,H.R5.target[1],0,patient,read,ehr,cardio,yes,1,0,1,Permit,NotApplicable,1,H.R5
+25,CCF,H.R5.target[1],1,patient,write,ehr,cardio,yes,1,0,0,Deny,Deny,0,H.R1
+25,CCF,H.R5.target[1],2,patient,write,ehr,cardio,no,19,1,1,Deny,Deny,0,H.R1
+26,CCF,H.R5.cond[],0,patient,read,ehr,cardio,yes,6,1,1,Permit,NotApplicable,1,H.R5
+27,CRE,H.R5,0,patient,read,ehr,cardio,yes,2,0,1,Permit,Deny,1,H.R5
+28,RDL,H.R5,0,patient,read,ehr,cardio,no,3,0,1,Permit,NotApplicable,1,H.R5
+30,CCF,H.R6.target[0],0,doctor,delete,ehr,cardio,no,0,0,0,Deny,NotApplicable,1,H.R6
+30,CCF,H.R6.target[0],1,doctor,print,ehr,cardio,yes,13,0,1,NotApplicable,Deny,1,H.R6
+31,CRE,H.R6,0,doctor,delete,ehr,cardio,yes,8,0,1,Deny,Permit,1,H.R6
+31,CRE,H.R6,1,patient,write,ehr,cardio,yes,20,1,1,Deny,Deny,0,H.R1
+31,CRE,H.R6,2,patient,delete,ehr,onco,yes,6,1,1,Deny,Deny,0,H.R1
+32,RDL,H.R6,0,doctor,delete,ehr,cardio,no,17,1,0,Deny,NotApplicable,1,H.R6
+33,RAI,H.P1.N0@0,0,doctor,delete,ehr,er,yes,0,0,0,Deny,Deny,0,H.R6
+33,RAI,H.P1.N0@0,1,patient,write,ehr,cardio,no,16,1,1,Deny,Deny,0,H.R1
+33,RAI,H.P1.N0@0,2,patient,delete,ehr,cardio,yes,16,1,0,Deny,Permit,1,H.P1.N0 H.R1
+34,RAI,H.P1.N1@3,0,patient,read,ehr,cardio,yes,3,1,1,Permit,Permit,0,H.R5
+34,RAI,H.P1.N1@3,1,patient,read,ehr,cardio,yes,14,1,1,Permit,Deny,1,H.P1.N1 H.R5
+34,RAI,H.P1.N1@3,2,patient,read,ehr,cardio,yes,20,0,0,NotApplicable,Deny,1,H.P1.N1
+35,PTC,H.P1.target:=any,0,doctor,read,ehr,cardio,yes,3,1,0,Permit,Permit,0,H.R2
+35,PTC,H.P1.target:=any,1,doctor,read,ehr,cardio,yes,23,0,1,Permit,Permit,0,H.R2
+35,PTC,H.P1.target:=any,2,doctor,read,ehr,cardio,no,13,1,0,Permit,Permit,0,H.R3
+35,PTC,H.P1.target:=any,3,doctor,read,prescription,cardio,yes,13,1,1,Permit,Permit,0,H.R2 H.R7
+35,PTC,H.P1.target:=any,4,doctor,read,billing,onco,yes,14,1,1,NotApplicable,Permit,1,H.R2
+35,PTC,H.P1.target:=any,5,doctor,read,schedule,cardio,yes,16,1,1,Permit,Permit,0,H.R2 H.R23
+35,PTC,H.P1.target:=any,6,doctor,write,prescription,onco,yes,3,0,0,Deny,Deny,0,H.R10
+35,PTC,H.P1.target:=any,7,doctor,write,lab,cardio,yes,6,0,0,Permit,Permit,0,H.R14 H.R2
+35,PTC,H.P1.target:=any,8,doctor,delete,ehr,er,yes,22,1,1,Deny,Deny,0,H.R6
+35,PTC,H.P1.target:=any,9,nurse,read,ehr,cardio,yes,9,1,0,Permit,Permit,0,H.R4
+35,PTC,H.P1.target:=any,10,nurse,read,billing,cardio,yes,10,0,0,NotApplicable,Permit,1,H.R4
+35,PTC,H.P1.target:=any,11,nurse,read,schedule,cardio,yes,16,0,1,Permit,Permit,0,H.R23 H.R4
+35,PTC,H.P1.target:=any,12,nurse,write,lab,cardio,no,20,0,1,Deny,Deny,0,H.R15
+35,PTC,H.P1.target:=any,13,nurse,write,schedule,cardio,yes,20,0,1,Deny,Deny,0,H.R25
+35,PTC,H.P1.target:=any,14,receptionist,read,schedule,cardio,no,9,1,1,Permit,Permit,0,H.R22
+35,PTC,H.P1.target:=any,15,receptionist,write,prescription,cardio,yes,1,0,0,Deny,Deny,0,H.R10
+35,PTC,H.P1.target:=any,16,receptionist,delete,schedule,cardio,yes,14,1,1,Permit,Deny,1,H.R22 H.R6
+35,PTC,H.P1.target:=any,17,patient,read,ehr,cardio,yes,14,0,1,Permit,Permit,0,H.R5
+35,PTC,H.P1.target:=any,18,patient,read,lab,onco,no,23,1,1,NotApplicable,Permit,1,H.R5
+35,PTC,H.P1.target:=any,19,patient,read,schedule,cardio,yes,16,0,1,Permit,Permit,0,H.R24 H.R5
+35,PTC,H.P1.target:=any,20,patient,write,ehr,cardio,no,12,1,0,Deny,Deny,0,H.R1
+35,PTC,H.P1.target:=any,21,patient,write,prescription,er,no,21,1,0,NotApplicable,Deny,1,H.R1
+35,PTC,H.P1.target:=any,22,patient,write,lab,cardio,yes,22,1,1,Deny,Deny,0,H.R1 H.R15
+36,PTC,H.P1.target[0],0,doctor,read,ehr,cardio,yes,21,0,1,Permit,NotApplicable,1,H.R2
+36,PTC,H.P1.target[0],1,doctor,read,ehr,cardio,yes,22,1,0,Permit,NotApplicable,1,H.R2
+36,PTC,H.P1.target[0],2,doctor,read,ehr,cardio,no,1,1,1,Permit,NotApplicable,1,H.R3
+36,PTC,H.P1.target[0],3,doctor,read,prescription,er,yes,1,1,1,Permit,Permit,0,H.R2 H.R7
+36,PTC,H.P1.target[0],4,doctor,write,prescription,cardio,yes,4,0,0,Deny,Deny,0,H.R10
+36,PTC,H.P1.target[0],5,doctor,delete,ehr,peds,yes,3,1,0,Deny,NotApplicable,1,H.R6
+36,PTC,H.P1.target[0],6,doctor,delete,prescription,onco,yes,22,1,0,NotApplicable,Deny,1,H.R6
+36,PTC,H.P1.target[0],7,nurse,read,ehr,cardio,yes,9,0,0,Permit,NotApplicable,1,H.R4
+36,PTC,H.P1.target[0],8,nurse,read,prescription,cardio,yes,13,0,0,Permit,Permit,0,H.R4 H.R8
+36,PTC,H.P1.target[0],9,receptionist,write,prescription,er,no,22,0,0,Deny,Deny,0,H.R10
+36,PTC,H.P1.target[0],10,patient,read,ehr,cardio,yes,5,1,1,Permit,NotApplicable,1,H.R5
+36,PTC,H.P1.target[0],11,patient,read,prescription,onco,yes,13,0,1,Permit,Permit,0,H.R11 H.R5
+36,PTC,H.P1.target[0],12,patient,write,ehr,cardio,yes,1,0,0,Deny,NotApplicable,1,H.R1
+36,PTC,H.P1.target[0],13,patient,write,prescription,cardio,yes,7,1,1,NotApplicable,Deny,1,H.R1
+36,PTC,H.P1.target[0],14,patient,delete,ehr,er,yes,5,1,1,Deny,NotApplicable,1,H.R1
+36,PTC,H.P1.target[0],15,patient,delete,prescription,cardio,no,8,0,1,NotApplicable,Deny,1,H.R1
+37,CAC,H.P1:FA->DO,0,doctor,read,ehr,cardio,yes,12,0,1,Permit,Permit,0,H.R2
+37,CAC,H.P1:FA->DO,1,doctor,read,ehr,cardio,no,8,1,1,Permit,Permit,0,H.R3
+37,CAC,H.P1:FA->DO,2,doctor,delete,ehr,onco,yes,11,1,0,Deny,Deny,0,H.R6
+37,CAC,H.P1:FA->DO,3,nurse,read,ehr,cardio,yes,18,1,0,Permit,Permit,0,H.R4
+37,CAC,H.P1:FA->DO,4,patient,read,ehr,cardio,yes,14,1,1,Permit,Permit,0,H.R5
+37,CAC,H.P1:FA->DO,5,patient,write,ehr,cardio,no,13,1,1,Deny,Deny,0,H.R1
+38,CAC,H.P1:FA->PO,0,doctor,read,ehr,cardio,yes,13,1,1,Permit,Permit,0,H.R2 H.R3
+38,CAC,H.P1:FA->PO,1,doctor,read,ehr,cardio,no,2,1,1,Permit,Permit,0,H.R3
+38,CAC,H.P1:FA->PO,2,doctor,read,ehr,peds,yes,1,0,1,Permit,Permit,0,H.R2
+38,CAC,H.P1:FA->PO,3,doctor,delete,ehr,onco,no,10,0,1,Deny,Deny,0,H.R6
+38,CAC,H.P1:FA->PO,4,nurse,read,ehr,cardio,yes,8,1,0,Permit,Permit,0,H.R4
+38,CAC,H.P1:FA->PO,5,patient,read,ehr,cardio,no,4,0,1,Permit,Permit,0,H.R5
+38,CAC,H.P1:FA->PO,6,patient,write,ehr,cardio,yes,18,1,1,Deny,Deny,0,H.R1
+39,VDC,H.P1.work[0],0,nurse,read,ehr,cardio,yes,7,0,0,Permit,NotApplicable,1,H.R4
+39,VDC,H.P1.work[0],1,nurse,read,ehr,cardio,yes,11,1,0,Permit,Permit,0,H.R4
+40,VDC,H.P1.work[1],0,nurse,read,ehr,cardio,yes,11,1,0,Permit,Permit,0,H.R4
+40,VDC,H.P1.work[1],1,nurse,read,ehr,onco,yes,20,0,0,NotApplicable,Permit,1,H.R4
+42,CCF,H.R7.target[0],0,doctor,read,prescription,cardio,yes,19,1,0,Permit,NotApplicable,1,H.R7
+42,CCF,H.R7.target[0],1,doctor,write,prescription,cardio,yes,2,0,1,Deny,Deny,0,H.R10
+42,CCF,H.R7.target[0],2,nurse,read,prescription,cardio,no,20,0,1,Permit,Permit,0,H.R7 H.R8
+42,CCF,H.R7.target[0],3,nurse,write,prescription,cardio,yes,4,0,0,Deny,Deny,0,H.R10 H.R9
+42,CCF,H.R7.target[0],4,nurse,write,prescription,cardio,yes,7,1,0,Deny,Deny,0,H.R9
+43,CCF,H.R7.cond[],0,doctor,read,prescription,cardio,yes,10,0,1,Permit,NotApplicable,1,H.R7
+43,CCF,H.R7.cond[],1,doctor,write,prescription,cardio,yes,13,1,1,Permit,Permit,0,H.R7
+43,CCF,H.R7.cond[],2,doctor,write,prescription,cardio,no,1,0,0,Deny,Deny,0,H.R10
+44,CRE,H.R7,0,doctor,read,prescription,cardio,yes,11,0,1,Permit,Deny,1,H.R7
+44,CRE,H.R7,1,doctor,write,prescription,cardio,yes,4,0,1,Deny,Deny,0,H.R10 H.R7
+44,CRE,H.R7,2,receptionist,write,prescription,cardio,no,0,0,0,Deny,Deny,0,H.R10
+45,RDL,H.R7,0,doctor,read,prescription,cardio,yes,7,0,0,Permit,NotApplicable,1,H.R7
+45,RDL,H.R7,1,doctor,write,prescription,cardio,yes,23,0,0,Deny,Deny,0,H.R10
+45,RDL,H.R7,2,receptionist,write,prescription,peds,yes,4,0,1,Deny,Deny,0,H.R10
+47,CCF,H.R8.target[0],0,nurse,read,prescription,cardio,yes,9,0,0,Permit,NotApplicable,1,H.R8
+47,CCF,H.R8.target[0],1,receptionist,read,prescription,cardio,no,0,1,0,NotApplicable,Permit,1,H.R8
+48,CCF,H.R8.target[1],0,doctor,read,prescription,cardio,no,14,0,0,Permit,Permit,0,H.R7
+48,CCF,H.R8.target[1],1,doctor,write,prescription,cardio,yes,22,0,0,Deny,Deny,0,H.R10
+48,CCF,H.R8.target[1],2,nurse,read,prescription,cardio,yes,4,1,1,Permit,NotApplicable,1,H.R8
+48,CCF,H.R8.target[1],3,nurse,write,prescription,cardio,yes,4,0,1,Deny,Deny,0,H.R10 H.R9
+48,CCF,H.R8.target[1],4,nurse,write,prescription,cardio,yes,6,0,0,Deny,Deny,0,H.R9
+48,CCF,H.R8.target[1],5,receptionist,write,prescription,onco,no,22,0,0,Deny,Deny,0,H.R10
+49,CRE,H.R8,0,nurse,read,prescription,onco,yes,1,1,0,Permit,Deny,1,H.R8
+50,RDL,H.R8,0,nurse,read,prescription,cardio,yes,16,0,1,Permit,NotApplicable,1,H.R8
+52,CCF,H.R9.target[0],0,nurse,write,prescription,cardio,no,17,1,1,Deny,NotApplicable,1,H.R9
+52,CCF,H.R9.target[0],1,receptionist,write,prescription,cardio,yes,11,0,0,NotApplicable,Deny,1,H.R9
+53,CCF,H.R9.target[1],0,nurse,write,prescription,onco,yes,7,1,1,Deny,NotApplicable,1,H.R9
+53,CCF,H.R9.target[1],1,nurse,delete,prescription,cardio,no,2,1,0,NotApplicable,Deny,1,H.R9
+54,CRE,H.R9,0,doctor,read,prescription,cardio,yes,3,1,0,Permit,Permit,0,H.R7
+54,CRE,H.R9,1,doctor,write,prescription,cardio,no,2,0,0,Deny,Deny,0,H.R10
+54,CRE,H.R9,2,nurse,write,prescription,cardio,yes,0,0,1,Deny,Deny,0,H.R10 H.R9
+54,CRE,H.R9,3,nurse,write,prescription,cardio,yes,11,1,1,Deny,Permit,1,H.R9
+54,CRE,H.R9,4,patient,write,prescription,onco,yes,1,0,1,Deny,Deny,0,H.R10
+55,RDL,H.R9,0,nurse,write,prescription,cardio,yes,17,0,1,Deny,NotApplicable,1,H.R9
+57,CCF,H.R10.target[0],0,doctor,read,prescription,cardio,no,8,1,1,Permit,Permit,0,H.R7
+57,CCF,H.R10.target[0],1,doctor,write,prescription,cardio,yes,23,0,0,Deny,Permit,1,H.R10 H.R7
+57,CCF,H.R10.target[0],2,doctor,delete,prescription,cardio,yes,5,0,0,NotApplicable,Deny,1,H.R10
+57,CCF,H.R10.target[0],3,receptionist,write,prescription,cardio,no,4,0,0,Deny,NotApplicable,1,H.R10
+58,CCF,H.R10.cond[1],0,doctor,read,prescription,cardio,yes,1,0,0,Permit,Permit,0,H.R7
+58,CCF,H.R10.cond[1],1,doctor,write,prescription,cardio,yes,3,0,1,Deny,Permit,1,H.R10 H.R7
+58,CCF,H.R10.cond[1],2,receptionist,write,prescription,onco,no,22,0,0,Deny,NotApplicable,1,H.R10
+59,CRE,H.R10,0,doctor,read,prescription,cardio,yes,3,0,0,Permit,Permit,0,H.R7
+59,CRE,H.R10,1,doctor,write,prescription,cardio,yes,5,0,1,Deny,Permit,1,H.R10 H.R7
+59,CRE,H.R10,2,nurse,write,prescription,cardio,yes,0,0,0,Deny,Deny,0,H.R10 H.R9
+59,CRE,H.R10,3,nurse,write,prescription,cardio,yes,11,0,1,Deny,Deny,0,H.R9
+59,CRE,H.R10,4,receptionist,write,prescription,cardio,yes,0,0,1,Deny,Permit,1,H.R10
+60,RDL,H.R10,0,doctor,read,prescription,cardio,no,9,1,1,Permit,Permit,0,H.R7
+60,RDL,H.R10,1,doctor,write,prescription,cardio,no,2,0,0,Deny,Permit,1,H.R10 H.R7
+60,RDL,H.R10,2,receptionist,write,prescription,onco,yes,22,0,0,Deny,NotApplicable,1,H.R10
+62,CCF,H.R11.target[0],0,patient,read,prescription,cardio,no,9,0,1,Permit,NotApplicable,1,H.R11
+62,CCF,H.R11.target[0],1,admin,read,prescription,cardio,yes,6,1,1,NotApplicable,Permit,1,H.R11
+63,CCF,H.R11.target[1],0,doctor,read,prescription,peds,no,3,1,0,Permit,Permit,0,H.R7
+63,CCF,H.R11.target[1],1,doctor,write,prescription,cardio,yes,4,0,1,Deny,Deny,0,H.R10
+63,CCF,H.R11.target[1],2,receptionist,write,prescription,cardio,yes,4,0,1,Deny,Deny,0,H.R10
+63,CCF,H.R11.target[1],3,patient,read,prescription,cardio,yes,20,0,1,Permit,NotApplicable,1,H.R11
+63,CCF,H.R11.target[1],4,patient,write,prescription,cardio,yes,6,1,1,NotApplicable,Permit,1,H.R11
+63,CCF,H.R11.target[1],5,patient,write,prescription,cardio,no,1,0,1,Deny,Deny,0,H.R10
+64,CCF,H.R11.cond[],0,patient,read,prescription,cardio,yes,11,1,1,Permit,NotApplicable,1,H.R11
+65,CRE,H.R11,0,patient,read,prescription,cardio,yes,17,1,1,Permit,Deny,1,H.R11
+66,RDL,H.R11,0,patient,read,prescription,cardio,yes,5,0,1,Permit,NotApplicable,1,H.R11
+67,RAI,H.P2.N0@0,0,doctor,read,prescription,cardio,no,20,1,1,Permit,Permit,0,H.R7
+67,RAI,H.P2.N0@0,1,doctor,write,prescription,cardio,yes,1,0,0,Deny,Deny,0,H.R10
+67,RAI,H.P2.N0@0,2,nurse,write,prescription,cardio,yes,22,0,0,Deny,Deny,0,H.R10 H.R9
+67,RAI,H.P2.N0@0,3,nurse,write,prescription,cardio,no,8,1,0,Deny,Deny,0,H.R9
+67,RAI,H.P2.N0@0,4,receptionist,write,prescription,cardio,yes,1,0,0,Deny,Deny,0,H.R10
+68,RAI,H.P2.N1@2,0,patient,read,prescription,cardio,yes,15,0,1,Permit,Deny,1,H.P2.N1 H.R11
+68,RAI,H.P2.N1@2,1,patient,read,prescription,cardio,no,8,0,1,Permit,Permit,0,H.R11
+68,RAI,H.P2.N1@2,2,patient,read,prescription,cardio,no,13,0,0,NotApplicable,Deny,1,H.P2.N1
+69,PTC,H.P2.target:=any,0,doctor,read,ehr,onco,yes,9,0,0,Permit,Permit,0,H.R2 H.R7
+69,PTC,H.P2.target:=any,1,doctor,read,prescription,cardio,no,14,1,0,Permit,Permit,0,H.R7
+69,PTC,H.P2.target:=any,2,doctor,read,schedule,cardio,yes,4,1,1,Permit,Permit,0,H.R23 H.R7
+69,PTC,H.P2.target:=any,3,doctor,write,ehr,cardio,yes,0,0,1,Permit,Deny,1,H.R10 H.R2
+69,PTC,H.P2.target:=any,4,doctor,write,prescription,cardio,yes,22,0,0,Deny,Deny,0,H.R10
+69,PTC,H.P2.target:=any,5,doctor,write,lab,cardio,yes,1,1,1,Permit,Permit,0,H.R14 H.R7
+69,PTC,H.P2.target:=any,6,doctor,write,lab,cardio,yes,4,0,0,Permit,Deny,1,H.R10 H.R14
+69,PTC,H.P2.target:=any,7,doctor,delete,lab,peds,no,16,1,0,Deny,Deny,0,H.R15
+69,PTC,H.P2.target:=any,8,nurse,read,ehr,er,no,5,1,1,NotApplicable,Permit,1,H.R8
+69,PTC,H.P2.target:=any,9,nurse,read,prescription,cardio,yes,5,0,1,Permit,Permit,0,H.R8
+69,PTC,H.P2.target:=any,10,nurse,read,lab,onco,no,0,0,0,Permit,Permit,0,H.R12 H.R8
+69,PTC,H.P2.target:=any,11,nurse,read,schedule,cardio,yes,19,0,1,Permit,Permit,0,H.R23 H.R8
+69,PTC,H.P2.target:=any,12,nurse,write,ehr,cardio,no,7,0,0,NotApplicable,Deny,1,H.R9
+69,PTC,H.P2.target:=any,13,nurse,write,prescription,cardio,yes,15,1,1,Deny,Deny,0,H.R9
+69,PTC,H.P2.target:=any,14,nurse,write,lab,er,yes,1,1,1,Deny,Deny,0,H.R15 H.R9
+69,PTC,H.P2.target:=any,15,receptionist,read,billing,er,no,8,0,1,Permit,Permit,0,H.R17
+69,PTC,H.P2.target:=any,16,receptionist,read,schedule,onco,yes,20,1,1,Permit,Permit,0,H.R22
+69,PTC,H.P2.target:=any,17,receptionist,write,prescription,er,yes,5,0,1,Deny,Deny,0,H.R10
+69,PTC,H.P2.target:=any,18,receptionist,write,billing,cardio,yes,4,0,1,Deny,Deny,0,H.R10 H.R18
+69,PTC,H.P2.target:=any,19,receptionist,write,schedule,onco,yes,3,0,1,Permit,Deny,1,H.R10 H.R22
+69,PTC,H.P2.target:=any,20,patient,read,prescription,cardio,yes,0,1,1,Permit,Permit,0,H.R11
+69,PTC,H.P2.target:=any,21,patient,read,lab,cardio,yes,20,1,1,NotApplicable,Permit,1,H.R11
+69,PTC,H.P2.target:=any,22,patient,read,schedule,cardio,yes,12,0,1,Permit,Permit,0,H.R11 H.R24
+69,PTC,H.P2.target:=any,23,patient,write,schedule,cardio,no,18,0,0,Deny,Deny,0,H.R25
+69,PTC,H.P2.target:=any,24,admin,write,billing,cardio,yes,3,0,1,Permit,Deny,1,H.R10 H.R17
+70,PTC,H.P2.target[0],0,doctor,read,prescription,cardio,no,8,0,1,Permit,NotApplicable,1,H.R7
+70,PTC,H.P2.target[0],1,doctor,read,lab,cardio,yes,17,0,0,Permit,Permit,0,H.R12 H.R7
+70,PTC,H.P2.target[0],2,doctor,write,prescription,er,yes,0,0,1,Deny,NotApplicable,1,H.R10
+70,PTC,H.P2.target[0],3,doctor,write,lab,cardio,yes,1,1,1,Permit,Permit,0,H.R14 H.R7
+70,PTC,H.P2.target[0],4,doctor,write,lab,cardio,yes,3,0,1,Permit,Deny,1,H.R10 H.R14
+70,PTC,H.P2.target[0],5,doctor,delete,lab,cardio,no,3,0,0,Deny,Deny,0,H.R15
+70,PTC,H.P2.target[0],6,nurse,read,prescription,cardio,yes,3,0,1,Permit,NotApplicable,1,H.R8
+70,PTC,H.P2.target[0],7,nurse,read,lab,cardio,yes,1,0,1,Permit,Permit,0,H.R12 H.R8
+70,PTC,H.P2.target[0],8,nurse,read,lab,onco,no,0,0,0,Permit,Permit,0,H.R12 H.R8
+70,PTC,H.P2.target[0],9,nurse,write,prescription,cardio,yes,5,0,1,Deny,NotApplicable,1,H.R10 H.R9
+70,PTC,H.P2.target[0],10,nurse,write,prescription,cardio,yes,6,1,0,Deny,NotApplicable,1,H.R9
+70,PTC,H.P2.target[0],11,nurse,write,lab,cardio,yes,19,0,1,Deny,Deny,0,H.R15 H.R9
+70,PTC,H.P2.target[0],12,receptionist,write,prescription,onco,no,0,0,1,Deny,NotApplicable,1,H.R10
+70,PTC,H.P2.target[0],13,patient,read,prescription,cardio,yes,1,1,1,Permit,NotApplicable,1,H.R11
+70,PTC,H.P2.target[0],14,patient,read,lab,cardio,yes,15,0,1,NotApplicable,Permit,1,H.R11
+71,CAC,H.P2:DO->PO,0,doctor,read,prescription,cardio,no,16,1,0,Permit,Permit,0,H.R7
+71,CAC,H.P2:DO->PO,1,doctor,write,prescription,cardio,yes,0,0,1,Deny,Permit,1,H.R10 H.R7
+71,CAC,H.P2:DO->PO,2,nurse,read,prescription,cardio,yes,2,0,0,Permit,Permit,0,H.R8
+71,CAC,H.P2:DO->PO,3,nurse,write,prescription,cardio,yes,6,1,1,Deny,Deny,0,H.R9
+71,CAC,H.P2:DO->PO,4,receptionist,write,prescription,peds,no,3,0,1,Deny,Deny,0,H.R10
+71,CAC,H.P2:DO->PO,5,patient,read,prescription,cardio,yes,0,0,1,Permit,Permit,0,H.R11
+72,CAC,H.P2:DO->FA,0,doctor,read,prescription,onco,yes,21,1,0,Permit,Permit,0,H.R7
+72,CAC,H.P2:DO->FA,1,doctor,write,prescription,cardio,no,4,0,0,Deny,Permit,1,H.R10 H.R7
+72,CAC,H.P2:DO->FA,2,nurse,read,prescription,cardio,yes,11,0,0,Permit,Permit,0,H.R8
+72,CAC,H.P2:DO->FA,3,nurse,write,prescription,onco,yes,2,1,0,Deny,Deny,0,H.R9
+72,CAC,H.P2:DO->FA,4,receptionist,write,prescription,cardio,yes,2,0,1,Deny,Deny,0,H.R10
+72,CAC,H.P2:DO->FA,5,patient,read,prescription,cardio,yes,3,1,1,Permit,Permit,0,H.R11
+73,VDC,H.P2.off[0],0,doctor,read,prescription,cardio,yes,7,1,1,Permit,Permit,0,H.R7
+73,VDC,H.P2.off[0],1,doctor,write,prescription,cardio,no,7,0,1,Permit,Deny,1,H.R10 H.R7
+73,VDC,H.P2.off[0],2,doctor,write,prescription,onco,yes,4,0,0,Deny,Deny,0,H.R10
+73,VDC,H.P2.off[0],3,receptionist,write,prescription,er,no,1,0,0,Deny,Deny,0,H.R10
+74,VDC,H.P2.off[1],0,doctor,read,prescription,peds,no,2,0,0,Permit,Permit,0,H.R7
+74,VDC,H.P2.off[1],1,doctor,write,prescription,cardio,yes,21,0,1,Permit,Deny,1,H.R10 H.R7
+74,VDC,H.P2.off[1],2,doctor,write,prescription,onco,yes,23,0,0,Deny,Deny,0,H.R10
+74,VDC,H.P2.off[1],3,patient,write,prescription,cardio,yes,1,0,0,Deny,Deny,0,H.R10
+76,CCF,H.R12.target[0],0,doctor,read,lab,cardio,yes,12,0,1,Permit,NotApplicable,1,H.R12
+76,CCF,H.R12.target[0],1,nurse,read,lab,onco,yes,4,0,0,Permit,Permit,0,H.R12
+76,CCF,H.R12.target[0],2,nurse,read,lab,onco,no,1,1,0,Permit,Permit,0,H.R12
+77,CCF,H.R12.target[1],0,doctor,read,lab,cardio,yes,19,1,1,Permit,NotApplicable,1,H.R12
+77,CCF,H.R12.target[1],1,doctor,write,lab,cardio,yes,3,0,1,Permit,Permit,0,H.R12 H.R14
+77,CCF,H.R12.target[1],2,doctor,write,lab,cardio,no,15,1,0,Deny,Permit,1,H.R12 H.R15
+77,CCF,H.R12.target[1],3,nurse,read,lab,onco,no,6,1,1,Permit,Deny,1,H.R12 H.R13
+77,CCF,H.R12.target[1],4,nurse,delete,lab,peds,no,1,0,0,Deny,Deny,0,H.R15
+78,CRE,H.R12,0,doctor,read,lab,cardio,yes,11,1,1,Permit,Deny,1,H.R12
+78,CRE,H.R12,1,nurse,read,lab,onco,no,6,0,0,Permit,Deny,1,H.R12 H.R13
+79,RDL,H.R12,0,doctor,read,lab,cardio,yes,3,1,1,Permit,NotApplicable,1,H.R12
+79,RDL,H.R12,1,nurse,read,lab,onco,no,0,1,1,Permit,Deny,1,H.R12 H.R13
+81,CCF,H.R13.target[0],0,doctor,read,lab,onco,yes,13,0,0,Permit,Permit,0,H.R12
+81,CCF,H.R13.target[0],1,nurse,read,lab,onco,no,0,1,1,Permit,Permit,0,H.R12
+81,CCF,H.R13.target[0],2,receptionist,read,lab,onco,no,3,1,0,Deny,Deny,0,H.R13 H.R16
+82,CCF,H.R13.target[1],0,nurse,read,lab,onco,no,0,0,1,Permit,Permit,0,H.R12
+82,CCF,H.R13.target[1],1,nurse,read,lab,er,no,1,1,0,Permit,Permit,0,H.R12
+83,CCF,H.R13.cond[0],0,doctor,read,lab,cardio,yes,14,1,1,Permit,Permit,0,H.R12
+83,CCF,H.R13.cond[0],1,nurse,read,lab,onco,no,2,0,0,Permit,Permit,0,H.R12
+83,CCF,H.R13.cond[0],2,nurse,write,lab,onco,no,1,0,1,Deny,Deny,0,H.R13 H.R15
+84,CCF,H.R13.cond[1],0,nurse,read,lab,onco,yes,0,1,1,Permit,Permit,0,H.R12
+84,CCF,H.R13.cond[1],1,nurse,read,lab,onco,no,0,1,1,Permit,Permit,0,H.R12
+85,CRE,H.R13,0,doctor,read,lab,cardio,no,13,1,1,Permit,Permit,0,H.R12
+85,CRE,H.R13,1,nurse,read,lab,onco,no,1,1,0,Permit,Permit,0,H.R12 H.R13
+86,RDL,H.R13,0,doctor,read,lab,cardio,yes,8,0,1,Permit,Permit,0,H.R12
+86,RDL,H.R13,1,nurse,read,lab,onco,no,14,0,0,Permit,Permit,0,H.R12
+88,CCF,H.R14.target[0],0,doctor,write,lab,cardio,yes,9,0,0,Permit,Deny,1,H.R14 H.R15
+88,CCF,H.R14.target[0],1,nurse,write,lab,cardio,yes,15,0,0,Deny,Permit,1,H.R14 H.R15
+89,CCF,H.R14.target[1],0,doctor,write,lab,cardio,yes,9,0,1,Permit,Deny,1,H.R14 H.R15
+89,CCF,H.R14.target[1],1,doctor,delete,lab,cardio,yes,9,1,0,Deny,Permit,1,H.R14 H.R15
+90,CCF,H.R14.cond[],0,doctor,write,lab,cardio,yes,1,1,1,Permit,Deny,1,H.R14 H.R15
+90,CCF,H.R14.cond[],1,doctor,write,lab,cardio,no,10,0,1,Deny,Permit,1,H.R14 H.R15
+91,CRE,H.R14,0,doctor,write,lab,cardio,yes,7,0,1,Permit,Deny,1,H.R14 H.R15
+91,CRE,H.R14,1,doctor,delete,lab,cardio,yes,10,0,0,Deny,Deny,0,H.R15
+92,RDL,H.R14,0,doctor,write,lab,cardio,yes,1,1,1,Permit,Deny,1,H.R14 H.R15
+92,RDL,H.R14,1,nurse,write,lab,onco,no,3,1,0,Deny,Deny,0,H.R15
+94,CCF,H.R15.cond[],0,doctor,write,lab,cardio,yes,3,1,1,Permit,Permit,0,H.R14
+94,CCF,H.R15.cond[],1,doctor,delete,lab,er,yes,11,0,0,Deny,Deny,0,H.R15
+94,CCF,H.R15.cond[],2,nurse,write,lab,cardio,yes,11,0,1,Deny,NotApplicable,1,H.R15
+95,CRE,H.R15,0,doctor,write,lab,cardio,yes,2,1,0,Permit,Permit,0,H.R14 H.R15
+95,CRE,H.R15,1,doctor,write,lab,onco,no,21,1,0,Deny,Permit,1,H.R15
+95,CRE,H.R15,2,receptionist,read,lab,onco,yes,8,1,1,Deny,Deny,0,H.R16
+95,CRE,H.R15,3,receptionist,write,lab,cardio,yes,22,0,0,Deny,Permit,1,H.R15 H.R16
+96,RDL,H.R15,0,doctor,write,lab,cardio,yes,8,1,1,Permit,Permit,0,H.R14
+96,RDL,H.R15,1,doctor,write,lab,onco,no,2,1,0,Deny,NotApplicable,1,H.R15
+98,CCF,H.R16.target[0],0,receptionist,read,lab,cardio,yes,17,0,0,Deny,NotApplicable,1,H.R16
+98,CCF,H.R16.target[0],1,patient,read,lab,cardio,no,4,0,0,NotApplicable,Deny,1,H.R16
+99,CRE,H.R16,0,doctor,write,lab,cardio,yes,1,1,1,Permit,Permit,0,H.R14
+99,CRE,H.R16,1,doctor,write,lab,er,no,10,1,1,Deny,Deny,0,H.R15
+99,CRE,H.R16,2,receptionist,read,lab,cardio,yes,12,1,1,Deny,Permit,1,H.R16
+99,CRE,H.R16,3,receptionist,write,lab,cardio,yes,4,1,1,Deny,Permit,1,H.R15 H.R16
+100,RDL,H.R16,0,receptionist,read,lab,cardio,yes,2,0,0,Deny,NotApplicable,1,H.R16
+101,RAI,H.P3.N0@0,0,doctor,read,lab,cardio,yes,0,0,1,Permit,Permit,0,H.R12
+101,RAI,H.P3.N0@0,1,nurse,read,lab,onco,no,11,0,1,Permit,Permit,0,H.R12
+102,RAI,H.P3.N1@2,0,doctor,write,lab,onco,yes,1,1,1,Permit,Permit,0,H.R14
+102,RAI,H.P3.N1@2,1,doctor,write,lab,peds,no,5,1,0,Deny,Deny,0,H.R15
+102,RAI,H.P3.N1@2,2,nurse,read,lab,onco,no,14,0,1,Permit,Permit,0,H.P3.N1 H.R12
+102,RAI,H.P3.N1@2,3,nurse,write,lab,onco,yes,16,0,1,Deny,Permit,1,H.P3.N1 H.R15
+102,RAI,H.P3.N1@2,4,nurse,print,lab,onco,yes,14,1,1,NotApplicable,Permit,1,H.P3.N1
+103,PTC,H.P3.target:=any,0,doctor,read,ehr,cardio,yes,5,0,0,Permit,Permit,0,H.R12 H.R2
+103,PTC,H.P3.target:=any,1,doctor,read,prescription,cardio,yes,11,1,0,Permit,Permit,0,H.R12 H.R7
+103,PTC,H.P3.target:=any,2,doctor,read,lab,cardio,yes,11,1,0,Permit,Permit,0,H.R12
+103,PTC,H.P3.target:=any,3,doctor,read,schedule,cardio,no,11,0,0,Permit,Permit,0,H.R12 H.R23
+103,PTC,H.P3.target:=any,4,doctor,write,ehr,cardio,yes,9,1,0,Permit,Permit,0,H.R14 H.R2
+103,PTC,H.P3.target:=any,5,doctor,write,prescription,cardio,no,19,0,0,Permit,Deny,1,H.R15 H.R7
+103,PTC,H.P3.target:=any,6,doctor,write,prescription,onco,yes,3,0,0,Deny,Deny,0,H.R10
+103,PTC,H.P3.target:=any,7,doctor,write,lab,onco,yes,15,0,0,Permit,Permit,0,H.R14
+103,PTC,H.P3.target:=any,8,doctor,write,billing,onco,yes,15,0,1,NotApplicable,Permit,1,H.R14
+103,PTC,H.P3.target:=any,9,doctor,write,schedule,cardio,yes,8,0,0,Deny,Deny,0,H.R25
+103,PTC,H.P3.target:=any,10,doctor,delete,lab,er,no,4,0,0,Deny,Deny,0,H.R15
+103,PTC,H.P3.target:=any,11,nurse,read,ehr,onco,no,9,1,0,NotApplicable,Permit,1,H.R12
+103,PTC,H.P3.target:=any,12,nurse,read,prescription,cardio,yes,17,0,0,Permit,Permit,0,H.R12 H.R8
+103,PTC,H.P3.target:=any,13,nurse,read,prescription,onco,no,2,1,0,Permit,Permit,0,H.R12 H.R8
+103,PTC,H.P3.target:=any,14,nurse,read,lab,onco,no,1,1,0,Permit,Permit,0,H.R12
+103,PTC,H.P3.target:=any,15,nurse,read,schedule,onco,no,8,0,1,Permit,Permit,0,H.R12 H.R23
+103,PTC,H.P3.target:=any,16,receptionist,read,lab,onco,yes,23,0,0,Deny,Deny,0,H.R16
+103,PTC,H.P3.target:=any,17,receptionist,read,billing,er,yes,22,1,0,Permit,Deny,1,H.R16 H.R17
+103,PTC,H.P3.target:=any,18,receptionist,write,prescription,cardio,yes,4,0,1,Deny,Deny,0,H.R10 H.R15 H.R16
+103,PTC,H.P3.target:=any,19,receptionist,write,billing,cardio,yes,2,0,0,Deny,Deny,0,H.R15 H.R16 H.R18
+103,PTC,H.P3.target:=any,20,receptionist,write,schedule,cardio,no,8,1,0,Permit,Deny,1,H.R15 H.R16 H.R22
+103,PTC,H.P3.target:=any,21,patient,read,schedule,cardio,yes,7,0,0,Permit,Permit,0,H.R24
+103,PTC,H.P3.target:=any,22,admin,read,billing,cardio,yes,1,0,0,Permit,Permit,0,H.R17
+103,PTC,H.P3.target:=any,23,admin,read,schedule,cardio,no,5,0,1,Permit,Permit,0,H.R22
+103,PTC,H.P3.target:=any,24,auditor,read,schedule,onco,no,6,1,1,Deny,Deny,0,H.R25
+104,PTC,H.P3.target[0],0,doctor,read,lab,cardio,yes,1,1,1,Permit,NotApplicable,1,H.R12
+104,PTC,H.P3.target[0],1,doctor,read,billing,cardio,no,4,1,0,NotApplicable,Permit,1,H.R12
+104,PTC,H.P3.target[0],2,doctor,write,lab,cardio,yes,3,1,1,Permit,NotApplicable,1,H.R14
+104,PTC,H.P3.target[0],3,doctor,write,billing,cardio,yes,0,0,0,NotApplicable,Permit,1,H.R14
+104,PTC,H.P3.target[0],4,doctor,write,billing,er,no,6,0,0,NotApplicable,Deny,1,H.R15
+104,PTC,H.P3.target[0],5,doctor,delete,lab,cardio,no,7,1,1,Deny,NotApplicable,1,H.R15
+104,PTC,H.P3.target[0],6,nurse,read,lab,onco,no,1,1,1,Permit,NotApplicable,1,H.R12
+104,PTC,H.P3.target[0],7,nurse,read,billing,onco,no,0,0,1,NotApplicable,Permit,1,H.R12
+104,PTC,H.P3.target[0],8,receptionist,read,lab,onco,yes,7,0,1,Deny,NotApplicable,1,H.R16
+104,PTC,H.P3.target[0],9,receptionist,write,billing,cardio,yes,10,1,0,Permit,Deny,1,H.R15 H.R16 H.R17
+104,PTC,H.P3.target[0],10,receptionist,write,billing,cardio,yes,23,0,0,Deny,Deny,0,H.R15 H.R16 H.R18
+104,PTC,H.P3.target[0],11,admin,read,billing,cardio,yes,4,1,0,Permit,Permit,0,H.R17
+105,CAC,H.P3:PO->DO,0,doctor,read,lab,onco,yes,0,0,1,Permit,Permit,0,H.R12
+105,CAC,H.P3:PO->DO,1,doctor,write,lab,cardio,yes,0,0,1,Permit,Deny,1,H.R14 H.R15
+105,CAC,H.P3:PO->DO,2,doctor,delete,lab,er,yes,14,0,1,Deny,Deny,0,H.R15
+105,CAC,H.P3:PO->DO,3,nurse,read,lab,onco,no,1,0,1,Permit,Deny,1,H.R12 H.R13
+105,CAC,H.P3:PO->DO,4,receptionist,read,lab,er,no,1,0,0,Deny,Deny,0,H.R16
+106,CAC,H.P3:PO->FA,0,doctor,read,lab,cardio,yes,3,1,1,Permit,Permit,0,H.R12
+106,CAC,H.P3:PO->FA,1,doctor,write,lab,cardio,yes,17,1,0,Permit,Permit,0,H.R14
+106,CAC,H.P3:PO->FA,2,doctor,delete,lab,onco,no,2,0,0,Deny,Deny,0,H.R15
+106,CAC,H.P3:PO->FA,3,nurse,read,lab,onco,no,2,0,0,Permit,Permit,0,H.R12
+106,CAC,H.P3:PO->FA,4,receptionist,read,lab,cardio,no,1,0,1,Deny,Deny,0,H.R16
+108,CCF,H.R17.target[0],0,receptionist,read,billing,cardio,yes,1,1,1,Permit,NotApplicable,1,H.R17
+108,CCF,H.R17.target[0],1,receptionist,write,billing,cardio,yes,0,0,1,Deny,Deny,0,H.R18
+108,CCF,H.R17.target[0],2,admin,read,billing,cardio,yes,10,0,1,Permit,Permit,0,H.R17
+109,CCF,H.R17.cond[],0,receptionist,read,billing,cardio,no,1,1,0,Permit,NotApplicable,1,H.R17
+109,CCF,H.R17.cond[],1,receptionist,write,billing,cardio,yes,4,0,0,Deny,Deny,0,H.R18
+109,CCF,H.R17.cond[],2,receptionist,write,billing,onco,no,11,1,1,Permit,Permit,0,H.R17
+110,CRE,H.R17,0,receptionist,read,billing,onco,yes,11,0,0,Permit,Deny,1,H.R17
+110,CRE,H.R17,1,receptionist,write,billing,cardio,yes,0,1,0,Deny,Deny,0,H.R17 H.R18
+111,RDL,H.R17,0,receptionist,write,billing,cardio,yes,5,0,1,Deny,Deny,0,H.R18
+111,RDL,H.R17,1,receptionist,write,billing,onco,no,9,0,0,Permit,NotApplicable,1,H.R17
+113,CCF,H.R18.target[0],0,receptionist,read,billing,cardio,yes,0,1,0,Permit,Permit,0,H.R17
+113,CCF,H.R18.target[0],1,receptionist,write,billing,cardio,yes,3,1,0,Deny,Permit,1,H.R17 H.R18
+113,CCF,H.R18.target[0],2,patient,write,billing,cardio,yes,20,1,1,NotApplicable,Deny,1,H.R18
+114,CCF,H.R18.target[1],0,receptionist,read,billing,peds,no,3,0,1,Permit,Permit,0,H.R17
+114,CCF,H.R18.target[1],1,receptionist,write,billing,cardio,yes,22,1,0,Deny,Permit,1,H.R17 H.R18
+114,CCF,H.R18.target[1],2,receptionist,delete,billing,cardio,yes,19,0,1,Deny,Deny,0,H.R18 H.R20
+115,CRE,H.R18,0,receptionist,read,billing,cardio,yes,20,0,1,Permit,Permit,0,H.R17
+115,CRE,H.R18,1,receptionist,write,billing,cardio,yes,0,0,0,Deny,Permit,1,H.R17 H.R18
+116,RDL,H.R18,0,receptionist,read,billing,er,no,1,0,1,Permit,Permit,0,H.R17
+116,RDL,H.R18,1,receptionist,write,billing,cardio,yes,2,1,1,Deny,Permit,1,H.R17 H.R18
+118,CCF,H.R19.target[0],0,patient,read,billing,cardio,yes,3,1,0,Permit,NotApplicable,1,H.R19
+118,CCF,H.R19.target[0],1,admin,read,billing,cardio,yes,3,1,0,Permit,Permit,0,H.R17 H.R19
+119,CCF,H.R19.cond[],0,patient,read,billing,cardio,yes,17,0,1,Permit,NotApplicable,1,H.R19
+119,CCF,H.R19.cond[],1,patient,print,billing,cardio,yes,0,1,0,Permit,Permit,0,H.R19
+120,CRE,H.R19,0,patient,read,billing,cardio,yes,18,1,1,Permit,Deny,1,H.R19
+121,RDL,H.R19,0,patient,read,billing,onco,yes,0,0,1,Permit,NotApplicable,1,H.R19
+123,CCF,H.R20.target[0],0,doctor,print,billing,er,no,3,1,1,NotApplicable,Deny,1,H.R20
+123,CCF,H.R20.target[0],1,nurse,delete,billing,cardio,no,15,0,0,Deny,NotApplicable,1,H.R20
+123,CCF,H.R20.target[0],2,receptionist,read,billing,peds,yes,10,1,1,Permit,Permit,0,H.R17
+123,CCF,H.R20.target[0],3,receptionist,write,billing,cardio,yes,23,0,0,Deny,Deny,0,H.R18
+123,CCF,H.R20.target[0],4,receptionist,print,billing,cardio,no,6,1,0,Permit,Deny,1,H.R17 H.R20
+123,CCF,H.R20.target[0],5,patient,read,billing,cardio,yes,5,0,0,Permit,Permit,0,H.R19
+123,CCF,H.R20.target[0],6,patient,print,billing,cardio,yes,21,1,1,Permit,Deny,1,H.R19 H.R20
+124,CRE,H.R20,0,doctor,delete,billing,cardio,yes,23,0,0,Deny,Permit,1,H.R20
+125,RDL,H.R20,0,nurse,delete,billing,onco,no,16,1,0,Deny,NotApplicable,1,H.R20
+127,CCF,H.R21.target[0],0,doctor,read,billing,cardio,yes,9,1,0,NotApplicable,Permit,1,H.R21
+127,CCF,H.R21.target[0],1,auditor,read,billing,cardio,yes,8,1,0,Permit,NotApplicable,1,H.R21
+128,CCF,H.R21.target[1],0,auditor,read,billing,cardio,yes,5,0,1,Permit,NotApplicable,1,H.R21
+128,CCF,H.R21.target[1],1,auditor,write,billing,cardio,yes,4,0,1,NotApplicable,Permit,1,H.R21
+129,CRE,H.R21,0,auditor,read,billing,cardio,no,3,0,1,Permit,Deny,1,H.R21
+130,RDL,H.R21,0,auditor,read,billing,cardio,no,19,1,0,Permit,NotApplicable,1,H.R21
+131,RAI,H.P4.N0@0,0,auditor,read,billing,cardio,yes,3,1,1,Permit,Permit,0,H.R21
+131,RAI,H.P4.N0@0,1,auditor,read,billing,cardio,yes,15,1,1,Permit,Deny,1,H.P4.N0 H.R21
+132,RAI,H.P4.N1@2,0,patient,read,billing,cardio,yes,20,0,1,Permit,Deny,1,H.P4.N1 H.R19
+132,RAI,H.P4.N1@2,1,patient,read,billing,cardio,no,4,1,0,Permit,Permit,0,H.R19
+132,RAI,H.P4.N1@2,2,patient,write,billing,cardio,yes,16,0,0,NotApplicable,Deny,1,H.P4.N1
+133,PTC,H.P4.target:=any,0,doctor,read,prescription,cardio,yes,6,0,0,Permit,Permit,0,H.R7
+133,PTC,H.P4.target:=any,1,doctor,read,schedule,onco,yes,23,1,0,Permit,Permit,0,H.R23
+133,PTC,H.P4.target:=any,2,doctor,write,prescription,cardio,yes,3,0,1,Deny,Deny,0,H.R10
+133,PTC,H.P4.target:=any,3,doctor,write,lab,cardio,yes,2,0,1,Permit,Permit,0,H.R14
+133,PTC,H.P4.target:=any,4,doctor,write,schedule,cardio,no,5,0,0,Deny,Deny,0,H.R25
+133,PTC,H.P4.target:=any,5,doctor,delete,billing,cardio,yes,5,1,0,Deny,Deny,0,H.R20
+133,PTC,H.P4.target:=any,6,doctor,delete,schedule,cardio,yes,3,0,1,Deny,Deny,0,H.R20 H.R25
+133,PTC,H.P4.target:=any,7,nurse,write,lab,cardio,no,7,1,1,Deny,Deny,0,H.R15
+133,PTC,H.P4.target:=any,8,receptionist,read,lab,cardio,yes,2,0,0,Deny,Deny,0,H.R16
+133,PTC,H.P4.target:=any,9,receptionist,read,billing,onco,no,9,0,1,Permit,Permit,0,H.R17
+133,PTC,H.P4.target:=any,10,receptionist,read,schedule,cardio,yes,20,0,0,Permit,Permit,0,H.R17 H.R22
+133,PTC,H.P4.target:=any,11,receptionist,write,prescription,onco,no,3,0,1,Deny,Deny,0,H.R10 H.R18
+133,PTC,H.P4.target:=any,12,receptionist,write,lab,cardio,yes,3,1,0,Deny,Deny,0,H.R15 H.R16 H.R18
+133,PTC,H.P4.target:=any,13,receptionist,write,billing,onco,yes,20,0,1,Deny,Deny,0,H.R18
+133,PTC,H.P4.target:=any,14,receptionist,write,schedule,cardio,yes,3,1,1,Permit,Deny,1,H.R18 H.R22
+133,PTC,H.P4.target:=any,15,receptionist,delete,schedule,cardio,yes,0,1,0,Permit,Deny,1,H.R20 H.R22
+133,PTC,H.P4.target:=any,16,patient,read,prescription,onco,yes,11,0,0,NotApplicable,Permit,1,H.R19
+133,PTC,H.P4.target:=any,17,patient,read,billing,cardio,yes,13,1,1,Permit,Permit,0,H.R19
+133,PTC,H.P4.target:=any,18,patient,read,schedule,cardio,yes,14,1,0,Permit,Permit,0,H.R19 H.R24
+133,PTC,H.P4.target:=any,19,patient,write,prescription,onco,yes,0,0,0,Deny,Deny,0,H.R10
+133,PTC,H.P4.target:=any,20,auditor,read,ehr,onco,yes,13,1,0,NotApplicable,Permit,1,H.R21
+133,PTC,H.P4.target:=any,21,auditor,read,billing,cardio,yes,0,1,1,Permit,Permit,0,H.R21
+133,PTC,H.P4.target:=any,22,auditor,read,schedule,cardio,no,20,1,0,Deny,Deny,0,H.R25
+134,PTC,H.P4.target[0],0,doctor,read,schedule,er,yes,1,1,1,Permit,Permit,0,H.R23
+134,PTC,H.P4.target[0],1,doctor,delete,billing,onco,no,21,0,0,Deny,NotApplicable,1,H.R20
+134,PTC,H.P4.target[0],2,nurse,write,schedule,er,no,13,1,1,Deny,Deny,0,H.R25
+134,PTC,H.P4.target[0],3,receptionist,read,billing,onco,no,1,1,1,Permit,NotApplicable,1,H.R17
+134,PTC,H.P4.target[0],4,receptionist,read,schedule,onco,yes,6,1,0,Permit,Permit,0,H.R17 H.R22
+134,PTC,H.P4.target[0],5,receptionist,write,billing,cardio,yes,21,0,1,Deny,NotApplicable,1,H.R18
+134,PTC,H.P4.target[0],6,receptionist,write,schedule,cardio,yes,0,0,0,Permit,Deny,1,H.R18 H.R22
+134,PTC,H.P4.target[0],7,receptionist,delete,schedule,cardio,yes,16,1,0,Permit,Deny,1,H.R20 H.R22
+134,PTC,H.P4.target[0],8,patient,read,billing,cardio,no,2,1,0,Permit,NotApplicable,1,H.R19
+134,PTC,H.P4.target[0],9,patient,read,schedule,cardio,yes,13,0,0,Permit,Permit,0,H.R19 H.R24
+134,PTC,H.P4.target[0],10,auditor,read,billing,cardio,yes,3,1,1,Permit,NotApplicable,1,H.R21
+134,PTC,H.P4.target[0],11,auditor,read,schedule,cardio,yes,0,0,1,Deny,Deny,0,H.R25
+135,CAC,H.P4:DO->PO,0,doctor,delete,billing,onco,no,9,1,0,Deny,Deny,0,H.R20
+135,CAC,H.P4:DO->PO,1,receptionist,read,billing,cardio,no,1,0,0,Permit,Permit,0,H.R17
+135,CAC,H.P4:DO->PO,2,receptionist,write,billing,cardio,yes,3,0,1,Deny,Permit,1,H.R17 H.R18
+135,CAC,H.P4:DO->PO,3,patient,read,billing,cardio,no,8,1,1,Permit,Permit,0,H.R19
+135,CAC,H.P4:DO->PO,4,auditor,read,billing,cardio,yes,0,1,1,Permit,Permit,0,H.R21
+136,CAC,H.P4:DO->FA,0,doctor,delete,billing,er,yes,0,1,0,Deny,Deny,0,H.R20
+136,CAC,H.P4:DO->FA,1,receptionist,read,billing,peds,no,0,0,1,Permit,Permit,0,H.R17
+136,CAC,H.P4:DO->FA,2,receptionist,write,billing,cardio,yes,2,0,0,Deny,Permit,1,H.R17 H.R18
+136,CAC,H.P4:DO->FA,3,patient,read,billing,cardio,no,16,0,1,Permit,Permit,0,H.R19
+136,CAC,H.P4:DO->FA,4,auditor,read,billing,cardio,yes,7,0,0,Permit,Permit,0,H.R21
+137,VDC,H.P4.work[0],0,receptionist,read,billing,peds,yes,17,1,1,Permit,Permit,0,H.R17
+137,VDC,H.P4.work[0],1,receptionist,write,billing,cardio,yes,1,0,1,Deny,Deny,0,H.R18
+137,VDC,H.P4.work[0],2,receptionist,write,billing,cardio,yes,8,1,1,Permit,Deny,1,H.R17 H.R18
+138,VDC,H.P4.work[1],0,receptionist,write,billing,cardio,no,3,1,0,Deny,Deny,0,H.R18
+138,VDC,H.P4.work[1],1,receptionist,write,billing,cardio,no,20,0,0,Deny,Permit,1,H.R17 H.R18
+138,VDC,H.P4.work[1],2,receptionist,print,billing,cardio,no,8,1,0,Permit,Permit,0,H.R17
+140,CCF,H.R22.target[0],0,doctor,delete,schedule,cardio,no,11,0,0,Deny,Deny,0,H.R25
+140,CCF,H.R22.target[0],1,receptionist,read,schedule,peds,yes,16,0,1,Permit,Deny,1,H.R22 H.R25
+140,CCF,H.R22.target[0],2,admin,read,schedule,cardio,yes,14,0,0,Permit,Permit,0,H.R22
+141,CRE,H.R22,0,doctor,read,schedule,onco,no,11,1,1,Permit,Permit,0,H.R23
+141,CRE,H.R22,1,doctor,write,schedule,cardio,yes,14,0,0,Deny,Deny,0,H.R25
+141,CRE,H.R22,2,receptionist,read,schedule,cardio,yes,2,0,1,Permit,Deny,1,H.R22
+141,CRE,H.R22,3,patient,read,schedule,cardio,no,5,0,0,Permit,Permit,0,H.R24
+142,RDL,H.R22,0,doctor,read,schedule,er,yes,11,1,0,Permit,Permit,0,H.R23
+142,RDL,H.R22,1,nurse,write,schedule,cardio,yes,15,0,1,Deny,Deny,0,H.R25
+142,RDL,H.R22,2,receptionist,read,schedule,onco,no,0,1,0,Permit,Deny,1,H.R22 H.R25
+142,RDL,H.R22,3,patient,read,schedule,cardio,yes,10,1,1,Permit,Permit,0,H.R24
+144,CCF,H.R23.target[0],0,doctor,read,schedule,cardio,yes,3,0,1,Permit,Deny,1,H.R23 H.R25
+144,CCF,H.R23.target[0],1,doctor,write,schedule,cardio,yes,7,0,0,Deny,Deny,0,H.R25
+144,CCF,H.R23.target[0],2,nurse,read,schedule,cardio,no,10,1,0,Permit,Permit,0,H.R23
+145,CCF,H.R23.cond[],0,doctor,read,schedule,cardio,no,20,0,1,Permit,Deny,1,H.R23 H.R25
+145,CCF,H.R23.cond[],1,doctor,delete,schedule,peds,no,4,0,0,Deny,Deny,0,H.R25
+145,CCF,H.R23.cond[],2,doctor,print,schedule,onco,no,11,1,1,Permit,Permit,0,H.R23
+146,CRE,H.R23,0,doctor,read,schedule,cardio,no,21,1,0,Permit,Deny,1,H.R23
+146,CRE,H.R23,1,doctor,write,schedule,cardio,yes,7,1,1,Deny,Deny,0,H.R25
+146,CRE,H.R23,2,receptionist,read,schedule,onco,yes,14,0,0,Permit,Permit,0,H.R22
+146,CRE,H.R23,3,patient,read,schedule,cardio,yes,4,1,1,Permit,Permit,0,H.R24
+147,RDL,H.R23,0,doctor,read,schedule,cardio,yes,18,1,0,Permit,Deny,1,H.R23 H.R25
+147,RDL,H.R23,1,doctor,write,schedule,cardio,no,1,0,0,Deny,Deny,0,H.R25
+147,RDL,H.R23,2,receptionist,read,schedule,er,yes,7,1,1,Permit,Permit,0,H.R22
+147,RDL,H.R23,3,patient,read,schedule,cardio,yes,0,1,1,Permit,Permit,0,H.R24
+149,CCF,H.R24.target[0],0,nurse,delete,schedule,onco,yes,19,0,1,Deny,Deny,0,H.R25
+149,CCF,H.R24.target[0],1,patient,read,schedule,cardio,no,10,0,0,Permit,Deny,1,H.R24 H.R25
+149,CCF,H.R24.target[0],2,admin,read,schedule,cardio,yes,18,1,0,Permit,Permit,0,H.R22
+150,CCF,H.R24.target[1],0,patient,read,schedule,cardio,yes,21,0,1,Permit,Deny,1,H.R24 H.R25
+150,CCF,H.R24.target[1],1,patient,write,schedule,cardio,yes,6,1,0,Deny,Permit,1,H.R24 H.R25
+151,CRE,H.R24,0,doctor,read,schedule,cardio,no,9,1,1,Permit,Permit,0,H.R23
+151,CRE,H.R24,1,doctor,delete,schedule,peds,no,19,1,1,Deny,Deny,0,H.R25
+151,CRE,H.R24,2,receptionist,read,schedule,peds,yes,11,1,1,Permit,Permit,0,H.R22
+151,CRE,H.R24,3,patient,read,schedule,cardio,yes,10,1,0,Permit,Deny,1,H.R24
+152,RDL,H.R24,0,doctor,read,schedule,onco,no,15,0,1,Permit,Permit,0,H.R23
+152,RDL,H.R24,1,doctor,write,schedule,cardio,no,13,0,0,Deny,Deny,0,H.R25
+152,RDL,H.R24,2,receptionist,read,schedule,peds,yes,6,0,0,Permit,Permit,0,H.R22
+152,RDL,H.R24,3,patient,read,schedule,cardio,yes,11,0,1,Permit,Deny,1,H.R24 H.R25
+153,RRO,H.R24<->H.R25,0,doctor,read,schedule,cardio,no,23,1,1,Permit,Permit,0,H.R23
+153,RRO,H.R24<->H.R25,1,doctor,write,schedule,er,yes,13,1,0,Deny,Deny,0,H.R25
+153,RRO,H.R24<->H.R25,2,receptionist,read,schedule,cardio,yes,22,0,0,Permit,Permit,0,H.R22
+153,RRO,H.R24<->H.R25,3,patient,read,schedule,cardio,yes,15,0,0,Permit,Deny,1,H.R24 H.R25
+154,CRE,H.R25,0,doctor,read,schedule,cardio,yes,0,0,0,Permit,Permit,0,H.R23
+154,CRE,H.R25,1,doctor,write,schedule,onco,no,0,0,0,Deny,Permit,1,H.R25
+154,CRE,H.R25,2,receptionist,write,schedule,cardio,no,7,0,0,Permit,Permit,0,H.R22
+154,CRE,H.R25,3,patient,read,schedule,cardio,no,14,1,0,Permit,Permit,0,H.R24
+155,RDL,H.R25,0,doctor,read,schedule,cardio,yes,15,1,0,Permit,Permit,0,H.R23
+155,RDL,H.R25,1,doctor,write,schedule,onco,no,20,0,0,Deny,NotApplicable,1,H.R25
+155,RDL,H.R25,2,receptionist,read,schedule,onco,yes,3,1,0,Permit,Permit,0,H.R22
+155,RDL,H.R25,3,patient,read,schedule,cardio,yes,17,0,1,Permit,Permit,0,H.R24
+156,RAI,H.P5.N0@0,0,doctor,write,schedule,onco,no,21,1,0,Deny,Deny,0,H.R25
+156,RAI,H.P5.N0@0,1,receptionist,read,schedule,cardio,yes,21,1,0,Permit,Deny,1,H.P5.N0 H.R22
+156,RAI,H.P5.N0@0,2,receptionist,read,schedule,onco,no,5,1,0,Permit,Permit,0,H.R22
+157,RAI,H.P5.N1@2,0,nurse,write,schedule,cardio,yes,8,0,0,Deny,Deny,0,H.R25
+157,RAI,H.P5.N1@2,1,receptionist,read,schedule,peds,no,18,0,1,Permit,Permit,0,H.R22
+158,PTC,H.P5.target:=any,0,doctor,read,ehr,cardio,yes,4,1,0,Permit,Permit,0,H.R2 H.R23
+158,PTC,H.P5.target:=any,1,doctor,read,ehr,cardio,no,1,1,0,Permit,Permit,0,H.R23 H.R3
+158,PTC,H.P5.target:=any,2,doctor,read,lab,cardio,yes,22,1,0,Permit,Permit,0,H.R12 H.R23
+158,PTC,H.P5.target:=any,3,doctor,read,schedule,onco,yes,7,0,0,Permit,Permit,0,H.R23
+158,PTC,H.P5.target:=any,4,doctor,write,ehr,cardio,yes,15,0,1,Permit,Deny,1,H.R2 H.R25
+158,PTC,H.P5.target:=any,5,doctor,write,prescription,cardio,yes,2,0,1,Deny,Deny,0,H.R10 H.R25
+158,PTC,H.P5.target:=any,6,doctor,write,prescription,cardio,no,18,0,0,Permit,Deny,1,H.R25 H.R7
+158,PTC,H.P5.target:=any,7,doctor,write,lab,cardio,yes,2,1,0,Permit,Deny,1,H.R14 H.R25
+158,PTC,H.P5.target:=any,8,doctor,delete,lab,er,no,6,0,0,Deny,Deny,0,H.R15 H.R25
+158,PTC,H.P5.target:=any,9,doctor,delete,schedule,cardio,no,9,1,0,Deny,Deny,0,H.R25
+158,PTC,H.P5.target:=any,10,doctor,print,ehr,onco,yes,17,1,1,NotApplicable,Permit,1,H.R23
+158,PTC,H.P5.target:=any,11,nurse,read,ehr,cardio,yes,9,1,0,Permit,Permit,0,H.R23 H.R4
+158,PTC,H.P5.target:=any,12,nurse,read,prescription,cardio,yes,10,0,1,Permit,Permit,0,H.R23 H.R8
+158,PTC,H.P5.target:=any,13,nurse,read,lab,onco,no,1,0,0,Permit,Permit,0,H.R12 H.R23
+158,PTC,H.P5.target:=any,14,receptionist,read,lab,cardio,yes,1,0,0,Deny,Deny,0,H.R16
+158,PTC,H.P5.target:=any,15,receptionist,read,billing,cardio,yes,7,0,1,Permit,Permit,0,H.R17 H.R22
+158,PTC,H.P5.target:=any,16,receptionist,write,prescription,er,no,0,0,0,Deny,Deny,0,H.R10
+158,PTC,H.P5.target:=any,17,receptionist,write,prescription,peds,yes,6,1,0,NotApplicable,Permit,1,H.R22
+158,PTC,H.P5.target:=any,18,receptionist,write,lab,onco,yes,14,1,1,Deny,Deny,0,H.R15 H.R16
+158,PTC,H.P5.target:=any,19,receptionist,write,billing,cardio,yes,4,0,0,Deny,Deny,0,H.R18
+158,PTC,H.P5.target:=any,20,receptionist,write,schedule,onco,yes,5,0,1,Permit,Permit,0,H.R22
+158,PTC,H.P5.target:=any,21,receptionist,delete,ehr,onco,yes,7,1,1,Deny,Deny,0,H.R6
+158,PTC,H.P5.target:=any,22,receptionist,delete,billing,er,no,21,0,1,Deny,Deny,0,H.R20
+158,PTC,H.P5.target:=any,23,patient,read,ehr,cardio,yes,23,0,1,Permit,Permit,0,H.R24 H.R5
+158,PTC,H.P5.target:=any,24,patient,read,ehr,cardio,no,7,1,0,NotApplicable,Permit,1,H.R24
+158,PTC,H.P5.target:=any,25,patient,read,prescription,cardio,yes,12,0,1,Permit,Permit,0,H.R11 H.R24
+158,PTC,H.P5.target:=any,26,patient,read,schedule,cardio,yes,21,1,1,Permit,Permit,0,H.R24
+158,PTC,H.P5.target:=any,27,patient,print,billing,cardio,yes,2,1,0,Permit,Deny,1,H.R19 H.R25
+158,PTC,H.P5.target:=any,28,auditor,read,billing,cardio,yes,16,0,1,Permit,Deny,1,H.R21 H.R25
+159,PTC,H.P5.target[0],0,doctor,read,ehr,cardio,no,1,1,0,Permit,Permit,0,H.R23 H.R3
+159,PTC,H.P5.target[0],1,doctor,read,ehr,er,yes,3,1,0,Permit,Permit,0,H.R2 H.R23
+159,PTC,H.P5.target[0],2,doctor,read,schedule,cardio,yes,17,1,1,Permit,NotApplicable,1,H.R23
+159,PTC,H.P5.target[0],3,doctor,write,ehr,cardio,yes,13,0,0,Permit,Deny,1,H.R2 H.R25
+159,PTC,H.P5.target[0],4,doctor,write,ehr,er,no,20,0,0,NotApplicable,Deny,1,H.R25
+159,PTC,H.P5.target[0],5,doctor,write,schedule,peds,yes,10,1,1,Deny,NotApplicable,1,H.R25
+159,PTC,H.P5.target[0],6,nurse,read,ehr,cardio,yes,9,1,1,Permit,Permit,0,H.R23 H.R4
+159,PTC,H.P5.target[0],7,receptionist,read,ehr,cardio,yes,21,0,1,NotApplicable,Permit,1,H.R22
+159,PTC,H.P5.target[0],8,receptionist,read,schedule,cardio,no,18,0,1,Permit,NotApplicable,1,H.R22
+159,PTC,H.P5.target[0],9,receptionist,delete,ehr,er,yes,0,1,0,Deny,Deny,0,H.R6
+159,PTC,H.P5.target[0],10,patient,read,ehr,cardio,yes,9,1,1,Permit,Permit,0,H.R24 H.R5
+159,PTC,H.P5.target[0],11,patient,read,schedule,cardio,yes,1,0,0,Permit,NotApplicable,1,H.R24
+160,CAC,H.P5:FA->DO,0,doctor,read,schedule,peds,yes,1,1,1,Permit,Deny,1,H.R23 H.R25
+160,CAC,H.P5:FA->DO,1,receptionist,read,schedule,cardio,no,18,0,1,Permit,Deny,1,H.R22 H.R25
+160,CAC,H.P5:FA->DO,2,patient,read,schedule,cardio,yes,6,0,0,Permit,Deny,1,H.R24 H.R25
+160,CAC,H.P5:FA->DO,3,patient,write,schedule,er,no,2,1,0,Deny,Deny,0,H.R25
+161,CAC,H.P5:FA->PO,0,doctor,read,schedule,cardio,yes,7,1,0,Permit,Permit,0,H.R23
+161,CAC,H.P5:FA->PO,1,doctor,delete,schedule,er,no,2,0,1,Deny,Deny,0,H.R25
+161,CAC,H.P5:FA->PO,2,receptionist,write,schedule,onco,yes,20,0,1,Permit,Permit,0,H.R22
+161,CAC,H.P5:FA->PO,3,patient,read,schedule,cardio,yes,4,1,0,Permit,Permit,0,H.R24
+162,CAC,HACS:DO->PO,0,doctor,read,ehr,cardio,yes,11,0,0,Permit,Permit,0,H.R2
+162,CAC,HACS:DO->PO,1,doctor,read,ehr,cardio,no,3,1,0,Permit,Permit,0,H.R3
+162,CAC,HACS:DO->PO,2,doctor,read,prescription,cardio,yes,4,1,0,Permit,Permit,0,H.R7
+162,CAC,HACS:DO->PO,3,doctor,read,lab,cardio,no,6,1,0,Permit,Permit,0,H.R12
+162,CAC,HACS:DO->PO,4,doctor,read,schedule,cardio,no,1,0,1,Permit,Permit,0,H.R23
+162,CAC,HACS:DO->PO,5,doctor,write,prescription,cardio,yes,0,0,1,Deny,Deny,0,H.R10
+162,CAC,HACS:DO->PO,6,doctor,write,lab,cardio,yes,4,1,1,Permit,Permit,0,H.R14
+162,CAC,HACS:DO->PO,7,doctor,write,schedule,er,no,5,0,1,Deny,Deny,0,H.R25
+162,CAC,HACS:DO->PO,8,doctor,delete,ehr,onco,yes,5,0,0,Deny,Deny,0,H.R6
+162,CAC,HACS:DO->PO,9,doctor,delete,lab,er,yes,17,0,1,Deny,Deny,0,H.R15
+162,CAC,HACS:DO->PO,10,doctor,delete,billing,cardio,no,23,0,0,Deny,Deny,0,H.R20
+162,CAC,HACS:DO->PO,11,nurse,read,ehr,cardio,yes,10,0,0,Permit,Permit,0,H.R4
+162,CAC,HACS:DO->PO,12,nurse,read,prescription,cardio,yes,5,0,1,Permit,Permit,0,H.R8
+162,CAC,HACS:DO->PO,13,nurse,read,lab,onco,no,4,1,0,Permit,Permit,0,H.R12
+162,CAC,HACS:DO->PO,14,nurse,write,prescription,cardio,yes,16,1,1,Deny,Deny,0,H.R9
+162,CAC,HACS:DO->PO,15,receptionist,read,lab,cardio,no,4,0,1,Deny,Deny,0,H.R16
+162,CAC,HACS:DO->PO,16,receptionist,read,billing,onco,no,19,1,0,Permit,Permit,0,H.R17
+162,CAC,HACS:DO->PO,17,receptionist,read,schedule,er,yes,21,0,1,Permit,Permit,0,H.R22
+162,CAC,HACS:DO->PO,18,receptionist,write,prescription,er,no,1,0,0,Deny,Deny,0,H.R10
+162,CAC,HACS:DO->PO,19,receptionist,write,billing,cardio,yes,22,1,1,Deny,Deny,0,H.R18
+162,CAC,HACS:DO->PO,20,patient,read,ehr,cardio,yes,9,1,1,Permit,Permit,0,H.R5
+162,CAC,HACS:DO->PO,21,patient,read,prescription,cardio,yes,17,1,1,Permit,Permit,0,H.R11
+162,CAC,HACS:DO->PO,22,patient,read,billing,cardio,yes,2,1,0,Permit,Permit,0,H.R19
+162,CAC,HACS:DO->PO,23,patient,read,schedule,cardio,yes,1,0,1,Permit,Permit,0,H.R24
+162,CAC,HACS:DO->PO,24,patient,write,ehr,cardio,yes,2,1,0,Deny,Deny,0,H.R1
+162,CAC,HACS:DO->PO,25,auditor,read,billing,cardio,yes,6,0,0,Permit,Permit,0,H.R21
+163,CAC,HACS:DO->FA,0,doctor,read,ehr,cardio,yes,17,1,1,Permit,Permit,0,H.R2
+163,CAC,HACS:DO->FA,1,doctor,read,ehr,cardio,yes,22,0,1,Permit,Permit,0,H.R2
+163,CAC,HACS:DO->FA,2,doctor,read,ehr,cardio,no,18,1,1,Permit,Permit,0,H.R3
+163,CAC,HACS:DO->FA,3,doctor,read,prescription,cardio,no,21,1,1,Permit,Permit,0,H.R7
+163,CAC,HACS:DO->FA,4,doctor,read,lab,cardio,no,8,1,0,Permit,Permit,0,H.R12
+163,CAC,HACS:DO->FA,5,doctor,read,schedule,onco,yes,23,1,0,Permit,Permit,0,H.R23
+163,CAC,HACS:DO->FA,6,doctor,write,prescription,cardio,yes,0,0,1,Deny,Deny,0,H.R10
+163,CAC,HACS:DO->FA,7,doctor,write,lab,cardio,yes,0,1,1,Permit,Permit,0,H.R14
+163,CAC,HACS:DO->FA,8,doctor,write,schedule,cardio,no,21,0,0,Deny,Deny,0,H.R25
+163,CAC,HACS:DO->FA,9,doctor,delete,ehr,er,no,23,1,1,Deny,Deny,0,H.R6
+163,CAC,HACS:DO->FA,10,doctor,delete,lab,cardio,no,9,1,0,Deny,Deny,0,H.R15
+163,CAC,HACS:DO->FA,11,nurse,read,ehr,cardio,yes,7,0,0,Permit,Permit,0,H.R4
+163,CAC,HACS:DO->FA,12,nurse,read,prescription,cardio,yes,5,1,1,Permit,Permit,0,H.R8
+163,CAC,HACS:DO->FA,13,nurse,read,lab,onco,no,0,0,1,Permit,Permit,0,H.R12
+163,CAC,HACS:DO->FA,14,nurse,write,prescription,cardio,yes,11,1,0,Deny,Deny,0,H.R9
+163,CAC,HACS:DO->FA,15,nurse,delete,billing,onco,yes,23,1,1,Deny,Deny,0,H.R20
+163,CAC,HACS:DO->FA,16,receptionist,read,lab,cardio,yes,0,0,0,Deny,Deny,0,H.R16
+163,CAC,HACS:DO->FA,17,receptionist,read,billing,cardio,yes,23,1,0,Permit,Permit,0,H.R17
+163,CAC,HACS:DO->FA,18,receptionist,read,schedule,cardio,yes,20,0,0,Permit,Permit,0,H.R22
+163,CAC,HACS:DO->FA,19,receptionist,write,prescription,cardio,no,1,0,0,Deny,Deny,0,H.R10
+163,CAC,HACS:DO->FA,20,receptionist,write,billing,onco,yes,4,0,1,Deny,Deny,0,H.R18
+163,CAC,HACS:DO->FA,21,patient,read,ehr,cardio,yes,7,1,1,Permit,Permit,0,H.R5
+163,CAC,HACS:DO->FA,22,patient,read,prescription,cardio,yes,2,1,1,Permit,Permit,0,H.R11
+163,CAC,HACS:DO->FA,23,patient,read,billing,cardio,yes,20,0,1,Permit,Permit,0,H.R19
+163,CAC,HACS:DO->FA,24,patient,read,schedule,cardio,yes,10,1,1,Permit,Permit,0,H.R24
+163,CAC,HACS:DO->FA,25,patient,write,ehr,cardio,yes,8,0,0,Deny,Deny,0,H.R1
+163,CAC,HACS:DO->FA,26,auditor,read,billing,cardio,yes,3,0,1,Permit,Permit,0,H.R21

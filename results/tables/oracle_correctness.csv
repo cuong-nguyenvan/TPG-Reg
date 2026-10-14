@@ -1,0 +1,4 @@
+Set,Rules,Path-oracle errors per suite,Error rate %,Rules with p(wrong)>0,Mean p(wrong) %,W1 errors (5 seeds),Never-decisive rules,W1 unsatisfiable
+HACS,25,2.0,8.0,5,7.0,0/120,H.R13,H.R13
+FMS,30,5.4,18.0,19,23.9,0/145,F.R12,F.R12
+SIS,20,2.8,14.0,8,12.6,0/100,-,-

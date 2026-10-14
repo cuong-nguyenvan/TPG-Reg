@@ -1,0 +1,6 @@
+/home/claude/tpgreg-repo/third_party/ndg_xacml_py3/ndg/xacml/parsers/etree/__init__.py:77: SyntaxWarning: invalid escape sequence '\{'
+  getNs = staticmethod(lambda tag: getattr(re.search('(?<=\{).+(?=\})', tag),
+FIN {'versions': 4, 'checked': 336, 'mismatches': 0}
+HACS {'versions': 165, 'checked': 186688, 'mismatches': 0, 'exhaustive_original': 92160} 33s
+FMS {'versions': 173, 'checked': 271700, 'mismatches': 0, 'exhaustive_original': 172800} 105s
+SIS {'versions': 127, 'checked': 93832, 'mismatches': 0, 'exhaustive_original': 20480} 118s

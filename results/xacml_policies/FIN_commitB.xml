@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<PolicySet xmlns="urn:oasis:names:tc:xacml:2.0:policy:schema:cd:04" PolicySetId="FIN" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:deny-overrides">
+  <Target/>
+  <Policy PolicyId="M.P1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable">
+    <Target/>
+    <Rule RuleId="M.R1" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">FinancialOfficer</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Transfer</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">0</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">1</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">2</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">3</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">4</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">5</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">6</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">7</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">8</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">9</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="M.R2" Effect="Deny">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">FinancialOfficer</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Transfer</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">6</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">7</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">8</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">9</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">10</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">11</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">12</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">13</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">14</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">15</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">16</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">17</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">18</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">19</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:amount" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">20</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+  </Policy>
+</PolicySet>

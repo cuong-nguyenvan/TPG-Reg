@@ -1,0 +1,5 @@
+Set,Policy versions,Requests evaluated,Mismatches vs ndg-xacml,Exhaustive original requests
+FIN,4,336,0,
+HACS,165,186688,0,92160
+FMS,173,271700,0,172800
+SIS,127,93832,0,20480

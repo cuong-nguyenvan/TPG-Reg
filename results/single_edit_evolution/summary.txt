@@ -1,0 +1,91 @@
+slice {'HACS': 0.09397872574955907, 'FMS': 0.7645591085271317, 'SIS': 0.3806929976851852, 'ALL': 0.4175875707835935}
+== HACS: n=164 changed=126 equiv=38
+  Retest-all  EDR=0.643±0.021 ARE=0.575±0.016 size=18.2 sizeEq=18.2
+  XFG-Regen   EDR=0.481±0.022 ARE=0.421±0.012 size=17.9 sizeEq=18.3
+  Retest-all(GA) EDR=0.665±0.033 ARE=0.593±0.029 size=19.4 sizeEq=19.1
+  XFG-Regen(GA) EDR=0.490±0.025 ARE=0.417±0.017 size=18.9 sizeEq=19.3
+  AST-Up      EDR=0.675±0.013 ARE=0.474±0.008 size=1.7 sizeEq=1.8 BISrec=0.504 prec=0.656 miss_evo=44 bis=1.4 eqBIS=1.6 eqNonEmpty=28
+  TPG-Reg     EDR=0.983±0.003 ARE=0.877±0.003 size=3.8 sizeEq=2.6 BISrec=1.000 prec=0.648 miss_evo=0 bis=2.9 eqBIS=2.4 eqNonEmpty=15
+  TPG-Reg(raw) EDR=0.994±0.006 ARE=0.975±0.008 size=12.3 sizeEq=9.6
+  TPG-Reg+D   EDR=1.000±0.000 ARE=0.983±0.000 size=4.0 sizeEq=2.6
+  -precedes   EDR=0.973±0.004 ARE=0.857±0.004 size=3.4 sizeEq=2.5 BISrec=0.940 prec=0.712 miss_evo=12 bis=2.5 eqBIS=2.4 eqNonEmpty=15
+  -overrides  EDR=0.978±0.006 ARE=0.796±0.007 size=2.6 sizeEq=2.3 BISrec=0.799 prec=0.810 miss_evo=36 bis=1.8 eqBIS=2.2 eqNonEmpty=15
+  -scopes     EDR=0.978±0.006 ARE=0.838±0.005 size=3.5 sizeEq=0.9 BISrec=0.957 prec=0.665 miss_evo=5 bis=2.7 eqBIS=0.8 eqNonEmpty=11
+  -refers     EDR=0.932±0.004 ARE=0.835±0.002 size=3.7 sizeEq=2.6 BISrec=0.957 prec=0.638 miss_evo=6 bis=2.8 eqBIS=2.4 eqNonEmpty=15
+== FMS: n=172 changed=129 equiv=43
+  Retest-all  EDR=0.411±0.025 ARE=0.253±0.012 size=12.4 sizeEq=12.5
+  XFG-Regen   EDR=0.256±0.023 ARE=0.179±0.018 size=12.4 sizeEq=12.3
+  Retest-all(GA) EDR=0.405±0.014 ARE=0.269±0.014 size=13.9 sizeEq=13.9
+  XFG-Regen(GA) EDR=0.301±0.026 ARE=0.214±0.018 size=13.7 sizeEq=13.8
+  AST-Up      EDR=0.488±0.016 ARE=0.210±0.013 size=1.9 sizeEq=2.1 BISrec=0.240 prec=0.522 miss_evo=99 bis=2.0 eqBIS=2.6 eqNonEmpty=41
+  TPG-Reg     EDR=0.868±0.011 ARE=0.523±0.006 size=23.8 sizeEq=5.6 BISrec=1.000 prec=0.216 miss_evo=0 bis=19.9 eqBIS=4.6 eqNonEmpty=16
+  TPG-Reg(raw) EDR=0.949±0.014 ARE=0.880±0.016 size=135.0 sizeEq=29.6
+  TPG-Reg+D   EDR=1.000±0.000 ARE=0.982±0.000 size=24.9 sizeEq=5.6
+  -precedes   EDR=0.831±0.008 ARE=0.498±0.016 size=20.2 sizeEq=5.1 BISrec=0.924 prec=0.233 miss_evo=18 bis=17.1 eqBIS=4.3 eqNonEmpty=16
+  -overrides  EDR=0.867±0.013 ARE=0.412±0.008 size=4.7 sizeEq=0.8 BISrec=0.434 prec=0.517 miss_evo=99 bis=3.6 eqBIS=0.7 eqNonEmpty=16
+  -scopes     EDR=0.864±0.012 ARE=0.532±0.006 size=23.6 sizeEq=5.6 BISrec=0.998 prec=0.218 miss_evo=1 bis=19.7 eqBIS=4.6 eqNonEmpty=16
+  -refers     EDR=0.856±0.006 ARE=0.516±0.005 size=23.7 sizeEq=5.6 BISrec=0.987 prec=0.215 miss_evo=2 bis=19.8 eqBIS=4.6 eqNonEmpty=16
+== SIS: n=126 changed=108 equiv=18
+  Retest-all  EDR=0.456±0.033 ARE=0.385±0.029 size=12.8 sizeEq=12.7
+  XFG-Regen   EDR=0.300±0.025 ARE=0.249±0.026 size=12.4 sizeEq=12.9
+  Retest-all(GA) EDR=0.478±0.021 ARE=0.382±0.015 size=13.6 sizeEq=13.7
+  XFG-Regen(GA) EDR=0.372±0.041 ARE=0.299±0.032 size=13.3 sizeEq=13.7
+  AST-Up      EDR=0.609±0.029 ARE=0.410±0.020 size=1.6 sizeEq=1.8 BISrec=0.484 prec=0.651 miss_evo=45 bis=1.5 eqBIS=1.7 eqNonEmpty=14
+  TPG-Reg     EDR=0.904±0.005 ARE=0.763±0.003 size=10.0 sizeEq=2.1 BISrec=1.000 prec=0.301 miss_evo=0 bis=6.9 eqBIS=1.5 eqNonEmpty=3
+  TPG-Reg(raw) EDR=0.989±0.009 ARE=0.952±0.019 size=29.9 sizeEq=6.2
+  TPG-Reg+D   EDR=1.000±0.000 ARE=0.978±0.000 size=10.3 sizeEq=2.1
+  -precedes   EDR=0.909±0.011 ARE=0.667±0.007 size=3.0 sizeEq=1.0 BISrec=0.700 prec=0.667 miss_evo=34 bis=2.2 eqBIS=0.8 eqNonEmpty=3
+  -overrides  EDR=0.919±0.004 ARE=0.778±0.005 size=9.4 sizeEq=1.6 BISrec=0.955 prec=0.310 miss_evo=10 bis=6.4 eqBIS=1.1 eqNonEmpty=3
+  -scopes     EDR=0.909±0.004 ARE=0.743±0.005 size=9.6 sizeEq=1.6 BISrec=0.969 prec=0.307 miss_evo=2 bis=6.5 eqBIS=1.1 eqNonEmpty=3
+  -refers     EDR=0.907±0.000 ARE=0.759±0.002 size=10.0 sizeEq=2.1 BISrec=1.000 prec=0.301 miss_evo=0 bis=6.9 eqBIS=1.5 eqNonEmpty=3
+== ALL: n=462 changed=363 equiv=99
+  Retest-all  EDR=0.505±0.019 ARE=0.357±0.009 size=14.6 sizeEq=14.7
+  XFG-Regen   EDR=0.347±0.015 ARE=0.251±0.016 size=14.3 sizeEq=14.7
+  Retest-all(GA) EDR=0.517±0.011 ARE=0.369±0.010 size=15.7 sizeEq=15.9
+  XFG-Regen(GA) EDR=0.388±0.011 ARE=0.279±0.007 size=15.4 sizeEq=15.9
+  AST-Up      EDR=0.589±0.008 ARE=0.315±0.007 size=1.8 sizeEq=1.9 BISrec=0.355 prec=0.597 miss_evo=188 bis=1.7 eqBIS=2.0 eqNonEmpty=83
+  TPG-Reg     EDR=0.918±0.004 ARE=0.658±0.003 size=12.8 sizeEq=3.8 BISrec=1.000 prec=0.276 miss_evo=0 bis=10.1 eqBIS=3.2 eqNonEmpty=34
+  TPG-Reg(raw) EDR=0.976±0.006 ARE=0.918±0.012 size=61.2 sizeEq=17.7
+  TPG-Reg+D   EDR=1.000±0.000 ARE=0.981±0.000 size=13.3 sizeEq=3.8
+  -precedes   EDR=0.904±0.006 ARE=0.618±0.009 size=9.3 sizeEq=3.4 BISrec=0.878 prec=0.324 miss_evo=64 bis=7.6 eqBIS=2.9 eqNonEmpty=34
+  -overrides  EDR=0.921±0.006 ARE=0.581±0.006 size=5.4 sizeEq=1.5 BISrec=0.633 prec=0.463 miss_evo=145 bis=3.8 eqBIS=1.3 eqNonEmpty=34
+  -scopes     EDR=0.917±0.003 ARE=0.649±0.002 size=12.4 sizeEq=3.1 BISrec=0.982 prec=0.278 miss_evo=8 bis=9.9 eqBIS=2.5 eqNonEmpty=30
+  -refers     EDR=0.898±0.003 ARE=0.643±0.003 size=12.7 sizeEq=3.8 BISrec=0.983 prec=0.273 miss_evo=8 bis=10.0 eqBIS=3.2 eqNonEmpty=34
+per-op TPG/AST/-prec/-over/-scopes/-refers ARE:
+  CAC n=30 ch=22 Retest-all:0.33/0.63 XFG-Regen:0.33/0.58 Retest-all(GA):0.34/0.60 XFG-Regen(GA):0.41/0.71 AST-Up:0.05/0.13 TPG-Reg:0.59/0.85 TPG-Reg(raw):0.96/1.00 TPG-Reg+D:0.94/1.00 -precedes:0.58/0.86 -overrides:0.53/0.75 -scopes:0.61/0.86 -refers:0.60/0.86
+  CCF n=155 ch=146 Retest-all:0.39/0.50 XFG-Regen:0.23/0.29 Retest-all(GA):0.38/0.51 XFG-Regen(GA):0.25/0.33 AST-Up:0.38/0.62 TPG-Reg:0.73/0.94 TPG-Reg(raw):0.92/0.97 TPG-Reg+D:1.00/1.00 -precedes:0.66/0.92 -overrides:0.64/0.95 -scopes:0.73/0.93 -refers:0.73/0.93
+  CRE n=75 ch=71 Retest-all:0.44/0.61 XFG-Regen:0.39/0.57 Retest-all(GA):0.42/0.59 XFG-Regen(GA):0.42/0.62 AST-Up:0.47/0.79 TPG-Reg:0.71/0.99 TPG-Reg(raw):0.93/1.00 TPG-Reg+D:1.00/1.00 -precedes:0.68/0.97 -overrides:0.55/0.95 -scopes:0.70/0.98 -refers:0.71/0.99
+  PRO n=9 ch=1 Retest-all:0.00/0.00 XFG-Regen:0.00/0.00 Retest-all(GA):0.00/0.00 XFG-Regen(GA):0.00/0.00 AST-Up:0.00/0.00 TPG-Reg:0.00/0.00 TPG-Reg(raw):1.00/1.00 TPG-Reg+D:1.00/1.00 -precedes:0.00/0.00 -overrides:1.00/1.00 -scopes:0.00/0.00 -refers:0.00/0.00
+  PTC n=20 ch=20 Retest-all:0.31/0.67 XFG-Regen:0.21/0.54 Retest-all(GA):0.36/0.71 XFG-Regen(GA):0.20/0.58 AST-Up:0.04/0.24 TPG-Reg:0.48/0.80 TPG-Reg(raw):0.89/1.00 TPG-Reg+D:0.95/1.00 -precedes:0.51/0.89 -overrides:0.42/0.84 -scopes:0.40/0.80 -refers:0.47/0.80
+  RAI n=24 ch=17 Retest-all:0.23/0.25 XFG-Regen:0.63/0.66 Retest-all(GA):0.34/0.34 XFG-Regen(GA):0.66/0.72 AST-Up:0.78/0.80 TPG-Reg:0.72/0.82 TPG-Reg(raw):0.95/0.95 TPG-Reg+D:0.94/1.00 -precedes:0.74/0.86 -overrides:0.63/0.85 -scopes:0.72/0.82 -refers:0.72/0.82
+  RDL n=75 ch=69 Retest-all:0.34/0.46 XFG-Regen:0.06/0.06 Retest-all(GA):0.38/0.49 XFG-Regen(GA):0.10/0.08 AST-Up:0.41/0.60 TPG-Reg:0.68/0.95 TPG-Reg(raw):0.93/0.98 TPG-Reg+D:1.00/1.00 -precedes:0.65/0.95 -overrides:0.64/0.96 -scopes:0.68/0.96 -refers:0.68/0.95
+  RRO n=63 ch=6 Retest-all:0.51/0.63 XFG-Regen:0.45/0.57 Retest-all(GA):0.57/0.67 XFG-Regen(GA):0.55/0.63 AST-Up:0.69/0.83 TPG-Reg:0.69/0.83 TPG-Reg(raw):1.00/1.00 TPG-Reg+D:1.00/1.00 -precedes:0.00/0.00 -overrides:0.69/0.83 -scopes:0.69/0.83 -refers:0.69/0.83
+  VDC n=11 ch=11 Retest-all:0.07/0.09 XFG-Regen:0.04/0.05 Retest-all(GA):0.10/0.11 XFG-Regen(GA):0.03/0.05 AST-Up:0.00/0.00 TPG-Reg:0.50/0.67 TPG-Reg(raw):0.62/0.78 TPG-Reg+D:1.00/1.00 -precedes:0.56/0.76 -overrides:0.63/0.82 -scopes:0.50/0.69 -refers:0.02/0.02
+misses [] 0
+undetected [('HACS', 'VDC', 'H.P2.off[1]', 160, [True, True, True, False, True]), ('HACS', 'CCF', 'H.R15.cond[]', 3456, [False, False, False, False, False]), ('HACS', 'CCF', 'H.R17.target[0]', 1920, [False, False, False, False, False]), ('FMS', 'CCF', 'F.R2.cond[]', 2640, [False, False, False, False, False]), ('FMS', 'CCF', 'F.R5.cond[]', 3504, [False, False, False, False, False]), ('FMS', 'CCF', 'F.R11.cond[]', 2640, [True, True, True, True, False]), ('FMS', 'VDC', 'F.P1.biz[0]', 1080, [False, False, True, False, False]), ('FMS', 'VDC', 'F.P1.biz[1]', 960, [False, True, False, True, False]), ('FMS', 'RDL', 'F.R15', 4488, [False, False, False, False, False]), ('FMS', 'RRO', 'F.R15<->F.R16', 2304, [False, False, False, False, False]), ('FMS', 'RAI', 'F.P2.N0@0', 2104, [False, False, False, False, False]), ('FMS', 'PTC', 'F.P2.target[0]', 10216, [False, False, False, False, False]), ('FMS', 'VDC', 'F.P2.biz[1]', 120, [False, False, False, False, False]), ('FMS', 'CRE', 'F.R25', 480, [False, False, False, False, False]), ('FMS', 'CCF', 'F.R26.cond[]', 480, [False, True, False, True, False]), ('FMS', 'RDL', 'F.R26', 480, [False, True, True, False, True]), ('FMS', 'CCF', 'F.R28.cond[]', 192, [False, False, False, False, False]), ('FMS', 'CCF', 'F.R29.target[1]', 576, [False, False, False, False, False]), ('FMS', 'CCF', 'F.R29.cond[]', 576, [False, False, False, False, False]), ('FMS', 'RDL', 'F.R29', 576, [False, False, False, False, False])] 35
+{
+"HACS": {
+"t_sem_ms": 11.545609615853476,
+"t_tpg2_ms": 1.866883353677733,
+"t_bis_ms": 0.12822963415091204,
+"t_gen_ms": 1.9810619329213874
+},
+"FMS": {
+"t_sem_ms": 21.40257823837305,
+"t_tpg2_ms": 4.187986034887831,
+"t_bis_ms": 0.5280300988250358,
+"t_gen_ms": 20.81628487206767
+},
+"SIS": {
+"t_sem_ms": 2.3757156428682866,
+"t_tpg2_ms": 0.7144847222373337,
+"t_bis_ms": 0.1437591190551757,
+"t_gen_ms": 1.233212039681218
+}
+}
+HACS 92160 25 5 {'PolicySet': 1, 'Target': 31, 'CombAlg': 6, 'Policy': 5, 'Attribute': 8, 'VarDef': 3, 'Rule': 25, 'Condition': 25} {'contains': 89, 'refers': 3, 'reads': 59, 'scopes': 30, 'combinedBy': 6, 'precedes': 3, 'overrides': 4} build 0.014914806999968278
+  oracle {'xfg_err': [3, 2, 2, 1, 2], 'w1_err': [0, 0, 0, 0, 0], 'w1_n': [24, 24, 24, 24, 24]} never_dec ['H.R13'] w1_empty ['H.R13'] xfgwrong ['H.R13', 'H.R25', 'H.R7']
+FMS 172800 30 3 {'PolicySet': 1, 'Target': 34, 'CombAlg': 4, 'Policy': 3, 'VarDef': 2, 'Attribute': 7, 'Rule': 30, 'Condition': 30} {'reads': 65, 'scopes': 33, 'overrides': 63, 'contains': 99, 'precedes': 12, 'combinedBy': 4, 'refers': 2} build 0.026979730999755702
+  oracle {'xfg_err': [6, 4, 4, 7, 6], 'w1_err': [0, 0, 0, 0, 0], 'w1_n': [29, 29, 29, 29, 29]} never_dec ['F.R12'] w1_empty ['F.R12'] xfgwrong ['F.R12', 'F.R16', 'F.R18', 'F.R2', 'F.R20', 'F.R21', 'F.R22', 'F.R23', 'F.R24', 'F.R29', 'F.R3', 'F.R5', 'F.R6']
+SIS 20480 20 4 {'PolicySet': 1, 'Target': 25, 'CombAlg': 5, 'Policy': 4, 'Rule': 20, 'Condition': 20, 'Attribute': 7, 'VarDef': 1} {'contains': 70, 'reads': 46, 'overrides': 2, 'precedes': 12, 'combinedBy': 5, 'scopes': 24, 'refers': 1} build 0.003319610999824363
+  oracle {'xfg_err': [4, 5, 2, 2, 1], 'w1_err': [0, 0, 0, 0, 0], 'w1_n': [20, 20, 20, 20, 20]} never_dec [] w1_empty [] xfgwrong ['S.R12', 'S.R15', 'S.R17', 'S.R18', 'S.R2', 'S.R20']

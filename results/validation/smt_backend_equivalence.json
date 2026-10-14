@@ -1,0 +1,35 @@
+{
+ "HACS": {
+  "versions": 165,
+  "edges_identical": 165,
+  "edges_differ": 0,
+  "smt_queries": 2081,
+  "prefilter_pruned": 22504,
+  "t_enum_s": 2.0001241729992216,
+  "t_smt_s": 2.46115531000396,
+  "witness_checked": 424,
+  "witness_valid": 424
+ },
+ "FMS": {
+  "versions": 173,
+  "edges_identical": 173,
+  "edges_differ": 0,
+  "smt_queries": 20499,
+  "prefilter_pruned": 17871,
+  "t_enum_s": 4.605775007003558,
+  "t_smt_s": 6.940980267001123,
+  "witness_checked": 533,
+  "witness_valid": 533
+ },
+ "SIS": {
+  "versions": 127,
+  "edges_identical": 127,
+  "edges_differ": 0,
+  "smt_queries": 3439,
+  "prefilter_pruned": 8641,
+  "t_enum_s": 0.3755127009990247,
+  "t_smt_s": 1.810861136999847,
+  "witness_checked": 257,
+  "witness_valid": 257
+ }
+}

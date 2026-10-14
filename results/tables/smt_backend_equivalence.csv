@@ -1,0 +1,4 @@
+Set,Versions,Edge sets identical (Z3 vs enumeration),Z3 queries,Pre-filtered pairs,Valid Z3 witnesses
+HACS,165,165,2081,22504,424/424
+FMS,173,173,20499,17871,533/533
+SIS,127,127,3439,8641,257/257

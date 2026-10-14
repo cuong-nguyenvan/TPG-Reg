@@ -1,0 +1,11 @@
+path-based oracle for R1 at amount=7: expected Permit, PDP: Deny
+v1 edges: [('overrides', 'R:M.R1', 'R:M.R2')]
+W1(R1) amounts: [0, 1, 2, 3, 4, 5]
+
+Commit A (refine R2: 5->8): CH=['M.R2'] BIS=['M.R1', 'M.R2'] |diff|=3 suite=4
+  amount= 6: Deny -> Permit  decisive=['M.R1', 'M.R2']  => intended
+  ground-truth changed amounts: [6, 7, 8]
+
+Commit B (refactor: DO->FA): CH=['M.R1', 'M.R2'] BIS=['M.R1', 'M.R2'] |diff|=4 suite=3
+  amount= 6: Deny -> Permit  decisive=['M.R1', 'M.R2']  => REGRESSION
+  ground-truth changed amounts: [6, 7, 8, 9]

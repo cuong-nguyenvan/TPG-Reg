@@ -1,0 +1,4 @@
+Set,Rules,Policies,|D|,|V|,|E|,precedes/overrides/refers,Evolutions,Behaviour-changing
+HACS,25,5,92160,104,194,3/4/3,164,126
+FMS,30,3,172800,111,278,12/63/2,172,129
+SIS,20,4,20480,83,160,12/2/1,126,108

@@ -1,0 +1,1153 @@
+evolution,op,edit,test,role,action,resource,own,open,week,year,decision_v1,decision_v2,changed,decisive_rules
+0,CCF,S.R1.target[0],0,student,view,course,0,0,1,1,Permit,Permit,0,S.R17
+0,CCF,S.R1.target[0],1,student,edit,transcript,1,0,7,2,Deny,Deny,0,S.R1 S.R12
+0,CCF,S.R1.target[0],2,student,edit,profile,1,0,1,2,Deny,Permit,1,S.R1 S.R15
+0,CCF,S.R1.target[0],3,student,edit,profile,1,1,6,1,Permit,Permit,0,S.R15
+0,CCF,S.R1.target[0],4,student,edit,course,0,0,1,3,Deny,Permit,1,S.R1 S.R17
+0,CCF,S.R1.target[0],5,student,edit,course,0,1,4,3,Deny,Deny,0,S.R16
+0,CCF,S.R1.target[0],6,student,approve,grades,1,0,4,1,NotApplicable,Deny,1,S.R1
+0,CCF,S.R1.target[0],7,student,approve,course,1,0,7,1,Deny,Deny,0,S.R1 S.R20
+0,CCF,S.R1.target[0],8,lecturer,view,grades,0,1,3,4,Permit,Permit,0,S.R5
+0,CCF,S.R1.target[0],9,lecturer,edit,grades,0,0,1,3,Deny,Permit,1,S.R1 S.R5
+0,CCF,S.R1.target[0],10,lecturer,edit,grades,0,0,15,2,Deny,Deny,0,S.R1 S.R6
+0,CCF,S.R1.target[0],11,lecturer,edit,profile,0,0,10,1,Deny,NotApplicable,1,S.R1
+0,CCF,S.R1.target[0],12,lecturer,edit,course,1,0,1,2,Deny,Permit,1,S.R1 S.R18
+0,CCF,S.R1.target[0],13,lecturer,approve,course,0,0,9,1,Permit,Deny,1,S.R1 S.R18
+0,CCF,S.R1.target[0],14,admin,view,grades,1,0,15,1,Permit,Permit,0,S.R2
+0,CCF,S.R1.target[0],15,admin,view,course,0,0,12,2,Permit,Permit,0,S.R2
+0,CCF,S.R1.target[0],16,admin,edit,transcript,0,0,2,2,Deny,Permit,1,S.R1 S.R2
+1,CCF,S.R1.cond[0],0,student,view,course,0,0,8,1,Permit,Permit,0,S.R17
+1,CCF,S.R1.cond[0],1,student,edit,grades,1,0,2,2,Deny,NotApplicable,1,S.R1
+1,CCF,S.R1.cond[0],2,student,edit,transcript,1,0,3,3,Deny,Deny,0,S.R1 S.R12
+1,CCF,S.R1.cond[0],3,student,edit,profile,1,0,7,4,Deny,Permit,1,S.R1 S.R15
+1,CCF,S.R1.cond[0],4,student,edit,profile,1,1,2,4,Permit,Permit,0,S.R15
+1,CCF,S.R1.cond[0],5,student,edit,course,0,0,3,3,Deny,Permit,1,S.R1 S.R17
+1,CCF,S.R1.cond[0],6,student,edit,course,0,1,5,4,Deny,Deny,0,S.R16
+1,CCF,S.R1.cond[0],7,student,export,course,0,0,4,3,Deny,Deny,0,S.R3
+1,CCF,S.R1.cond[0],8,lecturer,view,grades,0,0,6,4,Permit,Permit,0,S.R5
+1,CCF,S.R1.cond[0],9,lecturer,view,course,0,0,10,2,Permit,Permit,0,S.R18
+1,CCF,S.R1.cond[0],10,lecturer,edit,grades,0,0,2,4,Deny,Permit,1,S.R1 S.R5
+1,CCF,S.R1.cond[0],11,lecturer,edit,grades,0,0,16,2,Deny,Deny,0,S.R1 S.R6
+1,CCF,S.R1.cond[0],12,lecturer,edit,course,0,0,1,4,Deny,Permit,1,S.R1 S.R18
+1,CCF,S.R1.cond[0],13,admin,view,grades,1,0,1,3,Permit,Permit,0,S.R2
+1,CCF,S.R1.cond[0],14,admin,view,course,0,0,7,2,Permit,Permit,0,S.R2
+1,CCF,S.R1.cond[0],15,admin,edit,transcript,0,0,4,4,Deny,Permit,1,S.R1 S.R2
+2,CCF,S.R1.cond[1],0,student,view,course,0,1,12,2,Permit,Permit,0,S.R17
+2,CCF,S.R1.cond[1],1,student,edit,grades,1,0,16,1,Deny,Deny,0,S.R1
+2,CCF,S.R1.cond[1],2,student,edit,transcript,0,1,3,2,Deny,Deny,0,S.R12 S.R14
+2,CCF,S.R1.cond[1],3,student,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+2,CCF,S.R1.cond[1],4,student,approve,course,0,0,1,4,Deny,Deny,0,S.R20
+2,CCF,S.R1.cond[1],5,lecturer,view,grades,0,0,3,4,Permit,Permit,0,S.R5
+2,CCF,S.R1.cond[1],6,lecturer,view,course,1,1,9,3,Permit,Permit,0,S.R18
+2,CCF,S.R1.cond[1],7,lecturer,edit,grades,0,0,8,3,Deny,Deny,0,S.R1
+2,CCF,S.R1.cond[1],8,lecturer,edit,course,0,0,4,1,Deny,Deny,0,S.R1
+2,CCF,S.R1.cond[1],9,registrar,view,transcript,0,1,2,1,Permit,Permit,0,S.R11
+2,CCF,S.R1.cond[1],10,registrar,view,course,0,0,1,3,Permit,Permit,0,S.R19
+2,CCF,S.R1.cond[1],11,registrar,edit,transcript,0,0,1,4,Permit,Deny,1,S.R1 S.R11
+2,CCF,S.R1.cond[1],12,registrar,edit,profile,1,0,2,2,Permit,Deny,1,S.R1 S.R11 S.R15
+2,CCF,S.R1.cond[1],13,registrar,edit,course,0,0,1,4,Permit,Deny,1,S.R1 S.R19
+2,CCF,S.R1.cond[1],14,admin,view,grades,0,0,10,3,Permit,Permit,0,S.R2
+2,CCF,S.R1.cond[1],15,admin,view,course,1,0,2,3,Permit,Permit,0,S.R2
+2,CCF,S.R1.cond[1],16,admin,edit,transcript,0,0,12,2,Deny,Permit,1,S.R1 S.R2
+2,CCF,S.R1.cond[1],17,admin,edit,profile,1,0,1,2,Deny,Permit,1,S.R1 S.R2
+3,CRE,S.R1,0,student,view,grades,0,0,1,1,Deny,Deny,0,S.R8
+3,CRE,S.R1,1,student,view,profile,0,0,5,2,Deny,Deny,0,S.R14
+3,CRE,S.R1,2,student,view,course,0,0,1,1,Permit,Permit,0,S.R17
+3,CRE,S.R1,3,student,edit,grades,0,0,3,1,Deny,Permit,1,S.R1
+3,CRE,S.R1,4,student,edit,transcript,0,0,3,1,Deny,Permit,1,S.R1
+3,CRE,S.R1,5,student,edit,profile,1,0,4,3,Deny,Permit,1,S.R1
+3,CRE,S.R1,6,student,edit,profile,1,1,7,4,Permit,Permit,0,S.R15
+3,CRE,S.R1,7,student,edit,course,0,0,1,1,Deny,Permit,1,S.R1
+3,CRE,S.R1,8,student,edit,course,0,1,4,4,Deny,Deny,0,S.R16
+3,CRE,S.R1,9,student,approve,course,0,1,7,1,Deny,Deny,0,S.R20
+3,CRE,S.R1,10,lecturer,view,grades,0,0,3,3,Permit,Permit,0,S.R5
+3,CRE,S.R1,11,lecturer,view,course,0,1,3,2,Permit,Permit,0,S.R18
+3,CRE,S.R1,12,lecturer,edit,grades,0,0,15,3,Deny,Permit,1,S.R1
+3,CRE,S.R1,13,lecturer,edit,grades,0,1,15,1,Deny,Deny,0,S.R6
+3,CRE,S.R1,14,lecturer,edit,transcript,0,1,1,4,Deny,Deny,0,S.R12
+3,CRE,S.R1,15,lecturer,edit,profile,0,0,5,3,Deny,Permit,1,S.R1
+3,CRE,S.R1,16,lecturer,edit,course,0,0,6,4,Deny,Permit,1,S.R1
+3,CRE,S.R1,17,registrar,view,course,1,1,12,1,Permit,Permit,0,S.R19
+3,CRE,S.R1,18,registrar,edit,transcript,0,0,6,3,Permit,Permit,0,S.R11
+3,CRE,S.R1,19,admin,view,grades,0,1,12,4,Permit,Permit,0,S.R2
+3,CRE,S.R1,20,admin,view,course,0,1,8,2,Permit,Permit,0,S.R2
+3,CRE,S.R1,21,admin,edit,transcript,0,0,2,4,Deny,Permit,1,S.R1
+4,RDL,S.R1,0,student,view,course,0,0,1,1,Permit,Permit,0,S.R17
+4,RDL,S.R1,1,student,edit,grades,1,0,11,2,Deny,NotApplicable,1,S.R1
+4,RDL,S.R1,2,student,edit,transcript,1,0,14,2,Deny,Deny,0,S.R1 S.R12
+4,RDL,S.R1,3,student,edit,profile,1,0,2,1,Deny,Permit,1,S.R1 S.R15
+4,RDL,S.R1,4,student,edit,profile,1,1,1,2,Permit,Permit,0,S.R15
+4,RDL,S.R1,5,student,edit,course,0,0,2,1,Deny,Permit,1,S.R1 S.R17
+4,RDL,S.R1,6,student,edit,course,0,1,7,1,Deny,Deny,0,S.R16
+4,RDL,S.R1,7,student,export,course,0,0,16,1,Deny,Deny,0,S.R3
+4,RDL,S.R1,8,lecturer,view,grades,0,0,6,1,Permit,Permit,0,S.R5
+4,RDL,S.R1,9,lecturer,view,course,0,1,15,4,Permit,Permit,0,S.R18
+4,RDL,S.R1,10,lecturer,edit,grades,0,0,7,4,Deny,Permit,1,S.R1 S.R5
+4,RDL,S.R1,11,lecturer,edit,grades,0,0,16,4,Deny,Deny,0,S.R1 S.R6
+4,RDL,S.R1,12,lecturer,edit,course,1,0,6,4,Deny,Permit,1,S.R1 S.R18
+4,RDL,S.R1,13,admin,view,grades,0,0,3,3,Permit,Permit,0,S.R2
+4,RDL,S.R1,14,admin,view,course,0,0,7,1,Permit,Permit,0,S.R2
+4,RDL,S.R1,15,admin,edit,transcript,0,0,3,4,Deny,Permit,1,S.R1 S.R2
+5,RRO,S.R1<->S.R2,0,student,view,course,0,0,10,4,Permit,Permit,0,S.R17
+5,RRO,S.R1<->S.R2,1,student,edit,transcript,0,0,11,1,Deny,Deny,0,S.R1
+5,RRO,S.R1<->S.R2,2,student,edit,profile,1,1,11,4,Permit,Permit,0,S.R15
+5,RRO,S.R1<->S.R2,3,student,edit,course,0,0,5,4,Deny,Deny,0,S.R1
+5,RRO,S.R1<->S.R2,4,student,export,course,0,1,2,1,Deny,Deny,0,S.R3
+5,RRO,S.R1<->S.R2,5,lecturer,view,grades,1,0,2,3,Permit,Permit,0,S.R5
+5,RRO,S.R1<->S.R2,6,lecturer,edit,grades,0,0,1,3,Deny,Deny,0,S.R1
+5,RRO,S.R1<->S.R2,7,lecturer,edit,profile,0,0,7,4,Deny,Deny,0,S.R1
+5,RRO,S.R1<->S.R2,8,lecturer,edit,course,0,0,8,4,Deny,Deny,0,S.R1
+5,RRO,S.R1<->S.R2,9,lecturer,approve,course,0,1,8,1,Permit,Permit,0,S.R18
+5,RRO,S.R1<->S.R2,10,admin,view,grades,0,1,9,2,Permit,Permit,0,S.R2
+5,RRO,S.R1<->S.R2,11,admin,edit,transcript,0,0,3,2,Deny,Permit,1,S.R1 S.R2
+5,RRO,S.R1<->S.R2,12,admin,edit,profile,1,0,1,3,Deny,Permit,1,S.R1 S.R2
+5,RRO,S.R1<->S.R2,13,admin,edit,course,0,0,6,2,Deny,Permit,1,S.R1 S.R2
+6,CCF,S.R2.target[0],0,student,view,transcript,0,0,3,4,Deny,Permit,1,S.R14 S.R2
+6,CCF,S.R2.target[0],1,student,view,transcript,1,0,13,3,Permit,Permit,0,S.R10 S.R2
+6,CCF,S.R2.target[0],2,student,view,course,0,0,7,1,Permit,Permit,0,S.R17 S.R2
+6,CCF,S.R2.target[0],3,student,edit,grades,1,1,10,4,NotApplicable,Permit,1,S.R2
+6,CCF,S.R2.target[0],4,student,edit,transcript,0,0,2,2,Deny,Deny,0,S.R1
+6,CCF,S.R2.target[0],5,student,edit,profile,1,0,3,2,Deny,Deny,0,S.R1
+6,CCF,S.R2.target[0],6,student,edit,course,0,0,4,2,Deny,Deny,0,S.R1
+6,CCF,S.R2.target[0],7,student,edit,course,0,1,4,1,Deny,Permit,1,S.R16 S.R2
+6,CCF,S.R2.target[0],8,student,approve,grades,0,0,3,3,Deny,Deny,0,S.R8
+6,CCF,S.R2.target[0],9,student,approve,transcript,0,0,7,4,Deny,Deny,0,S.R14
+6,CCF,S.R2.target[0],10,student,export,grades,0,0,4,1,Deny,Permit,1,S.R2 S.R3
+6,CCF,S.R2.target[0],11,student,export,grades,1,0,5,2,Deny,Permit,1,S.R2 S.R3
+6,CCF,S.R2.target[0],12,student,export,transcript,1,0,2,3,Deny,Permit,1,S.R2 S.R3
+6,CCF,S.R2.target[0],13,student,export,course,0,1,8,4,Deny,Permit,1,S.R2 S.R3
+6,CCF,S.R2.target[0],14,lecturer,view,grades,0,0,1,3,Permit,Permit,0,S.R5
+6,CCF,S.R2.target[0],15,lecturer,view,course,0,0,10,1,Permit,Permit,0,S.R18
+6,CCF,S.R2.target[0],16,lecturer,edit,grades,0,0,3,2,Deny,Deny,0,S.R1
+6,CCF,S.R2.target[0],17,lecturer,edit,profile,1,1,15,3,Permit,Permit,0,S.R15
+6,CCF,S.R2.target[0],18,lecturer,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+6,CCF,S.R2.target[0],19,admin,view,grades,0,0,7,1,Permit,NotApplicable,1,S.R2
+6,CCF,S.R2.target[0],20,admin,edit,transcript,0,1,3,3,Permit,Deny,1,S.R12 S.R2
+6,CCF,S.R2.target[0],21,admin,edit,course,1,0,4,4,Deny,Deny,0,S.R1
+7,CCF,S.R2.cond[],0,student,view,course,0,0,7,2,Permit,Permit,0,S.R17
+7,CCF,S.R2.cond[],1,student,edit,transcript,0,0,5,2,Deny,Deny,0,S.R1
+7,CCF,S.R2.cond[],2,student,edit,profile,1,0,8,2,Deny,Deny,0,S.R1
+7,CCF,S.R2.cond[],3,student,edit,profile,1,1,9,1,Permit,Permit,0,S.R15
+7,CCF,S.R2.cond[],4,student,edit,course,0,0,6,1,Deny,Deny,0,S.R1
+7,CCF,S.R2.cond[],5,lecturer,view,grades,1,0,5,2,Permit,Permit,0,S.R5
+7,CCF,S.R2.cond[],6,lecturer,view,course,1,1,12,3,Permit,Permit,0,S.R18
+7,CCF,S.R2.cond[],7,lecturer,edit,grades,0,0,9,1,Deny,Deny,0,S.R1
+7,CCF,S.R2.cond[],8,lecturer,edit,course,0,0,6,3,Deny,Deny,0,S.R1
+7,CCF,S.R2.cond[],9,admin,view,grades,0,0,14,1,Permit,Permit,0,S.R2
+7,CCF,S.R2.cond[],10,admin,edit,transcript,1,0,9,2,Deny,Deny,0,S.R1
+7,CCF,S.R2.cond[],11,admin,approve,course,0,0,6,2,Deny,Permit,1,S.R2 S.R20
+7,CCF,S.R2.cond[],12,admin,export,course,0,0,11,3,Permit,Deny,1,S.R2 S.R20
+8,CRE,S.R2,0,student,view,profile,1,1,3,3,Permit,Permit,0,S.R10
+8,CRE,S.R2,1,student,view,course,0,1,15,1,Permit,Permit,0,S.R17
+8,CRE,S.R2,2,student,edit,grades,1,0,11,1,Deny,Deny,0,S.R1
+8,CRE,S.R2,3,student,edit,transcript,1,1,4,3,Deny,Deny,0,S.R12
+8,CRE,S.R2,4,student,edit,profile,1,1,4,2,Permit,Permit,0,S.R15
+8,CRE,S.R2,5,student,edit,course,0,0,2,2,Deny,Deny,0,S.R1
+8,CRE,S.R2,6,student,approve,course,0,0,6,1,Deny,Deny,0,S.R20
+8,CRE,S.R2,7,student,export,transcript,1,0,3,4,Deny,Deny,0,S.R3
+8,CRE,S.R2,8,lecturer,view,grades,0,0,5,2,Permit,Permit,0,S.R5
+8,CRE,S.R2,9,lecturer,view,course,0,1,8,3,Permit,Permit,0,S.R18
+8,CRE,S.R2,10,lecturer,edit,grades,0,0,1,3,Deny,Deny,0,S.R1
+8,CRE,S.R2,11,lecturer,edit,course,0,0,4,1,Deny,Deny,0,S.R1
+8,CRE,S.R2,12,registrar,view,course,0,0,1,3,Permit,Permit,0,S.R19
+8,CRE,S.R2,13,registrar,edit,transcript,0,1,3,2,Permit,Permit,0,S.R11
+8,CRE,S.R2,14,admin,view,grades,0,1,6,1,Permit,Deny,1,S.R2
+8,CRE,S.R2,15,admin,view,transcript,1,1,6,1,Permit,Deny,1,S.R2
+8,CRE,S.R2,16,admin,view,course,0,1,2,3,Permit,Deny,1,S.R2
+8,CRE,S.R2,17,admin,edit,transcript,0,1,1,4,Permit,Deny,1,S.R2
+8,CRE,S.R2,18,admin,edit,profile,1,0,4,3,Deny,Deny,0,S.R1
+8,CRE,S.R2,19,admin,edit,profile,1,1,4,3,Permit,Deny,1,S.R2
+9,RDL,S.R2,0,student,view,course,0,0,11,2,Permit,Permit,0,S.R17
+9,RDL,S.R2,1,student,edit,grades,1,0,4,4,Deny,Deny,0,S.R1
+9,RDL,S.R2,2,student,edit,transcript,1,1,7,2,Deny,Deny,0,S.R12
+9,RDL,S.R2,3,student,edit,profile,1,1,3,3,Permit,Permit,0,S.R15
+9,RDL,S.R2,4,student,edit,course,0,0,7,3,Deny,Deny,0,S.R1
+9,RDL,S.R2,5,student,approve,course,0,1,6,1,Deny,Deny,0,S.R20
+9,RDL,S.R2,6,lecturer,view,grades,0,0,2,1,Permit,Permit,0,S.R5
+9,RDL,S.R2,7,lecturer,view,course,0,0,9,3,Permit,Permit,0,S.R18
+9,RDL,S.R2,8,lecturer,edit,grades,0,0,3,2,Deny,Deny,0,S.R1
+9,RDL,S.R2,9,lecturer,edit,course,0,0,12,2,Deny,Deny,0,S.R1
+9,RDL,S.R2,10,registrar,view,course,0,0,16,1,Permit,Permit,0,S.R19
+9,RDL,S.R2,11,registrar,edit,transcript,0,0,5,1,Permit,Permit,0,S.R11
+9,RDL,S.R2,12,admin,view,transcript,0,0,3,4,Permit,NotApplicable,1,S.R2
+9,RDL,S.R2,13,admin,view,course,0,1,3,1,Permit,Deny,1,S.R2 S.R20
+9,RDL,S.R2,14,admin,edit,transcript,0,1,3,1,Permit,Deny,1,S.R12 S.R2
+9,RDL,S.R2,15,admin,edit,profile,1,0,16,1,Deny,Deny,0,S.R1
+11,CCF,S.R3.target[0],0,student,export,grades,1,0,3,3,Deny,NotApplicable,1,S.R3
+11,CCF,S.R3.target[0],1,student,export,transcript,1,0,7,3,Deny,Permit,1,S.R10 S.R3
+11,CCF,S.R3.target[0],2,lecturer,export,grades,0,0,1,3,NotApplicable,Deny,1,S.R3
+11,CCF,S.R3.target[0],3,lecturer,export,transcript,1,0,2,2,Permit,Deny,1,S.R10 S.R3
+12,CCF,S.R3.target[1],0,student,view,grades,1,0,1,3,Permit,Deny,1,S.R3 S.R4
+12,CCF,S.R3.target[1],1,student,view,transcript,1,0,7,2,Permit,Deny,1,S.R10 S.R3
+12,CCF,S.R3.target[1],2,student,view,course,0,0,3,2,Permit,Deny,1,S.R17 S.R3
+12,CCF,S.R3.target[1],3,student,edit,course,0,0,2,3,Deny,Deny,0,S.R1
+12,CCF,S.R3.target[1],4,student,edit,course,0,1,1,2,Permit,Permit,0,S.R17
+12,CCF,S.R3.target[1],5,student,edit,course,0,1,5,4,Deny,Deny,0,S.R16
+12,CCF,S.R3.target[1],6,student,approve,course,1,0,11,1,Deny,Deny,0,S.R20
+12,CCF,S.R3.target[1],7,student,export,grades,1,0,7,3,Deny,NotApplicable,1,S.R3
+12,CCF,S.R3.target[1],8,student,export,transcript,1,1,2,2,Deny,Permit,1,S.R10 S.R3
+12,CCF,S.R3.target[1],9,admin,view,course,1,0,13,4,Permit,Permit,0,S.R2
+13,CRE,S.R3,0,student,view,grades,0,0,8,1,Deny,Deny,0,S.R8
+13,CRE,S.R3,1,student,view,transcript,0,0,4,3,Deny,Deny,0,S.R14
+13,CRE,S.R3,2,student,view,transcript,1,1,2,2,Permit,Permit,0,S.R10
+13,CRE,S.R3,3,student,view,course,0,0,2,2,Permit,Permit,0,S.R17
+13,CRE,S.R3,4,student,edit,course,0,0,7,2,Deny,Deny,0,S.R1
+13,CRE,S.R3,5,student,approve,course,0,1,16,3,Deny,Deny,0,S.R20
+13,CRE,S.R3,6,student,export,grades,0,0,1,3,Deny,Permit,1,S.R3
+13,CRE,S.R3,7,student,export,grades,1,0,2,2,Deny,Permit,1,S.R3
+13,CRE,S.R3,8,student,export,transcript,0,0,10,4,Deny,Permit,1,S.R3
+13,CRE,S.R3,9,student,export,transcript,1,0,3,2,Deny,Permit,1,S.R3
+13,CRE,S.R3,10,student,export,course,0,0,6,3,Deny,Permit,1,S.R3
+13,CRE,S.R3,11,lecturer,view,course,1,0,4,1,Permit,Permit,0,S.R18
+13,CRE,S.R3,12,lecturer,edit,course,0,0,11,2,Deny,Deny,0,S.R1
+13,CRE,S.R3,13,registrar,view,course,0,1,6,1,Permit,Permit,0,S.R19
+13,CRE,S.R3,14,admin,view,course,0,1,11,3,Permit,Permit,0,S.R2
+14,RDL,S.R3,0,student,view,transcript,1,0,4,2,Permit,Permit,0,S.R10
+14,RDL,S.R3,1,student,export,grades,1,0,8,2,Deny,NotApplicable,1,S.R3
+14,RDL,S.R3,2,student,export,transcript,1,0,1,3,Deny,Permit,1,S.R10 S.R3
+15,RAI,S.P1.N0@0,0,student,view,grades,0,0,9,4,Deny,Deny,0,S.R8
+15,RAI,S.P1.N0@0,1,student,view,transcript,0,0,5,2,Deny,Deny,0,S.R14
+15,RAI,S.P1.N0@0,2,student,view,course,0,0,3,3,Permit,Permit,0,S.R17
+15,RAI,S.P1.N0@0,3,student,edit,course,0,0,3,3,Deny,Deny,0,S.R1
+15,RAI,S.P1.N0@0,4,student,approve,course,0,0,12,1,Deny,Deny,0,S.R20
+15,RAI,S.P1.N0@0,5,student,export,grades,0,0,11,2,Deny,Permit,1,S.P1.N0 S.R3
+15,RAI,S.P1.N0@0,6,student,export,grades,1,0,5,3,Deny,Deny,0,S.R3
+15,RAI,S.P1.N0@0,7,student,export,transcript,0,0,12,3,Deny,Permit,1,S.P1.N0 S.R3
+15,RAI,S.P1.N0@0,8,student,export,transcript,1,0,11,2,Deny,Permit,1,S.P1.N0 S.R3
+15,RAI,S.P1.N0@0,9,student,export,course,0,0,12,3,Deny,Permit,1,S.P1.N0 S.R3
+15,RAI,S.P1.N0@0,10,lecturer,view,course,1,1,4,2,Permit,Permit,0,S.R18
+15,RAI,S.P1.N0@0,11,lecturer,edit,course,0,0,9,1,Deny,Deny,0,S.R1
+15,RAI,S.P1.N0@0,12,registrar,view,course,0,1,9,3,Permit,Permit,0,S.R19
+15,RAI,S.P1.N0@0,13,admin,view,transcript,1,0,6,4,Permit,Permit,0,S.R2
+15,RAI,S.P1.N0@0,14,admin,view,course,0,0,13,1,Permit,Permit,0,S.R2
+16,RAI,S.P1.N1@1,0,student,view,grades,0,0,4,3,Deny,Deny,0,S.R8
+16,RAI,S.P1.N1@1,1,student,view,transcript,0,0,5,3,Deny,Deny,0,S.R14
+16,RAI,S.P1.N1@1,2,student,view,course,0,0,4,1,Permit,Permit,0,S.R17
+16,RAI,S.P1.N1@1,3,student,edit,course,0,0,2,4,Deny,Deny,0,S.R1
+16,RAI,S.P1.N1@1,4,student,export,grades,0,0,12,2,Deny,Permit,1,S.P1.N1 S.R3
+16,RAI,S.P1.N1@1,5,student,export,grades,1,0,4,3,Deny,Deny,0,S.R3
+16,RAI,S.P1.N1@1,6,student,export,transcript,0,0,12,1,Deny,Permit,1,S.P1.N1 S.R3
+16,RAI,S.P1.N1@1,7,student,export,transcript,1,0,15,4,Deny,Permit,1,S.P1.N1 S.R3
+16,RAI,S.P1.N1@1,8,student,export,course,0,0,13,2,Deny,Permit,1,S.P1.N1 S.R3
+16,RAI,S.P1.N1@1,9,lecturer,edit,course,0,0,5,3,Deny,Deny,0,S.R1
+16,RAI,S.P1.N1@1,10,lecturer,edit,course,0,1,1,2,Permit,Permit,0,S.R18
+16,RAI,S.P1.N1@1,11,lecturer,export,course,1,0,5,1,Deny,Deny,0,S.R20
+16,RAI,S.P1.N1@1,12,registrar,view,course,0,0,1,4,Permit,Permit,0,S.R19
+16,RAI,S.P1.N1@1,13,admin,view,transcript,1,0,16,1,Permit,Permit,0,S.R2
+16,RAI,S.P1.N1@1,14,admin,view,course,0,0,7,3,Permit,Permit,0,S.R2
+17,CAC,S.P1:FA->DO,0,student,view,profile,1,0,16,2,Permit,Permit,0,S.R10
+17,CAC,S.P1:FA->DO,1,student,view,course,0,0,16,4,Permit,Permit,0,S.R17
+17,CAC,S.P1:FA->DO,2,student,edit,transcript,0,0,14,1,Deny,Deny,0,S.R1
+17,CAC,S.P1:FA->DO,3,student,edit,profile,1,0,7,2,Deny,Deny,0,S.R1
+17,CAC,S.P1:FA->DO,4,student,edit,course,0,0,6,3,Deny,Deny,0,S.R1
+17,CAC,S.P1:FA->DO,5,student,export,grades,1,0,3,1,Deny,Deny,0,S.R3
+17,CAC,S.P1:FA->DO,6,student,export,transcript,1,0,1,4,Deny,Deny,0,S.R3
+17,CAC,S.P1:FA->DO,7,student,export,course,1,0,5,4,Deny,Deny,0,S.R3
+17,CAC,S.P1:FA->DO,8,lecturer,view,grades,0,0,4,2,Permit,Permit,0,S.R5
+17,CAC,S.P1:FA->DO,9,lecturer,view,course,0,1,3,2,Permit,Permit,0,S.R18
+17,CAC,S.P1:FA->DO,10,lecturer,edit,grades,0,0,6,3,Deny,Deny,0,S.R1
+17,CAC,S.P1:FA->DO,11,lecturer,edit,profile,0,0,16,3,Deny,Deny,0,S.R1
+17,CAC,S.P1:FA->DO,12,lecturer,edit,profile,1,1,5,4,Permit,Permit,0,S.R15
+17,CAC,S.P1:FA->DO,13,lecturer,edit,course,0,0,3,2,Deny,Deny,0,S.R1
+17,CAC,S.P1:FA->DO,14,admin,view,grades,0,1,13,3,Permit,Permit,0,S.R2
+17,CAC,S.P1:FA->DO,15,admin,view,course,0,0,2,2,Permit,Permit,0,S.R2
+17,CAC,S.P1:FA->DO,16,admin,edit,transcript,0,0,6,2,Deny,Deny,0,S.R1
+18,CAC,S.P1:FA->PO,0,student,view,course,0,0,5,3,Permit,Permit,0,S.R17
+18,CAC,S.P1:FA->PO,1,student,edit,grades,1,0,9,2,Deny,Deny,0,S.R1
+18,CAC,S.P1:FA->PO,2,student,edit,transcript,1,1,9,4,Deny,Deny,0,S.R12
+18,CAC,S.P1:FA->PO,3,student,edit,profile,1,1,11,3,Permit,Permit,0,S.R15
+18,CAC,S.P1:FA->PO,4,student,edit,course,0,0,6,1,Deny,Deny,0,S.R1
+18,CAC,S.P1:FA->PO,5,student,approve,course,0,1,12,3,Deny,Deny,0,S.R20
+18,CAC,S.P1:FA->PO,6,student,export,grades,1,0,1,3,Deny,Deny,0,S.R3
+18,CAC,S.P1:FA->PO,7,student,export,transcript,1,0,8,3,Deny,Deny,0,S.R3
+18,CAC,S.P1:FA->PO,8,lecturer,view,grades,1,0,4,1,Permit,Permit,0,S.R5
+18,CAC,S.P1:FA->PO,9,lecturer,view,course,0,1,6,2,Permit,Permit,0,S.R18
+18,CAC,S.P1:FA->PO,10,lecturer,edit,grades,0,0,6,3,Deny,Deny,0,S.R1
+18,CAC,S.P1:FA->PO,11,lecturer,edit,course,0,0,7,3,Deny,Deny,0,S.R1
+18,CAC,S.P1:FA->PO,12,lecturer,export,transcript,1,0,9,1,Permit,Permit,0,S.R10
+18,CAC,S.P1:FA->PO,13,admin,view,grades,0,1,4,3,Permit,Permit,0,S.R2
+18,CAC,S.P1:FA->PO,14,admin,edit,transcript,0,0,1,1,Deny,Permit,1,S.R1 S.R2
+18,CAC,S.P1:FA->PO,15,admin,edit,profile,1,0,4,3,Deny,Permit,1,S.R1 S.R2
+18,CAC,S.P1:FA->PO,16,admin,edit,course,0,0,1,4,Deny,Permit,1,S.R1 S.R2
+19,PRO,S.P1<->S.P2,0,student,view,course,0,1,3,2,Permit,Permit,0,S.R17
+19,PRO,S.P1<->S.P2,1,student,edit,transcript,0,0,10,3,Deny,Deny,0,S.R1
+19,PRO,S.P1<->S.P2,2,student,edit,profile,1,0,9,3,Deny,Deny,0,S.R1
+19,PRO,S.P1<->S.P2,3,student,edit,profile,1,1,13,3,Permit,Permit,0,S.R15
+19,PRO,S.P1<->S.P2,4,student,edit,course,0,0,3,3,Deny,Deny,0,S.R1
+19,PRO,S.P1<->S.P2,5,student,export,course,0,1,15,4,Deny,Deny,0,S.R3
+19,PRO,S.P1<->S.P2,6,lecturer,view,grades,0,0,2,2,Permit,Permit,0,S.R5
+19,PRO,S.P1<->S.P2,7,lecturer,view,course,0,0,10,3,Permit,Permit,0,S.R18
+19,PRO,S.P1<->S.P2,8,lecturer,edit,grades,0,0,5,1,Deny,Permit,1,S.R1 S.R5
+19,PRO,S.P1<->S.P2,9,lecturer,edit,grades,0,0,15,2,Deny,Deny,0,S.R1 S.R6
+19,PRO,S.P1<->S.P2,10,lecturer,edit,profile,0,0,16,3,Deny,Deny,0,S.R1
+19,PRO,S.P1<->S.P2,11,advisor,edit,course,1,0,4,2,Deny,Deny,0,S.R1
+19,PRO,S.P1<->S.P2,12,admin,view,course,1,0,16,3,Permit,Permit,0,S.R2
+19,PRO,S.P1<->S.P2,13,admin,edit,transcript,0,0,15,2,Deny,Deny,0,S.R1
+20,CCF,S.R4.target[0],0,student,view,grades,1,0,3,2,Permit,NotApplicable,1,S.R4
+20,CCF,S.R4.target[0],1,lecturer,view,grades,1,0,16,3,Permit,Permit,0,S.R4 S.R5
+21,CCF,S.R4.target[1],0,student,view,grades,1,0,3,2,Permit,NotApplicable,1,S.R4
+21,CCF,S.R4.target[1],1,student,view,course,0,0,10,1,Permit,Permit,0,S.R17
+21,CCF,S.R4.target[1],2,student,edit,grades,1,0,2,3,Deny,Deny,0,S.R1
+21,CCF,S.R4.target[1],3,student,edit,grades,1,1,1,2,NotApplicable,Permit,1,S.R4
+21,CCF,S.R4.target[1],4,student,edit,transcript,0,1,6,3,Deny,Deny,0,S.R12 S.R14
+21,CCF,S.R4.target[1],5,student,edit,profile,1,0,9,2,Deny,Deny,0,S.R1
+21,CCF,S.R4.target[1],6,student,edit,profile,1,1,13,4,Permit,Permit,0,S.R15
+21,CCF,S.R4.target[1],7,student,edit,course,0,0,11,3,Deny,Deny,0,S.R1
+21,CCF,S.R4.target[1],8,student,approve,course,0,1,3,4,Deny,Deny,0,S.R20
+21,CCF,S.R4.target[1],9,lecturer,view,grades,0,1,9,2,Permit,Permit,0,S.R5
+21,CCF,S.R4.target[1],10,lecturer,view,course,0,0,16,2,Permit,Permit,0,S.R18
+21,CCF,S.R4.target[1],11,lecturer,edit,grades,0,0,8,1,Deny,Deny,0,S.R1
+21,CCF,S.R4.target[1],12,lecturer,edit,course,0,0,4,1,Deny,Deny,0,S.R1
+21,CCF,S.R4.target[1],13,advisor,edit,grades,0,0,1,4,Deny,Deny,0,S.R1
+21,CCF,S.R4.target[1],14,admin,view,course,1,1,6,2,Permit,Permit,0,S.R2
+21,CCF,S.R4.target[1],15,admin,edit,transcript,0,0,7,3,Deny,Deny,0,S.R1
+22,CCF,S.R4.cond[],0,student,view,grades,1,0,1,1,Permit,NotApplicable,1,S.R4
+23,CRE,S.R4,0,student,view,grades,1,0,2,4,Permit,Deny,1,S.R4
+24,RDL,S.R4,0,student,view,grades,1,0,3,4,Permit,NotApplicable,1,S.R4
+26,CCF,S.R5.target[0],0,lecturer,view,grades,0,0,4,2,Permit,NotApplicable,1,S.R5
+26,CCF,S.R5.target[0],1,lecturer,edit,grades,0,0,15,4,Deny,Deny,0,S.R1
+26,CCF,S.R5.target[0],2,lecturer,edit,grades,0,1,15,4,Deny,Deny,0,S.R6
+26,CCF,S.R5.target[0],3,advisor,edit,grades,0,0,13,3,Deny,Deny,0,S.R1
+26,CCF,S.R5.target[0],4,advisor,edit,grades,0,1,7,1,NotApplicable,Permit,1,S.R5
+27,CCF,S.R5.cond[],0,lecturer,view,grades,0,0,2,1,Permit,NotApplicable,1,S.R5
+27,CCF,S.R5.cond[],1,lecturer,edit,grades,0,0,15,4,Deny,Deny,0,S.R1
+27,CCF,S.R5.cond[],2,lecturer,edit,grades,0,1,4,3,Permit,Permit,0,S.R5
+28,CRE,S.R5,0,student,view,course,0,0,4,4,Permit,Permit,0,S.R17
+28,CRE,S.R5,1,student,edit,transcript,0,1,12,2,Deny,Deny,0,S.R12 S.R14
+28,CRE,S.R5,2,student,edit,profile,1,1,7,3,Permit,Permit,0,S.R15
+28,CRE,S.R5,3,student,edit,course,0,0,4,1,Deny,Deny,0,S.R1
+28,CRE,S.R5,4,student,export,course,0,1,5,4,Deny,Deny,0,S.R3
+28,CRE,S.R5,5,lecturer,view,grades,0,0,1,2,Permit,Deny,1,S.R5
+28,CRE,S.R5,6,lecturer,edit,grades,0,0,15,4,Deny,Deny,0,S.R1
+28,CRE,S.R5,7,lecturer,edit,profile,0,0,15,4,Deny,Deny,0,S.R1
+28,CRE,S.R5,8,lecturer,edit,profile,1,0,4,4,Deny,Deny,0,S.R1
+28,CRE,S.R5,9,lecturer,edit,course,0,0,5,3,Deny,Deny,0,S.R1
+28,CRE,S.R5,10,lecturer,edit,course,1,1,7,3,Permit,Permit,0,S.R18
+28,CRE,S.R5,11,admin,view,course,0,1,11,3,Permit,Permit,0,S.R2
+28,CRE,S.R5,12,admin,edit,transcript,0,0,2,4,Deny,Deny,0,S.R1
+29,RDL,S.R5,0,student,view,course,0,0,3,4,Permit,Permit,0,S.R17
+29,RDL,S.R5,1,student,edit,grades,1,0,4,4,Deny,Deny,0,S.R1
+29,RDL,S.R5,2,student,edit,transcript,0,0,6,2,Deny,Deny,0,S.R1
+29,RDL,S.R5,3,student,edit,profile,1,0,13,1,Deny,Deny,0,S.R1
+29,RDL,S.R5,4,student,edit,course,0,0,10,1,Deny,Deny,0,S.R1
+29,RDL,S.R5,5,student,approve,course,0,0,15,4,Deny,Deny,0,S.R20
+29,RDL,S.R5,6,lecturer,view,grades,0,0,1,4,Permit,NotApplicable,1,S.R5
+29,RDL,S.R5,7,lecturer,view,course,0,0,8,3,Permit,Permit,0,S.R18
+29,RDL,S.R5,8,lecturer,edit,grades,0,0,16,1,Deny,Deny,0,S.R1
+29,RDL,S.R5,9,lecturer,edit,grades,0,1,15,1,Deny,Deny,0,S.R6
+29,RDL,S.R5,10,lecturer,edit,course,1,0,7,4,Deny,Deny,0,S.R1
+29,RDL,S.R5,11,advisor,edit,profile,1,1,3,2,Permit,Permit,0,S.R15
+29,RDL,S.R5,12,admin,view,course,0,1,10,3,Permit,Permit,0,S.R2
+29,RDL,S.R5,13,admin,edit,transcript,0,0,5,4,Deny,Deny,0,S.R1
+31,CCF,S.R6.target[0],0,lecturer,view,grades,0,0,15,4,Permit,Permit,0,S.R5
+31,CCF,S.R6.target[0],1,lecturer,edit,grades,0,0,15,1,Deny,Deny,0,S.R1
+31,CCF,S.R6.target[0],2,lecturer,edit,grades,0,1,15,1,Deny,Permit,1,S.R5 S.R6
+31,CCF,S.R6.target[0],3,advisor,edit,grades,0,1,16,1,NotApplicable,Deny,1,S.R6
+32,CCF,S.R6.target[1],0,lecturer,view,grades,0,0,4,4,Permit,Permit,0,S.R5
+32,CCF,S.R6.target[1],1,lecturer,edit,grades,0,0,15,2,Deny,Deny,0,S.R1
+32,CCF,S.R6.target[1],2,lecturer,edit,grades,0,1,15,2,Deny,Permit,1,S.R5 S.R6
+32,CCF,S.R6.target[1],3,lecturer,approve,grades,0,0,15,3,NotApplicable,Deny,1,S.R6
+33,CRE,S.R6,0,student,view,course,0,0,12,3,Permit,Permit,0,S.R17
+33,CRE,S.R6,1,student,edit,transcript,0,0,13,1,Deny,Deny,0,S.R1
+33,CRE,S.R6,2,student,edit,profile,1,0,2,3,Deny,Deny,0,S.R1
+33,CRE,S.R6,3,student,edit,profile,1,1,6,2,Permit,Permit,0,S.R15
+33,CRE,S.R6,4,student,edit,course,0,0,4,2,Deny,Deny,0,S.R1
+33,CRE,S.R6,5,lecturer,view,grades,0,0,4,4,Permit,Permit,0,S.R5
+33,CRE,S.R6,6,lecturer,view,course,0,0,7,4,Permit,Permit,0,S.R18
+33,CRE,S.R6,7,lecturer,edit,grades,0,0,15,3,Deny,Deny,0,S.R1
+33,CRE,S.R6,8,lecturer,edit,grades,0,1,15,2,Deny,Permit,1,S.R5 S.R6
+33,CRE,S.R6,9,lecturer,edit,course,0,0,4,3,Deny,Deny,0,S.R1
+33,CRE,S.R6,10,lecturer,export,course,1,0,14,2,Deny,Deny,0,S.R20
+33,CRE,S.R6,11,advisor,edit,grades,0,0,10,4,Deny,Deny,0,S.R1
+33,CRE,S.R6,12,admin,view,course,1,0,9,2,Permit,Permit,0,S.R2
+33,CRE,S.R6,13,admin,edit,transcript,0,0,9,1,Deny,Deny,0,S.R1
+34,RDL,S.R6,0,lecturer,view,grades,0,0,8,1,Permit,Permit,0,S.R5
+34,RDL,S.R6,1,lecturer,edit,grades,0,0,15,2,Deny,Deny,0,S.R1
+34,RDL,S.R6,2,lecturer,edit,grades,0,1,15,3,Deny,Permit,1,S.R5 S.R6
+36,CCF,S.R7.target[0],0,registrar,view,grades,0,0,1,3,Permit,NotApplicable,1,S.R7
+36,CCF,S.R7.target[0],1,admin,approve,grades,0,0,6,1,NotApplicable,Permit,1,S.R7
+37,CCF,S.R7.cond[],0,registrar,view,grades,0,1,5,3,Permit,NotApplicable,1,S.R7
+37,CCF,S.R7.cond[],1,registrar,approve,grades,0,0,13,1,Permit,Permit,0,S.R7
+38,CRE,S.R7,0,registrar,view,grades,0,1,3,4,Permit,Deny,1,S.R7
+39,RDL,S.R7,0,registrar,view,grades,0,1,4,1,Permit,NotApplicable,1,S.R7
+41,CCF,S.R8.target[0],0,student,view,grades,0,0,15,1,Deny,NotApplicable,1,S.R8
+41,CCF,S.R8.target[0],1,lecturer,view,grades,0,0,5,2,Permit,Deny,1,S.R5 S.R8
+41,CCF,S.R8.target[0],2,lecturer,view,grades,1,0,5,4,Permit,Permit,0,S.R5
+41,CCF,S.R8.target[0],3,lecturer,edit,grades,0,0,15,1,Deny,Deny,0,S.R1
+41,CCF,S.R8.target[0],4,lecturer,approve,grades,0,0,8,4,NotApplicable,Deny,1,S.R8
+42,CCF,S.R8.cond[],0,student,view,grades,0,0,1,4,Deny,NotApplicable,1,S.R8
+43,CRE,S.R8,0,student,view,grades,0,0,10,3,Deny,Permit,1,S.R8
+43,CRE,S.R8,1,student,view,course,0,0,6,1,Permit,Permit,0,S.R17
+43,CRE,S.R8,2,student,edit,grades,0,0,1,2,Deny,Deny,0,S.R1
+43,CRE,S.R8,3,student,edit,grades,1,0,4,3,Deny,Deny,0,S.R1
+43,CRE,S.R8,4,student,edit,transcript,0,1,12,2,Deny,Deny,0,S.R12 S.R14
+43,CRE,S.R8,5,student,edit,profile,1,0,3,2,Deny,Deny,0,S.R1
+43,CRE,S.R8,6,student,edit,course,0,0,4,4,Deny,Deny,0,S.R1
+43,CRE,S.R8,7,student,approve,course,1,0,2,3,Deny,Deny,0,S.R20
+43,CRE,S.R8,8,student,export,grades,0,0,7,2,Deny,Deny,0,S.R3
+43,CRE,S.R8,9,student,export,grades,1,0,7,1,Deny,Deny,0,S.R3
+43,CRE,S.R8,10,student,export,transcript,1,0,10,2,Deny,Deny,0,S.R3
+43,CRE,S.R8,11,lecturer,view,grades,0,1,3,1,Permit,Permit,0,S.R5
+43,CRE,S.R8,12,lecturer,view,course,0,1,6,3,Permit,Permit,0,S.R18
+43,CRE,S.R8,13,lecturer,edit,grades,0,0,4,3,Deny,Deny,0,S.R1
+43,CRE,S.R8,14,lecturer,edit,profile,1,1,3,3,Permit,Permit,0,S.R15
+43,CRE,S.R8,15,lecturer,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+43,CRE,S.R8,16,admin,view,transcript,1,0,4,4,Permit,Permit,0,S.R2
+43,CRE,S.R8,17,admin,view,course,0,0,15,1,Permit,Permit,0,S.R2
+43,CRE,S.R8,18,admin,edit,transcript,0,0,11,2,Deny,Deny,0,S.R1
+44,RDL,S.R8,0,student,view,grades,0,0,2,3,Deny,NotApplicable,1,S.R8
+46,CCF,S.R9.target[0],0,advisor,view,grades,0,0,2,2,Permit,NotApplicable,1,S.R9
+46,CCF,S.R9.target[0],1,registrar,view,grades,0,0,7,4,Permit,Permit,0,S.R7 S.R9
+47,CCF,S.R9.target[1],0,student,view,course,0,0,4,1,Permit,Permit,0,S.R17
+47,CCF,S.R9.target[1],1,student,edit,grades,1,0,13,3,Deny,Deny,0,S.R1
+47,CCF,S.R9.target[1],2,student,edit,transcript,0,1,7,4,Deny,Deny,0,S.R12 S.R14
+47,CCF,S.R9.target[1],3,student,edit,profile,1,0,6,3,Deny,Deny,0,S.R1
+47,CCF,S.R9.target[1],4,student,edit,profile,1,1,13,2,Permit,Permit,0,S.R15
+47,CCF,S.R9.target[1],5,student,edit,course,0,0,2,4,Deny,Deny,0,S.R1
+47,CCF,S.R9.target[1],6,student,approve,course,1,0,1,3,Deny,Deny,0,S.R20
+47,CCF,S.R9.target[1],7,lecturer,view,grades,1,0,6,1,Permit,Permit,0,S.R5
+47,CCF,S.R9.target[1],8,lecturer,view,course,0,1,8,2,Permit,Permit,0,S.R18
+47,CCF,S.R9.target[1],9,lecturer,edit,grades,0,0,1,4,Deny,Deny,0,S.R1
+47,CCF,S.R9.target[1],10,lecturer,edit,course,0,0,8,4,Deny,Deny,0,S.R1
+47,CCF,S.R9.target[1],11,advisor,view,grades,0,0,6,2,Permit,NotApplicable,1,S.R9
+47,CCF,S.R9.target[1],12,advisor,edit,grades,0,0,1,3,Deny,Deny,0,S.R1
+47,CCF,S.R9.target[1],13,advisor,edit,grades,0,1,6,4,NotApplicable,Permit,1,S.R9
+47,CCF,S.R9.target[1],14,admin,view,course,0,1,8,1,Permit,Permit,0,S.R2
+47,CCF,S.R9.target[1],15,admin,edit,transcript,0,0,3,3,Deny,Deny,0,S.R1
+48,CRE,S.R9,0,advisor,view,grades,0,0,2,3,Permit,Deny,1,S.R9
+49,RDL,S.R9,0,advisor,view,grades,0,1,1,3,Permit,NotApplicable,1,S.R9
+50,RAI,S.P2.N0@0,0,registrar,view,grades,0,0,6,1,Permit,Permit,0,S.R7
+50,RAI,S.P2.N0@0,1,registrar,view,grades,0,0,11,1,Permit,Deny,1,S.P2.N0 S.R7
+50,RAI,S.P2.N0@0,2,registrar,edit,grades,0,0,11,1,NotApplicable,Deny,1,S.P2.N0
+51,RAI,S.P2.N1@3,0,advisor,view,grades,0,0,2,2,Permit,Permit,0,S.R9
+51,RAI,S.P2.N1@3,1,advisor,view,grades,0,0,10,1,Permit,Deny,1,S.P2.N1 S.R9
+52,PTC,S.P2.target:=any,0,student,view,grades,1,0,4,4,Permit,Permit,0,S.R4
+52,PTC,S.P2.target:=any,1,student,view,course,0,0,9,1,Permit,Deny,1,S.R17 S.R8
+52,PTC,S.P2.target:=any,2,student,view,course,1,0,1,4,Permit,Permit,0,S.R17 S.R4
+52,PTC,S.P2.target:=any,3,student,edit,grades,0,1,12,4,Deny,Deny,0,S.R8
+52,PTC,S.P2.target:=any,4,student,edit,transcript,1,1,3,4,Deny,Deny,0,S.R12
+52,PTC,S.P2.target:=any,5,student,edit,profile,1,0,9,3,Deny,Deny,0,S.R1
+52,PTC,S.P2.target:=any,6,student,edit,profile,1,1,1,1,Permit,Permit,0,S.R15
+52,PTC,S.P2.target:=any,7,student,edit,course,0,0,1,1,Deny,Deny,0,S.R1
+52,PTC,S.P2.target:=any,8,student,edit,course,0,1,9,4,Deny,Deny,0,S.R16 S.R8
+52,PTC,S.P2.target:=any,9,student,approve,course,1,1,6,3,Deny,Deny,0,S.R20
+52,PTC,S.P2.target:=any,10,lecturer,view,grades,0,0,5,2,Permit,Permit,0,S.R5
+52,PTC,S.P2.target:=any,11,lecturer,edit,grades,0,0,15,3,Deny,Deny,0,S.R1
+52,PTC,S.P2.target:=any,12,lecturer,edit,transcript,0,1,2,2,Deny,Permit,1,S.R12 S.R5
+52,PTC,S.P2.target:=any,13,lecturer,edit,profile,1,1,15,1,Permit,Deny,1,S.R15 S.R6
+52,PTC,S.P2.target:=any,14,lecturer,edit,course,0,0,16,3,Deny,Deny,0,S.R1
+52,PTC,S.P2.target:=any,15,lecturer,edit,course,0,1,15,1,Permit,Deny,1,S.R18 S.R6
+52,PTC,S.P2.target:=any,16,advisor,view,grades,0,0,8,2,Permit,Permit,0,S.R9
+52,PTC,S.P2.target:=any,17,advisor,view,transcript,0,0,6,1,NotApplicable,Permit,1,S.R9
+52,PTC,S.P2.target:=any,18,advisor,view,course,0,1,5,2,Permit,Permit,0,S.R18 S.R9
+52,PTC,S.P2.target:=any,19,registrar,view,grades,0,1,3,2,Permit,Permit,0,S.R7
+52,PTC,S.P2.target:=any,20,registrar,view,course,0,1,6,2,Permit,Permit,0,S.R19 S.R7
+52,PTC,S.P2.target:=any,21,registrar,edit,transcript,0,0,7,1,Permit,Permit,0,S.R11
+52,PTC,S.P2.target:=any,22,admin,view,course,0,1,1,4,Permit,Permit,0,S.R2
+52,PTC,S.P2.target:=any,23,admin,edit,transcript,0,0,3,2,Deny,Deny,0,S.R1
+53,PTC,S.P2.target[0],0,student,view,grades,0,0,5,3,Deny,NotApplicable,1,S.R8
+53,PTC,S.P2.target[0],1,student,view,grades,1,0,1,2,Permit,NotApplicable,1,S.R4
+53,PTC,S.P2.target[0],2,student,view,transcript,1,0,3,1,Permit,Permit,0,S.R10 S.R4
+53,PTC,S.P2.target[0],3,student,edit,transcript,0,0,16,3,Deny,Deny,0,S.R1
+53,PTC,S.P2.target[0],4,student,edit,transcript,1,1,5,2,Deny,Deny,0,S.R12
+53,PTC,S.P2.target[0],5,lecturer,view,grades,0,0,1,1,Permit,NotApplicable,1,S.R5
+53,PTC,S.P2.target[0],6,lecturer,view,transcript,0,0,1,1,NotApplicable,Permit,1,S.R5
+53,PTC,S.P2.target[0],7,lecturer,edit,grades,0,0,2,1,Deny,Deny,0,S.R1
+53,PTC,S.P2.target[0],8,lecturer,edit,grades,0,1,15,1,Deny,NotApplicable,1,S.R6
+53,PTC,S.P2.target[0],9,lecturer,edit,transcript,0,1,4,3,Deny,Permit,1,S.R12 S.R5
+53,PTC,S.P2.target[0],10,lecturer,edit,transcript,1,0,15,2,Deny,Deny,0,S.R1
+53,PTC,S.P2.target[0],11,advisor,view,grades,0,0,4,1,Permit,NotApplicable,1,S.R9
+53,PTC,S.P2.target[0],12,advisor,view,transcript,0,0,2,1,NotApplicable,Permit,1,S.R9
+53,PTC,S.P2.target[0],13,registrar,view,grades,0,0,5,3,Permit,NotApplicable,1,S.R7
+53,PTC,S.P2.target[0],14,registrar,view,transcript,0,1,8,4,Permit,Permit,0,S.R11 S.R7
+53,PTC,S.P2.target[0],15,registrar,edit,transcript,0,0,3,3,Permit,Permit,0,S.R11
+53,PTC,S.P2.target[0],16,admin,edit,transcript,0,1,11,2,Permit,Permit,0,S.R2
+54,CAC,S.P2:DO->PO,0,student,view,grades,0,0,4,3,Deny,Deny,0,S.R8
+54,CAC,S.P2:DO->PO,1,student,view,grades,1,0,1,2,Permit,Permit,0,S.R4
+54,CAC,S.P2:DO->PO,2,lecturer,view,grades,0,0,6,1,Permit,Permit,0,S.R5
+54,CAC,S.P2:DO->PO,3,lecturer,edit,grades,0,0,15,1,Deny,Deny,0,S.R1
+54,CAC,S.P2:DO->PO,4,lecturer,edit,grades,0,1,15,1,Deny,Permit,1,S.R5 S.R6
+54,CAC,S.P2:DO->PO,5,advisor,view,grades,0,0,4,3,Permit,Permit,0,S.R9
+54,CAC,S.P2:DO->PO,6,registrar,view,grades,0,0,3,1,Permit,Permit,0,S.R7
+55,CAC,S.P2:DO->FA,0,student,view,grades,0,0,3,3,Deny,Deny,0,S.R8
+55,CAC,S.P2:DO->FA,1,student,view,grades,1,0,3,4,Permit,Permit,0,S.R4
+55,CAC,S.P2:DO->FA,2,lecturer,view,grades,0,0,1,1,Permit,Permit,0,S.R5
+55,CAC,S.P2:DO->FA,3,lecturer,edit,grades,0,0,15,2,Deny,Deny,0,S.R1
+55,CAC,S.P2:DO->FA,4,lecturer,edit,grades,0,1,15,1,Deny,Permit,1,S.R5 S.R6
+55,CAC,S.P2:DO->FA,5,advisor,view,grades,0,0,9,1,Permit,Permit,0,S.R9
+55,CAC,S.P2:DO->FA,6,registrar,view,grades,0,0,9,4,Permit,Permit,0,S.R7
+56,VDC,S.P2.late[],0,lecturer,view,grades,0,0,2,4,Permit,Permit,0,S.R5
+56,VDC,S.P2.late[],1,lecturer,edit,grades,0,0,15,3,Deny,Deny,0,S.R1
+56,VDC,S.P2.late[],2,lecturer,edit,grades,0,1,15,1,Deny,Permit,1,S.R5 S.R6
+58,CCF,S.R10.target[0],0,student,view,transcript,1,1,7,1,Permit,NotApplicable,1,S.R10
+58,CCF,S.R10.target[0],1,student,export,grades,1,0,8,3,Deny,Deny,0,S.R3
+58,CCF,S.R10.target[0],2,student,export,transcript,1,0,5,1,Deny,Deny,0,S.R3
+59,CCF,S.R10.cond[],0,student,view,transcript,1,0,1,4,Permit,NotApplicable,1,S.R10
+59,CCF,S.R10.cond[],1,student,export,transcript,1,1,12,1,Deny,Deny,0,S.R3
+59,CCF,S.R10.cond[],2,lecturer,export,transcript,1,0,11,1,Permit,Permit,0,S.R10
+60,CRE,S.R10,0,student,view,transcript,1,0,15,1,Permit,Deny,1,S.R10
+60,CRE,S.R10,1,student,view,course,0,0,2,2,Permit,Permit,0,S.R17
+60,CRE,S.R10,2,student,edit,transcript,0,0,15,1,Deny,Deny,0,S.R1
+60,CRE,S.R10,3,student,edit,profile,1,0,11,2,Deny,Deny,0,S.R1
+60,CRE,S.R10,4,student,edit,profile,1,1,16,2,Permit,Permit,0,S.R15
+60,CRE,S.R10,5,student,edit,course,0,0,5,3,Deny,Deny,0,S.R1
+60,CRE,S.R10,6,student,approve,course,1,0,16,1,Deny,Deny,0,S.R20
+60,CRE,S.R10,7,student,export,grades,1,0,3,2,Deny,Deny,0,S.R3
+60,CRE,S.R10,8,student,export,transcript,1,0,2,4,Deny,Deny,0,S.R3
+60,CRE,S.R10,9,lecturer,view,grades,0,0,13,1,Permit,Permit,0,S.R5
+60,CRE,S.R10,10,lecturer,edit,grades,0,0,1,3,Deny,Deny,0,S.R1
+60,CRE,S.R10,11,lecturer,edit,course,0,0,10,3,Deny,Deny,0,S.R1
+60,CRE,S.R10,12,lecturer,edit,course,0,1,8,3,Permit,Permit,0,S.R18
+60,CRE,S.R10,13,advisor,view,transcript,0,1,2,4,Permit,Permit,0,S.R13
+60,CRE,S.R10,14,advisor,view,transcript,1,0,7,4,Permit,Permit,0,S.R10 S.R13
+60,CRE,S.R10,15,registrar,view,transcript,1,0,12,1,Permit,Permit,0,S.R10 S.R11
+60,CRE,S.R10,16,registrar,view,profile,0,1,8,1,Permit,Permit,0,S.R11
+60,CRE,S.R10,17,registrar,edit,transcript,0,0,1,1,Permit,Permit,0,S.R11
+60,CRE,S.R10,18,admin,view,grades,1,0,15,2,Permit,Permit,0,S.R2
+60,CRE,S.R10,19,admin,view,transcript,1,0,6,3,Permit,Permit,0,S.R2
+60,CRE,S.R10,20,admin,view,course,0,0,11,1,Permit,Permit,0,S.R2
+60,CRE,S.R10,21,admin,edit,transcript,0,0,8,3,Deny,Deny,0,S.R1
+61,RDL,S.R10,0,student,export,grades,1,0,3,2,Deny,Deny,0,S.R3
+61,RDL,S.R10,1,student,export,transcript,1,0,3,1,Deny,Deny,0,S.R3
+61,RDL,S.R10,2,lecturer,view,transcript,1,0,7,2,Permit,NotApplicable,1,S.R10
+63,CCF,S.R11.target[0],0,student,view,course,0,0,10,2,Permit,Permit,0,S.R17
+63,CCF,S.R11.target[0],1,student,edit,grades,1,0,4,2,Deny,Deny,0,S.R1
+63,CCF,S.R11.target[0],2,student,edit,transcript,0,0,1,1,Deny,Deny,0,S.R1
+63,CCF,S.R11.target[0],3,student,edit,course,0,0,4,2,Deny,Deny,0,S.R1
+63,CCF,S.R11.target[0],4,student,approve,course,0,1,2,3,Deny,Deny,0,S.R20
+63,CCF,S.R11.target[0],5,lecturer,view,grades,0,1,3,1,Permit,Permit,0,S.R5
+63,CCF,S.R11.target[0],6,lecturer,edit,grades,0,0,3,1,Deny,Deny,0,S.R1
+63,CCF,S.R11.target[0],7,lecturer,edit,profile,1,0,10,1,Deny,Deny,0,S.R1
+63,CCF,S.R11.target[0],8,lecturer,edit,course,0,0,3,1,Deny,Deny,0,S.R1
+63,CCF,S.R11.target[0],9,lecturer,edit,course,0,1,3,2,Permit,Permit,0,S.R18
+63,CCF,S.R11.target[0],10,registrar,view,transcript,0,1,3,4,Permit,NotApplicable,1,S.R11
+63,CCF,S.R11.target[0],11,registrar,edit,transcript,0,0,10,2,Permit,Deny,1,S.R11 S.R12
+63,CCF,S.R11.target[0],12,admin,view,course,0,1,1,2,Permit,Permit,0,S.R2
+63,CCF,S.R11.target[0],13,admin,edit,transcript,0,0,1,2,Deny,Deny,0,S.R1
+63,CCF,S.R11.target[0],14,admin,edit,profile,1,1,2,2,Permit,Permit,0,S.R2
+63,CCF,S.R11.target[0],15,admin,approve,transcript,0,0,6,2,NotApplicable,Permit,1,S.R11
+64,CRE,S.R11,0,student,view,transcript,1,0,8,3,Permit,Permit,0,S.R10
+64,CRE,S.R11,1,student,edit,transcript,1,1,9,2,Deny,Deny,0,S.R12
+64,CRE,S.R11,2,student,edit,profile,1,1,10,1,Permit,Permit,0,S.R15
+64,CRE,S.R11,3,student,export,transcript,1,0,3,2,Deny,Deny,0,S.R3
+64,CRE,S.R11,4,lecturer,edit,profile,1,0,2,3,Deny,Deny,0,S.R1
+64,CRE,S.R11,5,registrar,view,transcript,1,1,13,1,Permit,Permit,0,S.R10 S.R11
+64,CRE,S.R11,6,registrar,edit,transcript,0,0,8,2,Permit,Deny,1,S.R11 S.R12
+64,CRE,S.R11,7,registrar,edit,profile,0,0,7,2,Permit,Deny,1,S.R11
+64,CRE,S.R11,8,registrar,edit,profile,1,0,10,2,Permit,Permit,0,S.R11 S.R15
+64,CRE,S.R11,9,admin,edit,transcript,1,1,13,2,Permit,Permit,0,S.R2
+65,RDL,S.R11,0,student,edit,transcript,1,1,8,2,Deny,Deny,0,S.R12
+65,RDL,S.R11,1,registrar,view,profile,0,1,11,3,Permit,NotApplicable,1,S.R11
+65,RDL,S.R11,2,registrar,edit,transcript,0,0,3,4,Permit,Deny,1,S.R11 S.R12
+65,RDL,S.R11,3,admin,edit,transcript,0,1,5,3,Permit,Permit,0,S.R2
+67,CCF,S.R12.target[0],0,student,view,course,0,0,2,2,Permit,Permit,0,S.R17
+67,CCF,S.R12.target[0],1,student,edit,transcript,1,1,14,3,Deny,NotApplicable,1,S.R12
+67,CCF,S.R12.target[0],2,student,edit,profile,1,0,1,3,Deny,Deny,0,S.R1
+67,CCF,S.R12.target[0],3,student,edit,course,0,0,3,4,Deny,Deny,0,S.R1
+67,CCF,S.R12.target[0],4,student,approve,transcript,1,1,13,1,NotApplicable,Deny,1,S.R12
+67,CCF,S.R12.target[0],5,student,approve,course,1,0,9,4,Deny,Deny,0,S.R20
+67,CCF,S.R12.target[0],6,lecturer,view,grades,0,0,8,2,Permit,Permit,0,S.R5
+67,CCF,S.R12.target[0],7,lecturer,edit,grades,0,0,3,2,Deny,Deny,0,S.R1
+67,CCF,S.R12.target[0],8,lecturer,edit,course,0,0,2,1,Deny,Deny,0,S.R1
+67,CCF,S.R12.target[0],9,lecturer,edit,course,1,1,1,3,Permit,Permit,0,S.R18
+67,CCF,S.R12.target[0],10,registrar,edit,transcript,0,1,2,2,Permit,Permit,0,S.R11
+67,CCF,S.R12.target[0],11,registrar,edit,profile,1,0,10,4,Permit,Permit,0,S.R11 S.R15
+67,CCF,S.R12.target[0],12,registrar,approve,transcript,1,0,13,3,Permit,Permit,0,S.R11
+67,CCF,S.R12.target[0],13,admin,view,grades,0,1,13,3,Permit,Permit,0,S.R2
+67,CCF,S.R12.target[0],14,admin,view,course,0,0,9,4,Permit,Permit,0,S.R2
+67,CCF,S.R12.target[0],15,admin,edit,transcript,0,0,13,1,Deny,Deny,0,S.R1
+68,CCF,S.R12.target[1],0,student,edit,transcript,1,1,12,3,Deny,NotApplicable,1,S.R12
+68,CCF,S.R12.target[1],1,student,edit,profile,1,1,2,1,Permit,Permit,0,S.R15
+68,CCF,S.R12.target[1],2,lecturer,edit,profile,0,1,5,2,NotApplicable,Deny,1,S.R12
+68,CCF,S.R12.target[1],3,registrar,edit,transcript,0,1,5,4,Permit,Permit,0,S.R11
+68,CCF,S.R12.target[1],4,registrar,edit,profile,1,1,3,2,Permit,Permit,0,S.R11 S.R15
+68,CCF,S.R12.target[1],5,admin,edit,transcript,1,1,4,3,Permit,Permit,0,S.R2
+68,CCF,S.R12.target[1],6,admin,edit,profile,1,0,1,3,Deny,Deny,0,S.R1
+69,CRE,S.R12,0,student,view,transcript,0,1,4,3,Deny,Deny,0,S.R14
+69,CRE,S.R12,1,student,view,course,0,0,5,3,Permit,Permit,0,S.R17
+69,CRE,S.R12,2,student,edit,grades,1,0,7,2,Deny,Deny,0,S.R1
+69,CRE,S.R12,3,student,edit,transcript,0,0,1,2,Deny,Deny,0,S.R1
+69,CRE,S.R12,4,student,edit,transcript,0,1,3,4,Deny,Permit,1,S.R12 S.R14
+69,CRE,S.R12,5,student,edit,transcript,1,1,1,1,Deny,Permit,1,S.R12
+69,CRE,S.R12,6,student,edit,profile,1,1,15,4,Permit,Permit,0,S.R15
+69,CRE,S.R12,7,student,edit,course,0,0,9,1,Deny,Deny,0,S.R1
+69,CRE,S.R12,8,student,approve,course,1,0,10,3,Deny,Deny,0,S.R20
+69,CRE,S.R12,9,lecturer,view,grades,0,0,1,4,Permit,Permit,0,S.R5
+69,CRE,S.R12,10,lecturer,view,course,0,0,13,1,Permit,Permit,0,S.R18
+69,CRE,S.R12,11,lecturer,edit,grades,0,0,4,2,Deny,Deny,0,S.R1
+69,CRE,S.R12,12,lecturer,edit,course,0,0,3,4,Deny,Deny,0,S.R1
+69,CRE,S.R12,13,registrar,view,profile,0,1,14,1,Permit,Permit,0,S.R11
+69,CRE,S.R12,14,registrar,edit,transcript,0,0,14,4,Permit,Permit,0,S.R11 S.R12
+69,CRE,S.R12,15,admin,view,grades,1,1,5,3,Permit,Permit,0,S.R2
+69,CRE,S.R12,16,admin,edit,transcript,0,0,2,4,Deny,Deny,0,S.R1
+69,CRE,S.R12,17,admin,edit,profile,1,0,3,4,Deny,Deny,0,S.R1
+69,CRE,S.R12,18,admin,edit,course,0,0,10,3,Deny,Deny,0,S.R1
+70,RDL,S.R12,0,student,view,course,0,0,2,2,Permit,Permit,0,S.R17
+70,RDL,S.R12,1,student,edit,transcript,1,1,11,3,Deny,NotApplicable,1,S.R12
+70,RDL,S.R12,2,student,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+70,RDL,S.R12,3,student,approve,course,0,1,14,2,Deny,Deny,0,S.R20
+70,RDL,S.R12,4,lecturer,view,grades,0,0,12,1,Permit,Permit,0,S.R5
+70,RDL,S.R12,5,lecturer,view,course,0,1,2,4,Permit,Permit,0,S.R18
+70,RDL,S.R12,6,lecturer,edit,grades,0,0,2,1,Deny,Deny,0,S.R1
+70,RDL,S.R12,7,lecturer,edit,profile,1,1,5,2,Permit,Permit,0,S.R15
+70,RDL,S.R12,8,lecturer,edit,course,0,0,15,3,Deny,Deny,0,S.R1
+70,RDL,S.R12,9,registrar,view,transcript,0,0,3,3,Permit,Permit,0,S.R11
+70,RDL,S.R12,10,registrar,edit,transcript,0,0,2,1,Permit,Permit,0,S.R11
+70,RDL,S.R12,11,admin,view,grades,0,0,3,3,Permit,Permit,0,S.R2
+70,RDL,S.R12,12,admin,view,course,0,0,15,3,Permit,Permit,0,S.R2
+70,RDL,S.R12,13,admin,edit,transcript,0,0,8,3,Deny,Deny,0,S.R1
+70,RDL,S.R12,14,admin,edit,profile,1,0,1,4,Deny,Deny,0,S.R1
+72,CCF,S.R13.target[0],0,advisor,view,transcript,0,1,2,4,Permit,NotApplicable,1,S.R13
+72,CCF,S.R13.target[0],1,registrar,view,transcript,0,0,9,3,Permit,Permit,0,S.R11 S.R13
+73,CCF,S.R13.target[1],0,student,view,course,0,0,7,1,Permit,Permit,0,S.R17
+73,CCF,S.R13.target[1],1,student,edit,grades,1,0,6,4,Deny,Deny,0,S.R1
+73,CCF,S.R13.target[1],2,student,edit,transcript,1,1,8,2,Deny,Deny,0,S.R12
+73,CCF,S.R13.target[1],3,student,edit,profile,1,1,13,1,Permit,Permit,0,S.R15
+73,CCF,S.R13.target[1],4,student,edit,course,0,0,2,4,Deny,Deny,0,S.R1
+73,CCF,S.R13.target[1],5,student,approve,course,0,0,7,4,Deny,Deny,0,S.R20
+73,CCF,S.R13.target[1],6,lecturer,view,grades,0,0,12,3,Permit,Permit,0,S.R5
+73,CCF,S.R13.target[1],7,lecturer,view,course,0,1,11,2,Permit,Permit,0,S.R18
+73,CCF,S.R13.target[1],8,lecturer,edit,grades,0,0,1,4,Deny,Deny,0,S.R1
+73,CCF,S.R13.target[1],9,lecturer,edit,course,0,0,2,2,Deny,Deny,0,S.R1
+73,CCF,S.R13.target[1],10,advisor,view,transcript,0,0,2,3,Permit,NotApplicable,1,S.R13
+73,CCF,S.R13.target[1],11,advisor,edit,transcript,0,1,4,4,Deny,Permit,1,S.R12 S.R13
+73,CCF,S.R13.target[1],12,advisor,edit,profile,0,1,7,4,NotApplicable,Permit,1,S.R13
+73,CCF,S.R13.target[1],13,advisor,edit,profile,1,0,11,2,Deny,Deny,0,S.R1
+73,CCF,S.R13.target[1],14,registrar,edit,transcript,0,0,6,1,Permit,Permit,0,S.R11
+73,CCF,S.R13.target[1],15,admin,view,course,0,0,6,4,Permit,Permit,0,S.R2
+73,CCF,S.R13.target[1],16,admin,edit,transcript,0,0,6,1,Deny,Deny,0,S.R1
+74,CCF,S.R13.cond[],0,advisor,view,transcript,0,1,1,2,Permit,NotApplicable,1,S.R13
+74,CCF,S.R13.cond[],1,advisor,view,transcript,0,1,7,4,Permit,Permit,0,S.R13
+75,CRE,S.R13,0,student,view,transcript,1,1,1,4,Permit,Permit,0,S.R10
+75,CRE,S.R13,1,student,export,transcript,1,0,4,3,Deny,Deny,0,S.R3
+75,CRE,S.R13,2,advisor,view,transcript,0,0,4,2,Permit,Deny,1,S.R13
+75,CRE,S.R13,3,advisor,view,transcript,1,0,2,2,Permit,Permit,0,S.R10 S.R13
+76,RDL,S.R13,0,advisor,view,transcript,0,0,14,4,Permit,NotApplicable,1,S.R13
+78,CCF,S.R14.target[0],0,student,view,transcript,0,1,1,3,Deny,NotApplicable,1,S.R14
+78,CCF,S.R14.target[0],1,lecturer,view,transcript,0,0,9,2,NotApplicable,Deny,1,S.R14
+79,CCF,S.R14.cond[],0,student,view,transcript,0,1,11,1,Deny,NotApplicable,1,S.R14
+80,CRE,S.R14,0,student,view,transcript,0,0,3,3,Deny,Permit,1,S.R14
+80,CRE,S.R14,1,student,view,course,0,0,2,4,Permit,Permit,0,S.R17
+80,CRE,S.R14,2,student,edit,grades,1,0,2,4,Deny,Deny,0,S.R1
+80,CRE,S.R14,3,student,edit,transcript,0,0,3,3,Deny,Deny,0,S.R1
+80,CRE,S.R14,4,student,edit,transcript,0,1,4,2,Deny,Permit,1,S.R12 S.R14
+80,CRE,S.R14,5,student,edit,transcript,1,1,2,1,Deny,Deny,0,S.R12
+80,CRE,S.R14,6,student,edit,profile,1,0,10,3,Deny,Deny,0,S.R1
+80,CRE,S.R14,7,student,edit,profile,1,1,3,4,Permit,Permit,0,S.R15
+80,CRE,S.R14,8,student,edit,course,0,0,10,3,Deny,Deny,0,S.R1
+80,CRE,S.R14,9,student,export,grades,1,0,11,3,Deny,Deny,0,S.R3
+80,CRE,S.R14,10,student,export,transcript,0,0,6,4,Deny,Deny,0,S.R3
+80,CRE,S.R14,11,student,export,transcript,1,0,16,2,Deny,Deny,0,S.R3
+80,CRE,S.R14,12,student,export,course,1,0,7,3,Deny,Deny,0,S.R3
+80,CRE,S.R14,13,lecturer,view,grades,0,0,7,1,Permit,Permit,0,S.R5
+80,CRE,S.R14,14,lecturer,edit,grades,0,0,13,3,Deny,Deny,0,S.R1
+80,CRE,S.R14,15,lecturer,edit,course,0,0,7,4,Deny,Deny,0,S.R1
+80,CRE,S.R14,16,advisor,view,course,0,0,2,2,Permit,Permit,0,S.R18
+80,CRE,S.R14,17,registrar,edit,transcript,0,0,5,4,Permit,Permit,0,S.R11
+80,CRE,S.R14,18,admin,view,profile,1,0,14,3,Permit,Permit,0,S.R2
+80,CRE,S.R14,19,admin,view,course,0,0,13,2,Permit,Permit,0,S.R2
+80,CRE,S.R14,20,admin,edit,transcript,0,0,2,2,Deny,Deny,0,S.R1
+81,RDL,S.R14,0,student,view,profile,0,0,2,4,Deny,NotApplicable,1,S.R14
+83,CCF,S.R15.target[0],0,student,view,course,0,0,3,3,Permit,Permit,0,S.R17
+83,CCF,S.R15.target[0],1,student,edit,grades,1,0,5,2,Deny,Deny,0,S.R1
+83,CCF,S.R15.target[0],2,student,edit,transcript,0,0,13,2,Deny,Deny,0,S.R1
+83,CCF,S.R15.target[0],3,student,edit,profile,1,0,10,2,Deny,Deny,0,S.R1
+83,CCF,S.R15.target[0],4,student,edit,profile,1,1,2,2,Permit,NotApplicable,1,S.R15
+83,CCF,S.R15.target[0],5,student,edit,course,0,0,2,2,Deny,Deny,0,S.R1
+83,CCF,S.R15.target[0],6,student,approve,course,0,1,1,4,Deny,Deny,0,S.R20
+83,CCF,S.R15.target[0],7,lecturer,view,grades,0,0,1,1,Permit,Permit,0,S.R5
+83,CCF,S.R15.target[0],8,lecturer,view,course,0,0,10,3,Permit,Permit,0,S.R18
+83,CCF,S.R15.target[0],9,lecturer,edit,grades,0,0,10,3,Deny,Deny,0,S.R1
+83,CCF,S.R15.target[0],10,lecturer,edit,course,0,0,12,2,Deny,Deny,0,S.R1
+83,CCF,S.R15.target[0],11,admin,view,course,1,0,2,3,Permit,Permit,0,S.R2
+83,CCF,S.R15.target[0],12,admin,edit,transcript,0,0,1,4,Deny,Deny,0,S.R1
+84,CCF,S.R15.target[1],0,student,view,course,0,0,11,2,Permit,Permit,0,S.R17
+84,CCF,S.R15.target[1],1,student,edit,grades,1,0,3,1,Deny,Deny,0,S.R1
+84,CCF,S.R15.target[1],2,student,edit,transcript,0,0,7,4,Deny,Deny,0,S.R1
+84,CCF,S.R15.target[1],3,student,edit,profile,1,0,14,1,Deny,Deny,0,S.R1
+84,CCF,S.R15.target[1],4,student,edit,profile,1,1,2,1,Permit,NotApplicable,1,S.R15
+84,CCF,S.R15.target[1],5,student,edit,course,0,0,2,3,Deny,Deny,0,S.R1
+84,CCF,S.R15.target[1],6,student,approve,course,1,0,8,2,Deny,Deny,0,S.R20
+84,CCF,S.R15.target[1],7,lecturer,view,grades,0,0,11,1,Permit,Permit,0,S.R5
+84,CCF,S.R15.target[1],8,lecturer,view,course,0,1,15,3,Permit,Permit,0,S.R18
+84,CCF,S.R15.target[1],9,lecturer,edit,grades,0,0,1,4,Deny,Deny,0,S.R1
+84,CCF,S.R15.target[1],10,lecturer,edit,course,0,0,10,3,Deny,Deny,0,S.R1
+84,CCF,S.R15.target[1],11,admin,view,course,0,0,2,2,Permit,Permit,0,S.R2
+84,CCF,S.R15.target[1],12,admin,edit,transcript,0,0,2,1,Deny,Deny,0,S.R1
+85,CCF,S.R15.cond[],0,student,view,course,0,0,11,4,Permit,Permit,0,S.R17
+85,CCF,S.R15.cond[],1,student,edit,grades,1,0,1,3,Deny,Deny,0,S.R1
+85,CCF,S.R15.cond[],2,student,edit,transcript,0,0,3,4,Deny,Deny,0,S.R1
+85,CCF,S.R15.cond[],3,student,edit,profile,1,0,13,2,Deny,Deny,0,S.R1
+85,CCF,S.R15.cond[],4,student,edit,profile,1,1,4,1,Permit,NotApplicable,1,S.R15
+85,CCF,S.R15.cond[],5,student,edit,course,0,0,7,3,Deny,Deny,0,S.R1
+85,CCF,S.R15.cond[],6,student,approve,profile,1,0,9,4,NotApplicable,Permit,1,S.R15
+85,CCF,S.R15.cond[],7,student,approve,course,1,0,4,4,Deny,Deny,0,S.R20
+85,CCF,S.R15.cond[],8,lecturer,view,grades,0,1,10,4,Permit,Permit,0,S.R5
+85,CCF,S.R15.cond[],9,lecturer,view,course,0,1,5,2,Permit,Permit,0,S.R18
+85,CCF,S.R15.cond[],10,lecturer,edit,grades,0,0,1,4,Deny,Deny,0,S.R1
+85,CCF,S.R15.cond[],11,lecturer,edit,course,0,0,8,3,Deny,Deny,0,S.R1
+85,CCF,S.R15.cond[],12,admin,view,course,0,1,6,2,Permit,Permit,0,S.R2
+85,CCF,S.R15.cond[],13,admin,edit,transcript,1,0,5,1,Deny,Deny,0,S.R1
+86,CRE,S.R15,0,student,view,course,0,0,15,4,Permit,Permit,0,S.R17
+86,CRE,S.R15,1,student,edit,grades,1,0,12,4,Deny,Deny,0,S.R1
+86,CRE,S.R15,2,student,edit,transcript,0,0,5,1,Deny,Deny,0,S.R1
+86,CRE,S.R15,3,student,edit,profile,1,1,3,3,Permit,Deny,1,S.R15
+86,CRE,S.R15,4,student,edit,course,0,0,2,1,Deny,Deny,0,S.R1
+86,CRE,S.R15,5,student,approve,course,1,1,16,2,Deny,Deny,0,S.R20
+86,CRE,S.R15,6,lecturer,view,grades,1,0,6,2,Permit,Permit,0,S.R5
+86,CRE,S.R15,7,lecturer,edit,grades,0,0,9,3,Deny,Deny,0,S.R1
+86,CRE,S.R15,8,lecturer,edit,course,0,0,1,2,Deny,Deny,0,S.R1
+86,CRE,S.R15,9,lecturer,edit,course,1,1,5,3,Permit,Permit,0,S.R18
+86,CRE,S.R15,10,registrar,view,transcript,0,0,15,3,Permit,Permit,0,S.R11
+86,CRE,S.R15,11,registrar,edit,transcript,0,0,3,3,Permit,Permit,0,S.R11
+86,CRE,S.R15,12,registrar,edit,profile,1,0,8,1,Permit,Permit,0,S.R11 S.R15
+86,CRE,S.R15,13,admin,view,grades,0,0,5,2,Permit,Permit,0,S.R2
+86,CRE,S.R15,14,admin,view,course,0,1,2,3,Permit,Permit,0,S.R2
+86,CRE,S.R15,15,admin,edit,transcript,0,0,11,2,Deny,Deny,0,S.R1
+86,CRE,S.R15,16,admin,edit,profile,1,0,3,4,Deny,Deny,0,S.R1
+87,RDL,S.R15,0,student,view,course,0,0,1,4,Permit,Permit,0,S.R17
+87,RDL,S.R15,1,student,edit,grades,1,0,3,4,Deny,Deny,0,S.R1
+87,RDL,S.R15,2,student,edit,transcript,0,0,10,1,Deny,Deny,0,S.R1
+87,RDL,S.R15,3,student,edit,course,0,0,4,1,Deny,Deny,0,S.R1
+87,RDL,S.R15,4,student,approve,course,0,1,1,3,Deny,Deny,0,S.R20
+87,RDL,S.R15,5,lecturer,view,grades,0,0,4,2,Permit,Permit,0,S.R5
+87,RDL,S.R15,6,lecturer,edit,grades,0,0,2,1,Deny,Deny,0,S.R1
+87,RDL,S.R15,7,lecturer,edit,profile,1,0,4,4,Deny,Deny,0,S.R1
+87,RDL,S.R15,8,lecturer,edit,profile,1,1,2,1,Permit,NotApplicable,1,S.R15
+87,RDL,S.R15,9,lecturer,edit,course,1,0,2,4,Deny,Deny,0,S.R1
+87,RDL,S.R15,10,lecturer,approve,course,0,0,3,3,Permit,Permit,0,S.R18
+87,RDL,S.R15,11,admin,view,course,0,1,12,1,Permit,Permit,0,S.R2
+87,RDL,S.R15,12,admin,edit,transcript,0,0,5,4,Deny,Deny,0,S.R1
+88,RAI,S.P3.N0@0,0,student,view,transcript,1,1,7,2,Permit,Permit,0,S.R10
+88,RAI,S.P3.N0@0,1,student,view,course,0,1,5,2,Permit,Permit,0,S.R17
+88,RAI,S.P3.N0@0,2,student,edit,transcript,1,0,15,4,Deny,Deny,0,S.R1
+88,RAI,S.P3.N0@0,3,student,edit,profile,1,0,11,2,Deny,Deny,0,S.R1
+88,RAI,S.P3.N0@0,4,student,edit,profile,1,1,2,2,Permit,Permit,0,S.R15
+88,RAI,S.P3.N0@0,5,student,edit,course,0,0,4,2,Deny,Deny,0,S.R1
+88,RAI,S.P3.N0@0,6,student,approve,transcript,1,1,14,2,NotApplicable,Deny,1,S.P3.N0
+88,RAI,S.P3.N0@0,7,student,approve,course,0,1,6,3,Deny,Deny,0,S.R20
+88,RAI,S.P3.N0@0,8,student,export,transcript,1,0,1,2,Deny,Deny,0,S.R3
+88,RAI,S.P3.N0@0,9,lecturer,view,grades,0,1,9,3,Permit,Permit,0,S.R5
+88,RAI,S.P3.N0@0,10,lecturer,view,course,0,0,7,3,Permit,Permit,0,S.R18
+88,RAI,S.P3.N0@0,11,lecturer,edit,grades,1,0,2,1,Deny,Deny,0,S.R1
+88,RAI,S.P3.N0@0,12,lecturer,edit,course,0,0,15,4,Deny,Deny,0,S.R1
+88,RAI,S.P3.N0@0,13,advisor,view,transcript,0,0,3,4,Permit,Permit,0,S.R13
+88,RAI,S.P3.N0@0,14,advisor,view,transcript,1,0,10,2,Permit,Permit,0,S.R10 S.R13
+88,RAI,S.P3.N0@0,15,registrar,view,transcript,0,0,1,4,Permit,Permit,0,S.R11
+88,RAI,S.P3.N0@0,16,registrar,edit,transcript,0,0,12,2,Permit,Permit,0,S.R11
+88,RAI,S.P3.N0@0,17,registrar,edit,profile,1,0,8,3,Permit,Permit,0,S.R11 S.R15
+88,RAI,S.P3.N0@0,18,admin,view,grades,1,1,12,1,Permit,Permit,0,S.R2
+88,RAI,S.P3.N0@0,19,admin,view,course,0,1,10,3,Permit,Permit,0,S.R2
+88,RAI,S.P3.N0@0,20,admin,edit,transcript,1,0,10,2,Deny,Deny,0,S.R1
+89,RAI,S.P3.N1@3,0,student,view,profile,1,0,15,1,Permit,Permit,0,S.R10
+89,RAI,S.P3.N1@3,1,student,edit,transcript,0,0,7,3,Deny,Deny,0,S.R1
+89,RAI,S.P3.N1@3,2,student,edit,profile,1,0,3,4,Deny,Deny,0,S.R1
+89,RAI,S.P3.N1@3,3,student,edit,profile,1,1,5,4,Permit,Permit,0,S.R15
+89,RAI,S.P3.N1@3,4,student,export,transcript,1,0,11,1,Deny,Deny,0,S.R3
+89,RAI,S.P3.N1@3,5,registrar,view,transcript,1,0,13,2,Permit,Permit,0,S.R10 S.R11
+89,RAI,S.P3.N1@3,6,registrar,edit,transcript,0,0,4,4,Permit,Permit,0,S.R11
+89,RAI,S.P3.N1@3,7,registrar,edit,profile,0,0,10,2,Permit,Permit,0,S.R11
+89,RAI,S.P3.N1@3,8,registrar,edit,profile,1,0,15,1,Permit,Permit,0,S.R11 S.R15
+89,RAI,S.P3.N1@3,9,admin,edit,transcript,0,1,16,4,Permit,Permit,0,S.R2
+90,PTC,S.P3.target:=any,0,student,view,transcript,0,0,8,2,Deny,Deny,0,S.R14
+90,PTC,S.P3.target:=any,1,student,view,transcript,1,0,6,3,Permit,Permit,0,S.R10
+90,PTC,S.P3.target:=any,2,student,view,course,0,0,2,4,Permit,Deny,1,S.R14 S.R17
+90,PTC,S.P3.target:=any,3,student,view,course,1,0,3,1,Permit,Permit,0,S.R10 S.R17
+90,PTC,S.P3.target:=any,4,student,edit,transcript,0,0,11,1,Deny,Deny,0,S.R1
+90,PTC,S.P3.target:=any,5,student,edit,transcript,1,1,10,2,Deny,Deny,0,S.R12
+90,PTC,S.P3.target:=any,6,student,edit,profile,1,0,15,1,Deny,Deny,0,S.R1
+90,PTC,S.P3.target:=any,7,student,edit,profile,1,1,1,3,Permit,Permit,0,S.R15
+90,PTC,S.P3.target:=any,8,student,edit,course,0,0,1,4,Deny,Deny,0,S.R1
+90,PTC,S.P3.target:=any,9,student,edit,course,0,1,5,4,Deny,Deny,0,S.R14 S.R16
+90,PTC,S.P3.target:=any,10,student,approve,course,1,0,8,3,Deny,Deny,0,S.R20
+90,PTC,S.P3.target:=any,11,student,export,transcript,1,0,11,4,Deny,Deny,0,S.R3
+90,PTC,S.P3.target:=any,12,lecturer,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+90,PTC,S.P3.target:=any,13,lecturer,export,grades,1,0,14,2,NotApplicable,Permit,1,S.R10
+90,PTC,S.P3.target:=any,14,advisor,view,transcript,0,0,6,2,Permit,Permit,0,S.R13
+90,PTC,S.P3.target:=any,15,advisor,view,course,1,0,7,4,Permit,Permit,0,S.R10 S.R13 S.R18
+90,PTC,S.P3.target:=any,16,registrar,view,transcript,0,0,4,3,Permit,Permit,0,S.R11
+90,PTC,S.P3.target:=any,17,registrar,view,course,0,0,6,1,Permit,Permit,0,S.R11 S.R19
+90,PTC,S.P3.target:=any,18,registrar,edit,grades,0,1,10,1,NotApplicable,Permit,1,S.R11
+90,PTC,S.P3.target:=any,19,registrar,edit,transcript,0,0,10,3,Permit,Permit,0,S.R11
+90,PTC,S.P3.target:=any,20,admin,view,course,0,0,9,4,Permit,Permit,0,S.R2
+90,PTC,S.P3.target:=any,21,admin,edit,transcript,0,0,9,2,Deny,Deny,0,S.R1
+91,PTC,S.P3.target[0],0,student,view,transcript,0,0,3,2,Deny,NotApplicable,1,S.R14
+91,PTC,S.P3.target[0],1,student,view,profile,0,0,7,1,Deny,Deny,0,S.R14
+91,PTC,S.P3.target[0],2,student,view,profile,1,0,9,3,Permit,Permit,0,S.R10
+91,PTC,S.P3.target[0],3,student,view,course,0,0,5,3,Permit,Permit,0,S.R17
+91,PTC,S.P3.target[0],4,student,edit,transcript,0,0,8,2,Deny,Deny,0,S.R1
+91,PTC,S.P3.target[0],5,student,edit,transcript,1,1,5,3,Deny,NotApplicable,1,S.R12
+91,PTC,S.P3.target[0],6,student,edit,profile,1,1,2,3,Permit,Permit,0,S.R15
+91,PTC,S.P3.target[0],7,student,edit,course,0,0,5,3,Deny,Deny,0,S.R1
+91,PTC,S.P3.target[0],8,student,approve,course,0,1,15,4,Deny,Deny,0,S.R20
+91,PTC,S.P3.target[0],9,student,export,profile,1,0,5,4,Deny,Deny,0,S.R3
+91,PTC,S.P3.target[0],10,lecturer,view,grades,0,1,1,2,Permit,Permit,0,S.R5
+91,PTC,S.P3.target[0],11,lecturer,view,course,0,0,12,4,Permit,Permit,0,S.R18
+91,PTC,S.P3.target[0],12,lecturer,edit,grades,0,0,3,2,Deny,Deny,0,S.R1
+91,PTC,S.P3.target[0],13,lecturer,edit,course,0,0,16,4,Deny,Deny,0,S.R1
+91,PTC,S.P3.target[0],14,advisor,view,transcript,1,0,9,3,Permit,NotApplicable,1,S.R10 S.R13
+91,PTC,S.P3.target[0],15,advisor,view,profile,0,0,3,2,Permit,Permit,0,S.R13
+91,PTC,S.P3.target[0],16,registrar,edit,transcript,0,0,9,4,Permit,NotApplicable,1,S.R11
+91,PTC,S.P3.target[0],17,registrar,edit,profile,0,0,6,2,Permit,Permit,0,S.R11
+91,PTC,S.P3.target[0],18,admin,view,grades,1,0,1,1,Permit,Permit,0,S.R2
+91,PTC,S.P3.target[0],19,admin,view,course,0,1,2,3,Permit,Permit,0,S.R2
+91,PTC,S.P3.target[0],20,admin,edit,transcript,0,0,2,4,Deny,Deny,0,S.R1
+91,PTC,S.P3.target[0],21,admin,edit,profile,1,0,2,1,Deny,Deny,0,S.R1
+92,CAC,S.P3:PO->DO,0,student,view,transcript,0,0,8,4,Deny,Deny,0,S.R14
+92,CAC,S.P3:PO->DO,1,student,edit,transcript,0,0,9,3,Deny,Deny,0,S.R1
+92,CAC,S.P3:PO->DO,2,student,edit,transcript,1,1,8,4,Deny,Deny,0,S.R12
+92,CAC,S.P3:PO->DO,3,student,edit,profile,1,1,1,4,Permit,Permit,0,S.R15
+92,CAC,S.P3:PO->DO,4,student,export,transcript,1,0,6,4,Deny,Deny,0,S.R3
+92,CAC,S.P3:PO->DO,5,lecturer,view,transcript,1,0,14,1,Permit,Permit,0,S.R10
+92,CAC,S.P3:PO->DO,6,lecturer,edit,profile,1,0,9,1,Deny,Deny,0,S.R1
+92,CAC,S.P3:PO->DO,7,advisor,view,transcript,0,0,2,4,Permit,Permit,0,S.R13
+92,CAC,S.P3:PO->DO,8,registrar,view,transcript,0,0,12,1,Permit,Permit,0,S.R11
+92,CAC,S.P3:PO->DO,9,registrar,edit,transcript,0,0,10,3,Permit,Deny,1,S.R11 S.R12
+92,CAC,S.P3:PO->DO,10,admin,edit,transcript,0,1,7,1,Permit,Permit,0,S.R2
+93,CAC,S.P3:PO->FA,0,student,view,profile,0,0,11,1,Deny,Deny,0,S.R14
+93,CAC,S.P3:PO->FA,1,student,edit,transcript,0,0,10,4,Deny,Deny,0,S.R1
+93,CAC,S.P3:PO->FA,2,student,edit,transcript,1,1,4,4,Deny,Deny,0,S.R12
+93,CAC,S.P3:PO->FA,3,student,edit,profile,1,0,7,2,Deny,Deny,0,S.R1
+93,CAC,S.P3:PO->FA,4,student,edit,profile,1,1,3,4,Permit,Permit,0,S.R15
+93,CAC,S.P3:PO->FA,5,student,export,transcript,1,0,13,2,Deny,Deny,0,S.R3
+93,CAC,S.P3:PO->FA,6,lecturer,view,transcript,1,0,6,1,Permit,Permit,0,S.R10
+93,CAC,S.P3:PO->FA,7,advisor,view,transcript,0,0,4,4,Permit,Permit,0,S.R13
+93,CAC,S.P3:PO->FA,8,registrar,view,transcript,0,0,13,2,Permit,Permit,0,S.R11
+93,CAC,S.P3:PO->FA,9,registrar,edit,transcript,0,1,2,2,Permit,Permit,0,S.R11
+93,CAC,S.P3:PO->FA,10,admin,edit,transcript,0,1,8,4,Permit,Permit,0,S.R2
+95,CCF,S.R16.target[0],0,student,view,course,0,0,2,3,Permit,Permit,0,S.R17
+95,CCF,S.R16.target[0],1,student,edit,course,0,0,5,2,Deny,Deny,0,S.R1
+95,CCF,S.R16.target[0],2,student,edit,course,0,1,3,1,Deny,Permit,1,S.R16 S.R17
+95,CCF,S.R16.target[0],3,student,approve,course,0,1,3,2,Deny,Deny,0,S.R16 S.R20
+95,CCF,S.R16.target[0],4,admin,view,course,0,1,7,4,Permit,Permit,0,S.R2
+96,CCF,S.R16.cond[0],0,student,view,course,0,0,9,1,Permit,Permit,0,S.R17
+96,CCF,S.R16.cond[0],1,student,edit,course,0,0,3,4,Deny,Deny,0,S.R1
+96,CCF,S.R16.cond[0],2,student,edit,course,0,1,3,2,Deny,Permit,1,S.R16 S.R17
+96,CCF,S.R16.cond[0],3,student,approve,course,1,0,8,4,Deny,Deny,0,S.R20
+96,CCF,S.R16.cond[0],4,admin,view,course,0,0,9,3,Permit,Permit,0,S.R2
+97,CCF,S.R16.cond[1],0,student,view,course,0,0,1,2,Permit,Permit,0,S.R17
+97,CCF,S.R16.cond[1],1,student,edit,course,0,0,9,1,Deny,Deny,0,S.R1
+97,CCF,S.R16.cond[1],2,student,edit,course,0,1,3,2,Deny,Permit,1,S.R16 S.R17
+97,CCF,S.R16.cond[1],3,student,edit,course,0,1,6,2,Deny,Deny,0,S.R16
+98,CCF,S.R16.cond[2],0,student,view,course,0,0,3,2,Permit,Permit,0,S.R17
+98,CCF,S.R16.cond[2],1,student,edit,course,0,0,2,4,Deny,Deny,0,S.R1
+98,CCF,S.R16.cond[2],2,student,edit,course,0,1,3,1,Deny,Permit,1,S.R16 S.R17
+98,CCF,S.R16.cond[2],3,student,approve,course,1,0,7,4,Deny,Deny,0,S.R20
+98,CCF,S.R16.cond[2],4,lecturer,view,course,0,1,14,2,Permit,Permit,0,S.R18
+98,CCF,S.R16.cond[2],5,lecturer,edit,course,0,0,1,1,Deny,Deny,0,S.R1
+98,CCF,S.R16.cond[2],6,lecturer,edit,course,0,1,3,4,Permit,Deny,1,S.R16 S.R18
+98,CCF,S.R16.cond[2],7,admin,view,course,0,0,2,2,Permit,Permit,0,S.R2
+99,CRE,S.R16,0,student,view,course,0,0,3,1,Permit,Permit,0,S.R17
+99,CRE,S.R16,1,student,edit,course,0,0,3,1,Deny,Deny,0,S.R1
+99,CRE,S.R16,2,student,edit,course,0,1,3,4,Deny,Permit,1,S.R16
+99,CRE,S.R16,3,student,approve,course,0,0,7,1,Deny,Deny,0,S.R20
+99,CRE,S.R16,4,lecturer,view,course,0,1,15,2,Permit,Permit,0,S.R18
+99,CRE,S.R16,5,lecturer,edit,course,0,0,3,1,Deny,Deny,0,S.R1
+99,CRE,S.R16,6,registrar,view,course,0,0,6,2,Permit,Permit,0,S.R19
+99,CRE,S.R16,7,admin,view,course,0,0,11,3,Permit,Permit,0,S.R2
+100,RDL,S.R16,0,student,view,course,0,0,1,2,Permit,Permit,0,S.R17
+100,RDL,S.R16,1,student,edit,course,0,0,2,3,Deny,Deny,0,S.R1
+100,RDL,S.R16,2,student,edit,course,0,1,3,2,Deny,Permit,1,S.R16 S.R17
+100,RDL,S.R16,3,student,approve,course,0,1,12,3,Deny,Deny,0,S.R20
+100,RDL,S.R16,4,admin,view,course,0,0,11,2,Permit,Permit,0,S.R2
+101,RRO,S.R16<->S.R17,0,student,view,course,0,0,9,4,Permit,Permit,0,S.R17
+101,RRO,S.R16<->S.R17,1,student,edit,course,0,0,3,2,Deny,Deny,0,S.R1
+101,RRO,S.R16<->S.R17,2,student,edit,course,0,1,3,1,Deny,Permit,1,S.R16 S.R17
+101,RRO,S.R16<->S.R17,3,student,approve,course,1,0,5,4,Deny,Deny,0,S.R20
+101,RRO,S.R16<->S.R17,4,admin,view,course,1,0,5,2,Permit,Permit,0,S.R2
+102,CCF,S.R17.target[0],0,student,view,course,0,0,8,2,Permit,Deny,1,S.R17 S.R20
+102,CCF,S.R17.target[0],1,student,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+102,CCF,S.R17.target[0],2,student,edit,course,0,1,4,2,Deny,Deny,0,S.R16
+102,CCF,S.R17.target[0],3,student,approve,course,1,0,11,3,Deny,Deny,0,S.R20
+102,CCF,S.R17.target[0],4,lecturer,view,course,0,0,8,3,Permit,Permit,0,S.R17 S.R18
+102,CCF,S.R17.target[0],5,lecturer,edit,course,0,0,1,1,Deny,Deny,0,S.R1
+102,CCF,S.R17.target[0],6,admin,view,course,0,0,9,1,Permit,Permit,0,S.R2
+103,CCF,S.R17.cond[],0,student,view,course,0,0,1,1,Permit,Deny,1,S.R17 S.R20
+103,CCF,S.R17.cond[],1,student,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+103,CCF,S.R17.cond[],2,student,edit,course,0,1,1,4,Permit,Permit,0,S.R17
+103,CCF,S.R17.cond[],3,student,edit,course,0,1,8,1,Deny,Deny,0,S.R16
+103,CCF,S.R17.cond[],4,student,approve,course,0,1,6,3,Deny,Deny,0,S.R20
+103,CCF,S.R17.cond[],5,admin,view,course,0,0,8,1,Permit,Permit,0,S.R2
+104,CRE,S.R17,0,student,view,course,0,0,9,4,Permit,Deny,1,S.R17
+104,CRE,S.R17,1,student,edit,grades,1,0,2,1,Deny,Deny,0,S.R1
+104,CRE,S.R17,2,student,edit,transcript,0,0,6,1,Deny,Deny,0,S.R1
+104,CRE,S.R17,3,student,edit,profile,1,0,7,1,Deny,Deny,0,S.R1
+104,CRE,S.R17,4,student,edit,profile,1,1,3,3,Permit,Permit,0,S.R15
+104,CRE,S.R17,5,student,edit,course,0,0,8,1,Deny,Deny,0,S.R1
+104,CRE,S.R17,6,student,edit,course,0,1,3,1,Deny,Deny,0,S.R16
+104,CRE,S.R17,7,lecturer,view,grades,0,0,5,4,Permit,Permit,0,S.R5
+104,CRE,S.R17,8,lecturer,view,course,0,1,2,1,Permit,Permit,0,S.R18
+104,CRE,S.R17,9,lecturer,edit,grades,0,0,2,4,Deny,Deny,0,S.R1
+104,CRE,S.R17,10,lecturer,edit,course,0,0,8,4,Deny,Deny,0,S.R1
+104,CRE,S.R17,11,lecturer,export,course,0,1,5,2,Deny,Deny,0,S.R20
+104,CRE,S.R17,12,registrar,view,course,0,0,16,2,Permit,Permit,0,S.R19
+104,CRE,S.R17,13,admin,edit,transcript,0,0,4,3,Deny,Deny,0,S.R1
+104,CRE,S.R17,14,admin,edit,course,0,1,7,3,Permit,Permit,0,S.R2
+105,RDL,S.R17,0,student,view,course,0,0,2,2,Permit,Deny,1,S.R17 S.R20
+105,RDL,S.R17,1,student,edit,transcript,0,0,12,4,Deny,Deny,0,S.R1
+105,RDL,S.R17,2,student,edit,profile,1,0,5,2,Deny,Deny,0,S.R1
+105,RDL,S.R17,3,student,edit,course,0,0,5,4,Deny,Deny,0,S.R1
+105,RDL,S.R17,4,student,edit,course,0,1,7,3,Deny,Deny,0,S.R16
+105,RDL,S.R17,5,student,approve,course,0,0,2,2,Deny,Deny,0,S.R20
+105,RDL,S.R17,6,lecturer,view,grades,0,0,4,1,Permit,Permit,0,S.R5
+105,RDL,S.R17,7,lecturer,view,course,1,0,9,1,Permit,Permit,0,S.R18
+105,RDL,S.R17,8,lecturer,edit,grades,0,0,1,3,Deny,Deny,0,S.R1
+105,RDL,S.R17,9,lecturer,edit,profile,0,0,8,3,Deny,Deny,0,S.R1
+105,RDL,S.R17,10,lecturer,edit,profile,1,1,12,4,Permit,Permit,0,S.R15
+105,RDL,S.R17,11,lecturer,edit,course,0,0,2,3,Deny,Deny,0,S.R1
+105,RDL,S.R17,12,registrar,view,course,0,1,5,1,Permit,Permit,0,S.R19
+105,RDL,S.R17,13,admin,view,course,1,1,11,3,Permit,Permit,0,S.R2
+105,RDL,S.R17,14,admin,edit,transcript,0,0,6,1,Deny,Deny,0,S.R1
+107,CCF,S.R18.target[0],0,student,approve,course,0,0,9,3,Deny,Deny,0,S.R20
+107,CCF,S.R18.target[0],1,lecturer,view,course,0,1,11,3,Permit,Deny,1,S.R18 S.R20
+107,CCF,S.R18.target[0],2,advisor,view,course,0,0,3,2,Permit,Permit,0,S.R18
+107,CCF,S.R18.target[0],3,advisor,edit,course,0,0,3,2,Deny,Deny,0,S.R1
+107,CCF,S.R18.target[0],4,admin,view,course,1,1,2,2,Permit,Permit,0,S.R2
+108,CCF,S.R18.cond[],0,lecturer,view,course,0,0,10,2,Permit,Deny,1,S.R18 S.R20
+108,CCF,S.R18.cond[],1,lecturer,edit,course,0,0,2,1,Deny,Deny,0,S.R1
+108,CCF,S.R18.cond[],2,lecturer,export,course,0,1,1,1,Deny,Permit,1,S.R18 S.R20
+108,CCF,S.R18.cond[],3,admin,view,course,0,1,10,4,Permit,Permit,0,S.R2
+109,CRE,S.R18,0,student,view,course,0,0,3,3,Permit,Permit,0,S.R17
+109,CRE,S.R18,1,student,edit,grades,1,0,3,2,Deny,Deny,0,S.R1
+109,CRE,S.R18,2,student,edit,transcript,0,1,14,3,Deny,Deny,0,S.R12 S.R14
+109,CRE,S.R18,3,student,edit,profile,1,1,8,4,Permit,Permit,0,S.R15
+109,CRE,S.R18,4,student,edit,course,0,0,2,2,Deny,Deny,0,S.R1
+109,CRE,S.R18,5,student,approve,course,0,1,1,4,Deny,Deny,0,S.R20
+109,CRE,S.R18,6,lecturer,view,grades,0,0,14,1,Permit,Permit,0,S.R5
+109,CRE,S.R18,7,lecturer,view,course,0,0,8,1,Permit,Deny,1,S.R18
+109,CRE,S.R18,8,lecturer,edit,grades,1,0,6,1,Deny,Deny,0,S.R1
+109,CRE,S.R18,9,lecturer,edit,course,0,0,1,2,Deny,Deny,0,S.R1
+109,CRE,S.R18,10,advisor,edit,profile,1,0,7,2,Deny,Deny,0,S.R1
+109,CRE,S.R18,11,registrar,view,course,0,0,11,4,Permit,Permit,0,S.R19
+109,CRE,S.R18,12,admin,view,course,0,0,3,3,Permit,Permit,0,S.R2
+109,CRE,S.R18,13,admin,edit,transcript,0,0,2,2,Deny,Deny,0,S.R1
+110,RDL,S.R18,0,student,view,course,0,0,1,2,Permit,Permit,0,S.R17
+110,RDL,S.R18,1,student,edit,grades,1,0,5,1,Deny,Deny,0,S.R1
+110,RDL,S.R18,2,student,edit,transcript,0,0,2,1,Deny,Deny,0,S.R1
+110,RDL,S.R18,3,student,edit,profile,1,0,13,3,Deny,Deny,0,S.R1
+110,RDL,S.R18,4,student,edit,course,0,0,13,2,Deny,Deny,0,S.R1
+110,RDL,S.R18,5,student,approve,course,0,0,14,1,Deny,Deny,0,S.R20
+110,RDL,S.R18,6,lecturer,view,grades,0,0,16,3,Permit,Permit,0,S.R5
+110,RDL,S.R18,7,lecturer,view,course,0,1,7,4,Permit,Deny,1,S.R18 S.R20
+110,RDL,S.R18,8,lecturer,edit,grades,0,0,2,4,Deny,Deny,0,S.R1
+110,RDL,S.R18,9,lecturer,edit,profile,1,1,9,4,Permit,Permit,0,S.R15
+110,RDL,S.R18,10,lecturer,edit,course,1,0,10,3,Deny,Deny,0,S.R1
+110,RDL,S.R18,11,registrar,view,course,1,1,7,3,Permit,Permit,0,S.R19
+110,RDL,S.R18,12,admin,view,course,0,0,14,2,Permit,Permit,0,S.R2
+110,RDL,S.R18,13,admin,edit,transcript,0,0,14,1,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],0,student,view,course,0,1,9,1,Permit,Permit,0,S.R17
+112,CCF,S.R19.target[0],1,student,edit,transcript,0,0,2,1,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],2,student,edit,profile,1,0,1,3,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],3,student,edit,profile,1,1,4,4,Permit,Permit,0,S.R15
+112,CCF,S.R19.target[0],4,student,edit,course,0,0,1,2,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],5,lecturer,view,grades,0,0,2,1,Permit,Permit,0,S.R5
+112,CCF,S.R19.target[0],6,lecturer,view,course,0,1,13,4,Permit,Permit,0,S.R18
+112,CCF,S.R19.target[0],7,lecturer,edit,grades,0,0,3,1,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],8,lecturer,edit,profile,0,0,13,2,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],9,lecturer,edit,course,0,0,8,1,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],10,registrar,view,course,0,0,2,3,Permit,Deny,1,S.R19 S.R20
+112,CCF,S.R19.target[0],11,admin,edit,transcript,0,1,4,3,Permit,Permit,0,S.R2
+112,CCF,S.R19.target[0],12,admin,edit,course,0,0,9,4,Deny,Deny,0,S.R1
+112,CCF,S.R19.target[0],13,admin,approve,course,0,0,3,3,Deny,Permit,1,S.R19 S.R20
+113,CRE,S.R19,0,student,view,course,0,0,2,1,Permit,Permit,0,S.R17
+113,CRE,S.R19,1,student,edit,course,0,0,5,1,Deny,Deny,0,S.R1
+113,CRE,S.R19,2,student,approve,course,0,1,8,2,Deny,Deny,0,S.R20
+113,CRE,S.R19,3,lecturer,view,course,0,0,13,4,Permit,Permit,0,S.R18
+113,CRE,S.R19,4,lecturer,edit,course,0,0,12,2,Deny,Deny,0,S.R1
+113,CRE,S.R19,5,registrar,view,course,0,0,16,2,Permit,Deny,1,S.R19
+113,CRE,S.R19,6,admin,view,course,0,0,1,2,Permit,Permit,0,S.R2
+114,RDL,S.R19,0,student,view,course,0,0,2,4,Permit,Permit,0,S.R17
+114,RDL,S.R19,1,student,edit,course,0,0,1,3,Deny,Deny,0,S.R1
+114,RDL,S.R19,2,student,approve,course,0,1,4,4,Deny,Deny,0,S.R20
+114,RDL,S.R19,3,lecturer,view,course,0,0,6,1,Permit,Permit,0,S.R18
+114,RDL,S.R19,4,lecturer,edit,course,0,0,6,3,Deny,Deny,0,S.R1
+114,RDL,S.R19,5,registrar,view,course,0,1,4,3,Permit,Deny,1,S.R19 S.R20
+114,RDL,S.R19,6,admin,view,course,0,0,1,3,Permit,Permit,0,S.R2
+115,RRO,S.R19<->S.R20,0,student,view,course,0,0,15,4,Permit,Permit,0,S.R17
+115,RRO,S.R19<->S.R20,1,student,edit,course,0,0,2,1,Deny,Deny,0,S.R1
+115,RRO,S.R19<->S.R20,2,student,approve,course,0,1,13,1,Deny,Deny,0,S.R20
+115,RRO,S.R19<->S.R20,3,lecturer,view,course,0,0,3,4,Permit,Permit,0,S.R18
+115,RRO,S.R19<->S.R20,4,lecturer,edit,course,0,0,1,1,Deny,Deny,0,S.R1
+115,RRO,S.R19<->S.R20,5,registrar,view,course,0,0,1,1,Permit,Deny,1,S.R19 S.R20
+115,RRO,S.R19<->S.R20,6,admin,view,course,0,0,8,3,Permit,Permit,0,S.R2
+116,CRE,S.R20,0,student,view,transcript,1,0,11,2,Permit,Permit,0,S.R10
+116,CRE,S.R20,1,student,view,course,0,0,7,3,Permit,Permit,0,S.R17
+116,CRE,S.R20,2,student,edit,grades,1,0,10,1,Deny,Deny,0,S.R1
+116,CRE,S.R20,3,student,edit,transcript,0,0,6,3,Deny,Deny,0,S.R1
+116,CRE,S.R20,4,student,edit,profile,1,0,12,2,Deny,Deny,0,S.R1
+116,CRE,S.R20,5,student,edit,profile,1,1,7,4,Permit,Permit,0,S.R15
+116,CRE,S.R20,6,student,edit,course,0,0,1,1,Deny,Deny,0,S.R1
+116,CRE,S.R20,7,student,edit,course,0,1,4,4,Deny,Deny,0,S.R16
+116,CRE,S.R20,8,student,approve,course,1,0,11,4,Deny,Permit,1,S.R20
+116,CRE,S.R20,9,student,export,grades,1,0,2,2,Deny,Deny,0,S.R3
+116,CRE,S.R20,10,student,export,transcript,1,0,8,2,Deny,Deny,0,S.R3
+116,CRE,S.R20,11,student,export,course,0,0,6,1,Deny,Deny,0,S.R3
+116,CRE,S.R20,12,lecturer,view,grades,0,0,14,4,Permit,Permit,0,S.R5
+116,CRE,S.R20,13,lecturer,view,course,0,0,14,1,Permit,Permit,0,S.R18
+116,CRE,S.R20,14,lecturer,edit,grades,0,0,1,1,Deny,Deny,0,S.R1
+116,CRE,S.R20,15,lecturer,edit,course,1,0,14,1,Deny,Deny,0,S.R1
+116,CRE,S.R20,16,registrar,view,course,1,0,9,2,Permit,Permit,0,S.R19
+116,CRE,S.R20,17,admin,view,grades,1,0,4,4,Permit,Permit,0,S.R2
+116,CRE,S.R20,18,admin,view,course,1,1,1,4,Permit,Permit,0,S.R2
+116,CRE,S.R20,19,admin,edit,transcript,0,0,7,3,Deny,Deny,0,S.R1
+117,RDL,S.R20,0,student,view,course,0,0,4,2,Permit,Permit,0,S.R17
+117,RDL,S.R20,1,student,edit,transcript,0,0,3,2,Deny,Deny,0,S.R1
+117,RDL,S.R20,2,student,edit,profile,1,0,7,3,Deny,Deny,0,S.R1
+117,RDL,S.R20,3,student,edit,course,0,0,5,2,Deny,Deny,0,S.R1
+117,RDL,S.R20,4,student,edit,course,0,1,5,1,Deny,Deny,0,S.R16
+117,RDL,S.R20,5,student,approve,course,0,0,7,2,Deny,NotApplicable,1,S.R20
+117,RDL,S.R20,6,lecturer,view,grades,0,0,14,4,Permit,Permit,0,S.R5
+117,RDL,S.R20,7,lecturer,view,course,0,0,12,4,Permit,Permit,0,S.R18
+117,RDL,S.R20,8,lecturer,edit,grades,0,0,3,1,Deny,Deny,0,S.R1
+117,RDL,S.R20,9,lecturer,edit,profile,1,1,1,2,Permit,Permit,0,S.R15
+117,RDL,S.R20,10,lecturer,edit,course,0,0,3,1,Deny,Deny,0,S.R1
+117,RDL,S.R20,11,registrar,view,course,0,0,9,4,Permit,Permit,0,S.R19
+117,RDL,S.R20,12,admin,view,grades,1,0,10,1,Permit,Permit,0,S.R2
+117,RDL,S.R20,13,admin,view,course,0,0,2,3,Permit,Permit,0,S.R2
+117,RDL,S.R20,14,admin,edit,transcript,0,0,12,1,Deny,Deny,0,S.R1
+118,RAI,S.P4.N0@0,0,student,view,course,0,0,6,3,Permit,Permit,0,S.R17
+118,RAI,S.P4.N0@0,1,student,edit,grades,1,0,1,3,Deny,Deny,0,S.R1
+118,RAI,S.P4.N0@0,2,student,edit,transcript,0,1,8,4,Deny,Deny,0,S.R12 S.R14
+118,RAI,S.P4.N0@0,3,student,edit,profile,1,0,4,3,Deny,Deny,0,S.R1
+118,RAI,S.P4.N0@0,4,student,edit,profile,1,1,15,4,Permit,Permit,0,S.R15
+118,RAI,S.P4.N0@0,5,student,edit,course,0,0,3,3,Deny,Deny,0,S.R1
+118,RAI,S.P4.N0@0,6,student,edit,course,0,1,3,4,Deny,Deny,0,S.R16
+118,RAI,S.P4.N0@0,7,student,edit,course,0,1,10,3,Deny,Permit,1,S.P4.N0 S.R16
+118,RAI,S.P4.N0@0,8,student,approve,course,1,0,6,3,Deny,Deny,0,S.R20
+118,RAI,S.P4.N0@0,9,student,export,grades,1,0,3,1,Deny,Deny,0,S.R3
+118,RAI,S.P4.N0@0,10,student,export,transcript,1,0,4,2,Deny,Deny,0,S.R3
+118,RAI,S.P4.N0@0,11,student,export,course,0,0,7,3,Deny,Deny,0,S.R3
+118,RAI,S.P4.N0@0,12,lecturer,view,grades,1,0,4,3,Permit,Permit,0,S.R5
+118,RAI,S.P4.N0@0,13,lecturer,view,course,0,0,8,1,Permit,Permit,0,S.P4.N0 S.R18
+118,RAI,S.P4.N0@0,14,lecturer,edit,grades,0,0,1,4,Deny,Deny,0,S.R1
+118,RAI,S.P4.N0@0,15,lecturer,edit,course,0,0,8,4,Deny,Deny,0,S.R1
+118,RAI,S.P4.N0@0,16,registrar,view,course,0,0,5,1,Permit,Permit,0,S.R19
+118,RAI,S.P4.N0@0,17,admin,view,profile,1,0,16,1,Permit,Permit,0,S.R2
+118,RAI,S.P4.N0@0,18,admin,view,course,1,0,16,4,Permit,Permit,0,S.R2
+118,RAI,S.P4.N0@0,19,admin,edit,transcript,0,0,4,3,Deny,Deny,0,S.R1
+119,RAI,S.P4.N1@2,0,student,export,course,1,0,7,4,Deny,Deny,0,S.R3
+119,RAI,S.P4.N1@2,1,lecturer,view,course,0,1,2,3,Permit,Permit,0,S.R18
+119,RAI,S.P4.N1@2,2,lecturer,view,course,1,1,12,2,Permit,Deny,1,S.P4.N1 S.R18
+119,RAI,S.P4.N1@2,3,lecturer,edit,course,0,0,3,1,Deny,Deny,0,S.R1
+119,RAI,S.P4.N1@2,4,admin,view,course,0,0,15,3,Permit,Permit,0,S.R2
+120,PTC,S.P4.target:=any,0,student,view,grades,0,0,10,2,Deny,Deny,0,S.R8
+120,PTC,S.P4.target:=any,1,student,view,grades,1,0,4,4,Permit,Permit,0,S.R4
+120,PTC,S.P4.target:=any,2,student,view,transcript,0,0,13,3,Deny,Deny,0,S.R14
+120,PTC,S.P4.target:=any,3,student,view,transcript,1,1,13,3,Permit,Permit,0,S.R10
+120,PTC,S.P4.target:=any,4,student,view,course,0,0,16,2,Permit,Permit,0,S.R17
+120,PTC,S.P4.target:=any,5,student,edit,grades,1,1,3,4,NotApplicable,Deny,1,S.R16
+120,PTC,S.P4.target:=any,6,student,edit,transcript,0,1,3,3,Deny,Deny,0,S.R12 S.R14
+120,PTC,S.P4.target:=any,7,student,edit,profile,1,0,2,1,Deny,Deny,0,S.R1
+120,PTC,S.P4.target:=any,8,student,edit,profile,1,1,7,1,Permit,Permit,0,S.R15
+120,PTC,S.P4.target:=any,9,student,edit,course,0,0,8,2,Deny,Deny,0,S.R1
+120,PTC,S.P4.target:=any,10,student,edit,course,0,1,3,1,Deny,Deny,0,S.R16
+120,PTC,S.P4.target:=any,11,student,export,grades,0,0,8,3,Deny,Deny,0,S.R3
+120,PTC,S.P4.target:=any,12,student,export,transcript,1,0,5,3,Deny,Deny,0,S.R3
+120,PTC,S.P4.target:=any,13,lecturer,view,grades,0,0,3,2,Permit,Permit,0,S.R5
+120,PTC,S.P4.target:=any,14,lecturer,view,course,0,0,2,2,Permit,Permit,0,S.R18
+120,PTC,S.P4.target:=any,15,lecturer,edit,grades,0,0,15,3,Deny,Deny,0,S.R1
+120,PTC,S.P4.target:=any,16,lecturer,edit,transcript,1,1,15,1,Deny,Deny,0,S.R12
+120,PTC,S.P4.target:=any,17,lecturer,edit,course,0,0,6,1,Deny,Deny,0,S.R1
+120,PTC,S.P4.target:=any,18,lecturer,approve,grades,1,0,4,4,NotApplicable,Permit,1,S.R18
+120,PTC,S.P4.target:=any,19,lecturer,export,course,0,0,5,2,Deny,Deny,0,S.R20
+120,PTC,S.P4.target:=any,20,advisor,view,grades,0,0,1,1,Permit,Permit,0,S.R9
+120,PTC,S.P4.target:=any,21,advisor,view,transcript,0,0,4,2,Permit,Permit,0,S.R13
+120,PTC,S.P4.target:=any,22,registrar,view,grades,0,0,9,4,Permit,Permit,0,S.R7
+120,PTC,S.P4.target:=any,23,registrar,view,transcript,0,1,1,1,Permit,Permit,0,S.R11
+120,PTC,S.P4.target:=any,24,registrar,view,transcript,1,0,8,1,Permit,Permit,0,S.R10 S.R11
+120,PTC,S.P4.target:=any,25,registrar,view,course,0,1,16,2,Permit,Permit,0,S.R19
+120,PTC,S.P4.target:=any,26,registrar,edit,grades,0,1,14,1,NotApplicable,Permit,1,S.R19
+120,PTC,S.P4.target:=any,27,registrar,edit,transcript,0,0,8,2,Permit,Permit,0,S.R11
+120,PTC,S.P4.target:=any,28,admin,edit,transcript,0,0,4,4,Deny,Deny,0,S.R1
+120,PTC,S.P4.target:=any,29,admin,edit,profile,1,1,3,2,Permit,Permit,0,S.R2
+120,PTC,S.P4.target:=any,30,admin,edit,course,1,1,2,3,Permit,Permit,0,S.R2
+121,PTC,S.P4.target[0],0,student,view,grades,1,0,1,2,Permit,Permit,0,S.R4
+121,PTC,S.P4.target[0],1,student,view,course,0,0,15,3,Permit,NotApplicable,1,S.R17
+121,PTC,S.P4.target[0],2,student,edit,grades,0,0,3,3,Deny,Deny,0,S.R1
+121,PTC,S.P4.target[0],3,student,edit,grades,0,1,5,1,Deny,Deny,0,S.R8
+121,PTC,S.P4.target[0],4,student,edit,course,0,0,2,4,Deny,Deny,0,S.R1
+121,PTC,S.P4.target[0],5,student,edit,course,0,1,5,4,Deny,NotApplicable,1,S.R16
+121,PTC,S.P4.target[0],6,student,approve,grades,1,0,6,3,NotApplicable,Deny,1,S.R20
+121,PTC,S.P4.target[0],7,student,approve,course,0,0,13,3,Deny,NotApplicable,1,S.R20
+121,PTC,S.P4.target[0],8,lecturer,view,grades,0,0,3,2,Permit,Permit,0,S.R5
+121,PTC,S.P4.target[0],9,lecturer,view,course,0,0,8,4,Permit,NotApplicable,1,S.R18
+121,PTC,S.P4.target[0],10,lecturer,edit,grades,0,0,15,1,Deny,Deny,0,S.R1
+121,PTC,S.P4.target[0],11,lecturer,edit,course,0,0,9,2,Deny,Deny,0,S.R1
+121,PTC,S.P4.target[0],12,advisor,view,grades,0,0,1,3,Permit,Permit,0,S.R9
+121,PTC,S.P4.target[0],13,registrar,view,grades,0,0,6,1,Permit,Permit,0,S.R7
+121,PTC,S.P4.target[0],14,registrar,view,course,0,0,5,4,Permit,NotApplicable,1,S.R19
+121,PTC,S.P4.target[0],15,admin,view,grades,0,0,4,3,Permit,Permit,0,S.R2
+121,PTC,S.P4.target[0],16,admin,view,course,0,0,10,3,Permit,Permit,0,S.R2
+122,CAC,S.P4:FA->DO,0,student,view,course,0,0,6,2,Permit,Deny,1,S.R17 S.R20
+122,CAC,S.P4:FA->DO,1,student,edit,course,0,0,2,2,Deny,Deny,0,S.R1
+122,CAC,S.P4:FA->DO,2,student,edit,course,0,1,7,2,Deny,Deny,0,S.R16 S.R20
+122,CAC,S.P4:FA->DO,3,student,approve,course,1,0,11,2,Deny,Deny,0,S.R20
+122,CAC,S.P4:FA->DO,4,lecturer,view,course,0,0,10,3,Permit,Deny,1,S.R18 S.R20
+122,CAC,S.P4:FA->DO,5,lecturer,edit,course,0,0,13,1,Deny,Deny,0,S.R1
+122,CAC,S.P4:FA->DO,6,registrar,view,course,0,0,4,2,Permit,Deny,1,S.R19 S.R20
+122,CAC,S.P4:FA->DO,7,admin,view,course,0,0,1,3,Permit,Permit,0,S.R2
+123,CAC,S.P4:FA->PO,0,student,view,course,0,0,4,2,Permit,Permit,0,S.R17
+123,CAC,S.P4:FA->PO,1,student,edit,course,0,0,5,4,Deny,Deny,0,S.R1
+123,CAC,S.P4:FA->PO,2,student,edit,course,0,1,3,4,Deny,Permit,1,S.R16 S.R17
+123,CAC,S.P4:FA->PO,3,student,approve,course,1,0,5,3,Deny,Deny,0,S.R20
+123,CAC,S.P4:FA->PO,4,lecturer,view,course,0,1,10,3,Permit,Permit,0,S.R18
+123,CAC,S.P4:FA->PO,5,lecturer,edit,course,0,0,3,1,Deny,Deny,0,S.R1
+123,CAC,S.P4:FA->PO,6,registrar,view,course,0,0,8,4,Permit,Permit,0,S.R19
+123,CAC,S.P4:FA->PO,7,admin,view,course,1,0,15,2,Permit,Permit,0,S.R2
+124,CAC,SIS:FA->DO,0,student,view,grades,0,0,2,4,Deny,Deny,0,S.R8
+124,CAC,SIS:FA->DO,1,student,view,grades,1,0,2,4,Permit,Permit,0,S.R4
+124,CAC,SIS:FA->DO,2,student,view,profile,0,0,12,4,Deny,Deny,0,S.R14
+124,CAC,SIS:FA->DO,3,student,view,profile,1,0,5,1,Permit,Permit,0,S.R10
+124,CAC,SIS:FA->DO,4,student,view,course,0,0,7,3,Permit,Permit,0,S.R17
+124,CAC,SIS:FA->DO,5,student,edit,grades,1,0,3,4,Deny,Deny,0,S.R1
+124,CAC,SIS:FA->DO,6,student,edit,profile,1,0,13,1,Deny,Deny,0,S.R1
+124,CAC,SIS:FA->DO,7,student,edit,profile,1,1,2,4,Permit,Permit,0,S.R15
+124,CAC,SIS:FA->DO,8,student,edit,course,0,0,11,1,Deny,Deny,0,S.R1
+124,CAC,SIS:FA->DO,9,student,edit,course,0,1,3,3,Deny,Deny,0,S.R16
+124,CAC,SIS:FA->DO,10,student,approve,course,0,0,4,1,Deny,Deny,0,S.R20
+124,CAC,SIS:FA->DO,11,student,export,grades,1,0,4,3,Deny,Deny,0,S.R3
+124,CAC,SIS:FA->DO,12,student,export,transcript,1,0,6,3,Deny,Deny,0,S.R3
+124,CAC,SIS:FA->DO,13,lecturer,view,grades,0,0,3,2,Permit,Permit,0,S.R5
+124,CAC,SIS:FA->DO,14,lecturer,view,course,0,0,3,4,Permit,Permit,0,S.R18
+124,CAC,SIS:FA->DO,15,lecturer,edit,grades,0,0,15,2,Deny,Deny,0,S.R1 S.R6
+124,CAC,SIS:FA->DO,16,lecturer,edit,transcript,0,1,10,4,Deny,Deny,0,S.R12
+124,CAC,SIS:FA->DO,17,lecturer,edit,course,0,0,13,2,Deny,Deny,0,S.R1
+124,CAC,SIS:FA->DO,18,advisor,view,grades,0,0,3,2,Permit,Permit,0,S.R9
+124,CAC,SIS:FA->DO,19,advisor,view,transcript,0,0,2,4,Permit,Permit,0,S.R13
+124,CAC,SIS:FA->DO,20,registrar,view,grades,0,0,10,4,Permit,Permit,0,S.R7
+124,CAC,SIS:FA->DO,21,registrar,view,transcript,0,0,11,2,Permit,Permit,0,S.R11
+124,CAC,SIS:FA->DO,22,registrar,view,course,0,0,8,1,Permit,Permit,0,S.R19
+124,CAC,SIS:FA->DO,23,registrar,edit,transcript,0,0,13,3,Permit,Permit,0,S.R11
+124,CAC,SIS:FA->DO,24,admin,view,grades,1,0,1,1,Permit,Permit,0,S.R2
+124,CAC,SIS:FA->DO,25,admin,view,course,0,0,16,2,Permit,Deny,1,S.R2 S.R20
+124,CAC,SIS:FA->DO,26,admin,edit,transcript,0,0,2,4,Deny,Deny,0,S.R1 S.R12
+124,CAC,SIS:FA->DO,27,admin,edit,transcript,0,1,3,3,Permit,Deny,1,S.R12 S.R2
+125,CAC,SIS:FA->PO,0,student,view,grades,0,1,8,2,Deny,Deny,0,S.R8
+125,CAC,SIS:FA->PO,1,student,view,grades,1,0,2,4,Permit,Permit,0,S.R4
+125,CAC,SIS:FA->PO,2,student,view,transcript,0,0,15,4,Deny,Deny,0,S.R14
+125,CAC,SIS:FA->PO,3,student,view,transcript,1,1,7,3,Permit,Permit,0,S.R10
+125,CAC,SIS:FA->PO,4,student,view,course,0,0,1,3,Permit,Permit,0,S.R17
+125,CAC,SIS:FA->PO,5,student,edit,transcript,0,0,9,1,Deny,Deny,0,S.R1 S.R12 S.R14
+125,CAC,SIS:FA->PO,6,student,edit,transcript,1,1,9,2,Deny,Deny,0,S.R12
+125,CAC,SIS:FA->PO,7,student,edit,profile,1,1,12,4,Permit,Permit,0,S.R15
+125,CAC,SIS:FA->PO,8,student,edit,course,0,0,3,3,Deny,Permit,1,S.R1 S.R17
+125,CAC,SIS:FA->PO,9,student,edit,course,0,1,8,2,Deny,Deny,0,S.R16
+125,CAC,SIS:FA->PO,10,student,approve,course,0,0,4,1,Deny,Deny,0,S.R20
+125,CAC,SIS:FA->PO,11,student,export,grades,1,0,11,1,Deny,Deny,0,S.R3
+125,CAC,SIS:FA->PO,12,student,export,transcript,1,1,3,4,Deny,Permit,1,S.R10 S.R3
+125,CAC,SIS:FA->PO,13,lecturer,view,grades,0,0,7,2,Permit,Permit,0,S.R5
+125,CAC,SIS:FA->PO,14,lecturer,view,course,0,0,3,3,Permit,Permit,0,S.R18
+125,CAC,SIS:FA->PO,15,lecturer,edit,grades,0,0,9,1,Deny,Permit,1,S.R1 S.R5
+125,CAC,SIS:FA->PO,16,lecturer,edit,grades,0,0,15,1,Deny,Deny,0,S.R1 S.R6
+125,CAC,SIS:FA->PO,17,lecturer,edit,profile,0,0,4,2,Deny,Deny,0,S.R1
+125,CAC,SIS:FA->PO,18,lecturer,edit,course,0,0,4,2,Deny,Permit,1,S.R1 S.R18
+125,CAC,SIS:FA->PO,19,advisor,view,grades,0,0,13,3,Permit,Permit,0,S.R9
+125,CAC,SIS:FA->PO,20,advisor,view,transcript,0,0,7,3,Permit,Permit,0,S.R13
+125,CAC,SIS:FA->PO,21,registrar,view,grades,0,0,10,4,Permit,Permit,0,S.R7
+125,CAC,SIS:FA->PO,22,registrar,view,transcript,0,1,8,1,Permit,Permit,0,S.R11
+125,CAC,SIS:FA->PO,23,registrar,view,course,0,1,16,2,Permit,Permit,0,S.R19
+125,CAC,SIS:FA->PO,24,registrar,edit,transcript,0,0,16,4,Permit,Permit,0,S.R11
+125,CAC,SIS:FA->PO,25,admin,view,grades,0,1,11,3,Permit,Permit,0,S.R2
+125,CAC,SIS:FA->PO,26,admin,view,course,0,0,1,1,Permit,Permit,0,S.R2
+125,CAC,SIS:FA->PO,27,admin,edit,transcript,0,0,10,3,Deny,Deny,0,S.R1 S.R12
+125,CAC,SIS:FA->PO,28,admin,edit,profile,1,0,2,4,Deny,Permit,1,S.R1 S.R15

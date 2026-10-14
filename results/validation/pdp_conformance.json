@@ -1,0 +1,26 @@
+{
+ "FIN": {
+  "versions": 4,
+  "checked": 336,
+  "mismatches": 0
+ },
+ "HACS": {
+  "versions": 165,
+  "checked": 186688,
+  "mismatches": 0,
+  "exhaustive_original": 92160
+ },
+ "FMS": {
+  "versions": 173,
+  "checked": 271700,
+  "mismatches": 0,
+  "exhaustive_original": 172800
+ },
+ "SIS": {
+  "versions": 127,
+  "checked": 93832,
+  "mismatches": 0,
+  "exhaustive_original": 20480
+ },
+ "examples": []
+}

@@ -1,0 +1,6 @@
+n,|E*|,build s,Z3 queries,pre-filtered pairs,evolutions,changed,G2 incr. s (med),BIS s (med),|BIS|/n med,|BIS|/n p90,global diff s (med),soundness violations,outside-BIS rules applicable to a change,outside-BIS rules checked,EDR W %,EDR D %,gen W s (med),gen W s (p90),|T| W (med)
+50,11,0.0,15,574,30,26,0.04,0.000,0.02,0.11,0.014,0,0,1212,88.5,100.0,0.04,0.1,2.0
+100,73,0.1,92,2359,30,24,0.08,0.001,0.04,0.14,0.014,0,0,2156,91.7,100.0,0.08,0.4,9.5
+200,263,0.3,326,9313,30,22,0.15,0.001,0.01,0.23,0.024,0,0,3908,95.5,100.0,0.06,1.8,7.5
+400,1683,0.9,1867,36689,30,16,0.31,0.011,0.06,0.92,0.093,0,2,3978,68.8,100.0,0.69,16.3,137.5
+800,7621,3.0,8596,142940,30,15,0.70,0.379,0.27,0.96,0.165,not run,not run,not run,not run,not run,not run,not run,not run

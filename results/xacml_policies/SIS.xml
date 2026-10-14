@@ -1,0 +1,692 @@
+<?xml version="1.0" ?>
+<PolicySet xmlns="urn:oasis:names:tc:xacml:2.0:policy:schema:cd:04" PolicySetId="SIS" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:first-applicable">
+  <Target/>
+  <Policy PolicyId="S.P1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable">
+    <Target/>
+    <Rule RuleId="S.R1" Effect="Deny">
+      <Target>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">edit</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+              <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:open" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </Apply>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">0</AttributeValue>
+          </Apply>
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+              </Apply>
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">registrar</AttributeValue>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R2" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">admin</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </Apply>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">approve</AttributeValue>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R3" Effect="Deny">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">student</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">export</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+    </Rule>
+  </Policy>
+  <Policy PolicyId="S.P2" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:deny-overrides">
+    <Target>
+      <Resources>
+        <Resource>
+          <ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">grades</AttributeValue>
+            <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:resource" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </ResourceMatch>
+        </Resource>
+      </Resources>
+    </Target>
+    <Rule RuleId="S.R4" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">student</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">view</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+            <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:own" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </Apply>
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">1</AttributeValue>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R5" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">lecturer</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">view</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">edit</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R6" Effect="Deny">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">lecturer</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">edit</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">15</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">16</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R7" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">registrar</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">view</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">approve</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">export</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R8" Effect="Deny">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">student</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+            <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:own" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </Apply>
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">0</AttributeValue>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R9" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">advisor</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">view</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+    </Rule>
+  </Policy>
+  <Policy PolicyId="S.P3" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:permit-overrides">
+    <Target>
+      <Resources>
+        <Resource>
+          <ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">transcript</AttributeValue>
+            <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:resource" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </ResourceMatch>
+        </Resource>
+        <Resource>
+          <ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">profile</AttributeValue>
+            <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:resource" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </ResourceMatch>
+        </Resource>
+      </Resources>
+    </Target>
+    <Rule RuleId="S.R10" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">1</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:own" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">view</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">export</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R11" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">registrar</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+    </Rule>
+    <Rule RuleId="S.R12" Effect="Deny">
+      <Target>
+        <Resources>
+          <Resource>
+            <ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">transcript</AttributeValue>
+              <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:resource" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ResourceMatch>
+          </Resource>
+        </Resources>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">edit</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+    </Rule>
+    <Rule RuleId="S.R13" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">advisor</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">view</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:year" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">2</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:year" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">3</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:year" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">4</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R14" Effect="Deny">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">student</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+            <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:own" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </Apply>
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">0</AttributeValue>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R15" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">1</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:own" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+        <Resources>
+          <Resource>
+            <ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">profile</AttributeValue>
+              <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:resource" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ResourceMatch>
+          </Resource>
+        </Resources>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+            <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </Apply>
+          <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">edit</AttributeValue>
+        </Apply>
+      </Condition>
+    </Rule>
+  </Policy>
+  <Policy PolicyId="S.P4" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable">
+    <Target>
+      <Resources>
+        <Resource>
+          <ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">course</AttributeValue>
+            <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:resource" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+          </ResourceMatch>
+        </Resource>
+      </Resources>
+    </Target>
+    <Rule RuleId="S.R16" Effect="Deny">
+      <Target>
+        <Actions>
+          <Action>
+            <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">edit</AttributeValue>
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </ActionMatch>
+          </Action>
+        </Actions>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+              <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:open" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </Apply>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">1</AttributeValue>
+          </Apply>
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">3</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">4</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">5</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">6</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">7</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">8</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">9</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">10</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">11</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">12</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">13</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">14</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">15</AttributeValue>
+                </Apply>
+              </Apply>
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                  <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                    <ResourceAttributeDesignator AttributeId="urn:tpgreg:attr:week" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                  </Apply>
+                  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">16</AttributeValue>
+                </Apply>
+              </Apply>
+            </Apply>
+          </Apply>
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </Apply>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">student</AttributeValue>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R17" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">student</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">view</AttributeValue>
+              </Apply>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+              <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+                  <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+                </Apply>
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">edit</AttributeValue>
+              </Apply>
+            </Apply>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R18" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">lecturer</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">advisor</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+      <Condition>
+        <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+              <ActionAttributeDesignator AttributeId="urn:tpgreg:attr:action" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </Apply>
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">export</AttributeValue>
+          </Apply>
+        </Apply>
+      </Condition>
+    </Rule>
+    <Rule RuleId="S.R19" Effect="Permit">
+      <Target>
+        <Subjects>
+          <Subject>
+            <SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">registrar</AttributeValue>
+              <SubjectAttributeDesignator AttributeId="urn:tpgreg:attr:role" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+            </SubjectMatch>
+          </Subject>
+        </Subjects>
+      </Target>
+    </Rule>
+    <Rule RuleId="S.R20" Effect="Deny">
+      <Target/>
+    </Rule>
+  </Policy>
+</PolicySet>
