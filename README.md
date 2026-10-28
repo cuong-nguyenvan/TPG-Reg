@@ -8,12 +8,6 @@ edit can influence — and generates a small regression test suite inside the BI
 reported with the rules that decide it and classified as *intended* or *regression* with respect to the
 declared intent of the change.
 
-> **Tiếng Việt.** TPG-Reg là bộ công cụ kiểm thử hồi quy cho chính sách XACML khi chính sách thay đổi:
-> dựng đồ thị chính sách có kiểu (TPG) cho hai phiên bản, tính tập tác động hành vi (BIS) và sinh bộ test
-> hồi quy trong BIS. Thư mục `tpgreg/` là thư viện, `experiments/` là các chương trình thực nghiệm,
-> `results/` là kết quả đã chạy (xem `results/REPORT.md`). Chạy lại toàn bộ: `./run_all.sh`
-> (≈1 giờ trên 2 nhân) hoặc `./run_all.sh --fast` (≈5 phút, bỏ qua thực nghiệm khả năng mở rộng và
-> kiểm tra tương thích PDP).
 
 ## Installation
 
